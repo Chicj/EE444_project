@@ -1,4 +1,5 @@
 #include <msp430.h>
+#include <i2c.h>
 #include "bno055.h"
 
 // function prototypes 

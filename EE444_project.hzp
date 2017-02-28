@@ -21,11 +21,14 @@
       <file file_name="bno055_support.c" />
       <file file_name="DecrementVcore.c" />
       <file file_name="IncrementVcore.c" />
+      <file file_name="i2c.h" />
     </folder>
     <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
       <file file_name="$(StudioDir)/src/crt0.asm" />
     </folder>
+    <file file_name="I2Clib_Debug.hza" />
+    <file file_name="I2Clib_Release.hza" />
   </project>
   <configuration
     Name="MSP430 Debug"
