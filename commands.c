@@ -3,7 +3,7 @@ The commands.c file is for commands that will be displayed through the serial te
 In order to add a command you must create a function as seen below.
 Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd}" table at the end of the file.
 **********************************************************************************************************************************************/
-#include <msp430.h>
+#include <msp430.h>   // prune these 
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

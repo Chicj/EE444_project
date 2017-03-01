@@ -3,7 +3,7 @@
 //
 //
 //*****************************************************************************************
-#include <msp430.h>
+#include <msp430.h> // prune these 
 #include <ctl.h>
 #include <i2c.h>              
 #include <ARCbus.h>
@@ -11,8 +11,7 @@
 #include <terminal.h>      
 #include <string.h>           // for memset function
 #include <UCA2_uart.h>        // UART setup 
-#include "pins.h"             // linked in bare_bones solution 
-#include "subsystem.h"        // linked in bare_bones solution 
+
 
 
 CTL_TASK_t terminal_task; // name your task (first thing to do when setting up a new task (1))
@@ -40,13 +39,14 @@ void main(void){
   //turn on LED's this will flash the LED's during startup
   P7DIR=0xFF;
   //init complete turn on LED0 and all others off
-  P7OUT=0x00;
+  P7OUT=0xFF;
 
   //TESTING: set log level to report everything by default
   set_error_level(0);
 
   //initialize UART
-  UCA2_init_UART(UART_PORT,UART_TX_PIN_NUM,UART_RX_PIN_NUM);
+  //UCA2_init_UART(UART_PORT,UART_TX_PIN_NUM,UART_RX_PIN_NUM);
+  UCA2_init_UART(3,5,6);
 
   //setup bus interface
   initARCbus(0x14);   // Default addr for "SYS" subsystem, should be changed for specific subsystems.
@@ -57,7 +57,7 @@ void main(void){
 
 
   // creating the tasks
-  //ctl_task_run(&terminal_task,BUS_PRI_LOW,terminal,"IMU","terminal",sizeof(terminal_stack)/sizeof(terminal_stack[0])-2,terminal_stack-1,0);
+  ctl_task_run(&terminal_task,BUS_PRI_LOW,terminal,"EE444 IMU Project code","terminal",sizeof(terminal_stack)/sizeof(terminal_stack[0])-2,terminal_stack-1,0);
 
   //main loop <-- this is an ARCbus function 
   mainLoop(); 
