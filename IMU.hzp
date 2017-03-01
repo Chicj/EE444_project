@@ -25,7 +25,6 @@
     </folder>
     <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
-      <file file_name="$(StudioDir)/src/crt0.asm" />
     </folder>
     <configuration
       Name="Debug"
@@ -38,11 +37,7 @@
     Name="MSP430 Debug"
     inherited_configurations="MSP430;Debug" />
   <configuration Name="MSP430" Platform="MSP430" hidden="Yes" />
-  <configuration
-    Name="Debug"
-    build_debug_information="Yes"
-    hidden="Yes"
-    linker_additional_files="$(ARC_prefix)/lib/BUSlib_Debug.hza;$(ARC_prefix)/lib/Error_printf_Debug.hza;$(ARC_prefix)/lib/termlib_Debug.hza;$(ARC_prefix)/lib/commandLib_Debug.hza;$(ARC_prefix)/lib/SD-lib_err_Debug.hza;$(ARC_prefix)/lib/UART_UCA2_Debug.hza;$(ARC_prefix)/lib/SD-lib_UCA1_Debug.hza;$(ARC_prefix)/lib/I2Clib_Debug.hza" />
+  <configuration Name="Debug" build_debug_information="Yes" hidden="Yes" />
   <configuration
     Name="MSP430 Release"
     inherited_configurations="MSP430;Release" />
@@ -51,7 +46,6 @@
     build_debug_information="No"
     c_preprocessor_definitions="NDEBUG"
     hidden="Yes"
-    linker_additional_files="$(ARC_prefix)/lib/BUSlib_Release.hza;$(ARC_prefix)/lib/Error_printg_Release.hza;$(ARC_prefix)/lib/termlib_Release.hza;$(ARC_prefix)/lib/UART_UCA2_Release.hza;$(ARC_prefix)/lib/commandLib_Release.hza;$(ARC_prefix)/lib/SD-lib_err_Release.hza;$(ARC_prefix)/lib/SD-lib_UCA1_Release.hza;$(ARC_prefix)/lib/I2Clib_Release.hza"
     optimize_block_locality="Yes"
     optimize_copy_propagation="Yes"
     optimize_cross_calling="Standard"

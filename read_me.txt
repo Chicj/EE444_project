@@ -1,4 +1,9 @@
-notes on crossworks setup file
+notes using ARC-lib in a crossworks sol. 
+
+	delete auto gen crt0.asm file. ARClib uses its own
+	make sure in Crossworks you pick a CTL solution from the start menue 
+	
+changes to the project solution in the editor
      c_system_include_directories="$(StudioDir)/include;$(PackagesDir)/include;$(ARC_prefix)/include"
 		lists include directeries ie finds --> <somefile.h>. the first two entries in the list are probably defalt
 	  

@@ -8,7 +8,8 @@
 #include <i2c.h>              
 #include <ARCbus.h>
 #include <Error.h>
-#include <terminal.h>         
+#include <terminal.h>      
+#include <string.h>           // for memset function
 #include <UCA2_uart.h>        // UART setup 
 #include "pins.h"             // linked in bare_bones solution 
 #include "subsystem.h"        // linked in bare_bones solution 
@@ -55,9 +56,8 @@ void main(void){
   terminal_stack[0]=terminal_stack[sizeof(terminal_stack)/sizeof(terminal_stack[0])-1]=0xfeed;  //put marker values at the words before/after the stack
 
 
-
   // creating the tasks
-  ctl_task_run(&terminal_task,BUS_PRI_LOW,terminal,"IMU","terminal",sizeof(terminal_stack)/sizeof(terminal_stack[0])-2,terminal_stack-1,0);
+  //ctl_task_run(&terminal_task,BUS_PRI_LOW,terminal,"IMU","terminal",sizeof(terminal_stack)/sizeof(terminal_stack[0])-2,terminal_stack-1,0);
 
   //main loop <-- this is an ARCbus function 
   mainLoop(); 
