@@ -45,7 +45,7 @@ int example_command(char **argv,unsigned short argc){
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
 
-                   ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS,
+                   ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
                    {NULL,NULL,NULL}};
 
