@@ -1,0 +1,126 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\schematic.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify)
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (CON4
+      (FullPartName "CON4.Normal")
+      (LibraryName "Z:\SSEP\SOFTWARE\CADENCE\ARCLIB.OLB")
+      (DeviceIndex "0"))
+    (CON6
+      (FullPartName "CON6.Normal")
+      (LibraryName "Z:\CADENCEWORK\ARC-STUFF\PARTS\ARCLIB.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "Z:\SSEP\SOFTWARE\CADENCE\ARCLIB.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "Z:\SSEP\SOFTWARE\CADENCE\ARCLIB.OLB")
+      (DeviceIndex "0"))
+    (BNO055
+      (FullPartName "BNO055.Normal")
+      (LibraryName "Z:\SSEP\SOFTWARE\CADENCE\ARCLIB.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\schematic.dsn")
+      (Path "Design Resources" ".\schematic.dsn" "TOP")
+      (Path "Design Resources" ".\schematic.dsn" "CPU")
+      (Path "Design Resources" ".\schematic.dsn" "HEADER")
+      (Path "Design Resources" ".\schematic.dsn" "LED")
+      (Path "Design Resources" ".\schematic.dsn" "LIM")
+      (Path "Design Resources" ".\schematic.dsn" "MEM")
+      (Path "Design Resources" ".\schematic.dsn" "MP_A")
+      (Path "Design Resources" ".\schematic.dsn" "USB")
+      (Path "Design Resources" ".\schematic.dsn" "Design Cache")
+      (Select "Design Resources" ".\schematic.dsn" "TOP" "TOP"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 3"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1413 50 620")
+        (Scroll "-133 0")
+        (Zoom "108")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\CJODELL2\DESKTOP\EE444_PROJECT\DEV-IMU-SCHEMATIC\SCHEMATIC.DSN")
+      (Schematic "TOP")
+      (Page "TOP"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1467 100 674")
+        (Scroll "-135 0")
+        (Zoom "108")
+        (Occurrence "/IMU"))
+      (Path
+         "C:\USERS\CJODELL2\DESKTOP\EE444_PROJECT\DEV-IMU-SCHEMATIC\SCHEMATIC.DSN")
+      (Schematic "IMU")
+      (Page "IMU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 125 1492 125 699")
+        (Scroll "0 178")
+        (Zoom "100")
+        (Occurrence "/SYS-CPU"))
+      (Path
+         "C:\USERS\CJODELL2\DESKTOP\EE444_PROJECT\DEV-IMU-SCHEMATIC\SCHEMATIC.DSN")
+      (Schematic "CPU")
+      (Page "CPU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 919 100 674")
+        (Scroll "0 0")
+        (Zoom "108")
+        (Occurrence "/Prototype Area"))
+      (Path
+         "C:\USERS\CJODELL2\DESKTOP\EE444_PROJECT\DEV-IMU-SCHEMATIC\SCHEMATIC.DSN")
+      (Schematic "MP_A")
+      (Page "Main Proto Area"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 125 1200 125 699")
+        (Scroll "0 0")
+        (Zoom "108")
+        (Occurrence "/Visual"))
+      (Path
+         "C:\USERS\CJODELL2\DESKTOP\EE444_PROJECT\DEV-IMU-SCHEMATIC\SCHEMATIC.DSN")
+      (Schematic "LED")
+      (Page "LED")))
+  (MPSSessionName "cjodell2"))

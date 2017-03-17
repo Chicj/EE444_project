@@ -1,0 +1,1217 @@
+{ Using PSTWRITER 16.5.0 p001Aug-18-2015 at 15:37:11 }
+
+Starting the Swp file dumping process ...
+Loading netlist files ...
+Loading... Z:\CADENCEWORK\ARC-STUFF\BOARDS\ARC-PROTO-BOARD-REV2.1\ALLEGRO/pstchip.dat
+
+Loading... Z:\CADENCEWORK\ARC-STUFF\BOARDS\ARC-PROTO-BOARD-REV2.1\ALLEGRO/pstxprt.dat
+
+Loading... Z:\CADENCEWORK\ARC-STUFF\BOARDS\ARC-PROTO-BOARD-REV2.1\ALLEGRO/pstxnet.dat
+packaging the design view...Loading physical design view ...Loading... Z:\CADENCEWORK\ARC-STUFF\BOARDS\ARC-PROTO-BOARD-REV2.1\ALLEGRO/funcview.dat
+Loading... Z:\CADENCEWORK\ARC-STUFF\BOARDS\ARC-PROTO-BOARD-REV2.1\ALLEGRO/compview.dat
+Loading... Z:\CADENCEWORK\ARC-STUFF\BOARDS\ARC-PROTO-BOARD-REV2.1\ALLEGRO/netview.dat
+Loading... Z:\CADENCEWORK\ARC-STUFF\BOARDS\ARC-PROTO-BOARD-REV2.1\ALLEGRO/pinview.dat
+packaging the design view...
+Generating the design view difference#1 ERROR(ORCAP-36057): Unable to backannotate the changes to design file 'SCHEMATIC.DSN' because the original design file used to create the board has a different name 'SCHEMATIC.DSN'. Choose the correct design file and backannotate again.
+Analyzing Gate and Pin Swaps ...
+
+Analyzing Refdes Changes ...
+
+Analyzing Instance Property Differences ...
+
+Analyzing Net Property Differences ...
+
+Analyzing Pin Property Differences ...
+
+*** List of Instance Differences ***
+#2 WARNING(ORCAP-36007): Ignoring new Component "CT4, Section 1" found on board.
+#3 WARNING(ORCAP-36007): Ignoring new Component "CT3, Section 1" found on board.
+#4 WARNING(ORCAP-36007): Ignoring new Component "CB12, Section 1" found on board.
+#5 WARNING(ORCAP-36007): Ignoring new Component "CT1, Section 1" found on board.
+#6 WARNING(ORCAP-36007): Ignoring new Component "RT1, Section 1" found on board.
+#7 WARNING(ORCAP-36007): Ignoring new Component "RT5, Section 1" found on board.
+#8 WARNING(ORCAP-36007): Ignoring new Component "RB19, Section 1" found on board.
+#9 WARNING(ORCAP-36007): Ignoring new Component "RB10, Section 1" found on board.
+#10 WARNING(ORCAP-36007): Ignoring new Component "RT9, Section 1" found on board.
+#11 WARNING(ORCAP-36007): Ignoring new Component "RT3, Section 1" found on board.
+#12 WARNING(ORCAP-36007): Ignoring new Component "RT2, Section 1" found on board.
+#13 WARNING(ORCAP-36007): Ignoring new Component "RB17, Section 1" found on board.
+#14 WARNING(ORCAP-36007): Ignoring new Component "RB1, Section 1" found on board.
+#15 WARNING(ORCAP-36007): Ignoring new Component "RB23, Section 1" found on board.
+#16 WARNING(ORCAP-36007): Ignoring new Component "RB20, Section 1" found on board.
+#17 WARNING(ORCAP-36007): Ignoring new Component "RB22, Section 1" found on board.
+#18 WARNING(ORCAP-36007): Ignoring new Component "RB21, Section 1" found on board.
+#19 WARNING(ORCAP-36007): Ignoring new Component "RB25, Section 1" found on board.
+#20 WARNING(ORCAP-36007): Ignoring new Component "RB24, Section 1" found on board.
+#21 WARNING(ORCAP-36007): Ignoring new Component "RB27, Section 1" found on board.
+#22 WARNING(ORCAP-36007): Ignoring new Component "RB26, Section 1" found on board.
+#23 WARNING(ORCAP-36007): Ignoring new Component "CT16, Section 1" found on board.
+#24 WARNING(ORCAP-36007): Ignoring new Component "RB2, Section 1" found on board.
+#25 WARNING(ORCAP-36007): Ignoring new Component "RT4, Section 1" found on board.
+#26 WARNING(ORCAP-36007): Ignoring new Component "RB18, Section 1" found on board.
+#27 WARNING(ORCAP-36007): Ignoring new Component "RT6, Section 1" found on board.
+#28 WARNING(ORCAP-36007): Ignoring new Component "RT8, Section 1" found on board.
+#29 WARNING(ORCAP-36007): Ignoring new Component "RT7, Section 1" found on board.
+#30 WARNING(ORCAP-36007): Ignoring new Component "RB4, Section 1" found on board.
+#31 WARNING(ORCAP-36007): Ignoring new Component "RB5, Section 1" found on board.
+#32 WARNING(ORCAP-36007): Ignoring new Component "RB8, Section 1" found on board.
+#33 WARNING(ORCAP-36007): Ignoring new Component "RB3, Section 1" found on board.
+#34 WARNING(ORCAP-36007): Ignoring new Component "RB6, Section 1" found on board.
+#35 WARNING(ORCAP-36007): Ignoring new Component "RB7, Section 1" found on board.
+#36 WARNING(ORCAP-36007): Ignoring new Component "RB9, Section 1" found on board.
+#37 WARNING(ORCAP-36007): Ignoring new Component "RB11, Section 1" found on board.
+#38 WARNING(ORCAP-36007): Ignoring new Component "RB15, Section 1" found on board.
+#39 WARNING(ORCAP-36007): Ignoring new Component "RB12, Section 1" found on board.
+#40 WARNING(ORCAP-36007): Ignoring new Component "RB13, Section 1" found on board.
+#41 WARNING(ORCAP-36007): Ignoring new Component "RB14, Section 1" found on board.
+#42 WARNING(ORCAP-36007): Ignoring new Component "RB16, Section 1" found on board.
+#43 WARNING(ORCAP-36007): Ignoring new Component "CB10, Section 1" found on board.
+#44 WARNING(ORCAP-36007): Ignoring new Component "CT2, Section 1" found on board.
+#45 WARNING(ORCAP-36007): Ignoring new Component "CB6, Section 1" found on board.
+#46 WARNING(ORCAP-36007): Ignoring new Component "CT7, Section 1" found on board.
+#47 WARNING(ORCAP-36007): Ignoring new Component "CT11, Section 1" found on board.
+#48 WARNING(ORCAP-36007): Ignoring new Component "CT9, Section 1" found on board.
+#49 WARNING(ORCAP-36007): Ignoring new Component "CB3, Section 1" found on board.
+#50 WARNING(ORCAP-36007): Ignoring new Component "CB9, Section 1" found on board.
+#51 WARNING(ORCAP-36007): Ignoring new Component "CT13, Section 1" found on board.
+#52 WARNING(ORCAP-36007): Ignoring new Component "CT15, Section 1" found on board.
+#53 WARNING(ORCAP-36007): Ignoring new Component "CB13, Section 1" found on board.
+#54 WARNING(ORCAP-36007): Ignoring new Component "CB11, Section 1" found on board.
+#55 WARNING(ORCAP-36007): Ignoring new Component "CB14, Section 1" found on board.
+#56 WARNING(ORCAP-36007): Ignoring new Component "CB5, Section 1" found on board.
+#57 WARNING(ORCAP-36007): Ignoring new Component "CT6, Section 1" found on board.
+#58 WARNING(ORCAP-36007): Ignoring new Component "CT10, Section 1" found on board.
+#59 WARNING(ORCAP-36007): Ignoring new Component "CB1, Section 1" found on board.
+#60 WARNING(ORCAP-36007): Ignoring new Component "CT8, Section 1" found on board.
+#61 WARNING(ORCAP-36007): Ignoring new Component "CB4, Section 1" found on board.
+#62 WARNING(ORCAP-36007): Ignoring new Component "CB8, Section 1" found on board.
+#63 WARNING(ORCAP-36007): Ignoring new Component "CT12, Section 1" found on board.
+#64 WARNING(ORCAP-36007): Ignoring new Component "CT14, Section 1" found on board.
+#65 WARNING(ORCAP-36007): Ignoring new Component "CT17, Section 1" found on board.
+#66 WARNING(ORCAP-36007): Ignoring new Component "CB7, Section 1" found on board.
+#67 WARNING(ORCAP-36007): Ignoring new Component "CT5, Section 1" found on board.
+#68 WARNING(ORCAP-36007): Ignoring new Component "CB2, Section 1" found on board.
+#69 WARNING(ORCAP-36007): Ignoring new Component "UT2, Section 1" found on board.
+#70 WARNING(ORCAP-36007): Ignoring new Component "CB15, Section 1" found on board.
+#71 WARNING(ORCAP-36007): Ignoring new Component "JT18, Section 1" found on board.
+#72 WARNING(ORCAP-36007): Ignoring new Component "JT3, Section 1" found on board.
+#73 WARNING(ORCAP-36007): Ignoring new Component "JT23, Section 1" found on board.
+#74 WARNING(ORCAP-36007): Ignoring new Component "DT1, Section 1" found on board.
+#75 WARNING(ORCAP-36007): Ignoring new Component "DT2, Section 1" found on board.
+#76 WARNING(ORCAP-36007): Ignoring new Component "DT3, Section 1" found on board.
+#77 WARNING(ORCAP-36007): Ignoring new Component "DT4, Section 1" found on board.
+#78 WARNING(ORCAP-36007): Ignoring new Component "DT5, Section 1" found on board.
+#79 WARNING(ORCAP-36007): Ignoring new Component "DT6, Section 1" found on board.
+#80 WARNING(ORCAP-36007): Ignoring new Component "DT7, Section 1" found on board.
+#81 WARNING(ORCAP-36007): Ignoring new Component "DT8, Section 1" found on board.
+#82 WARNING(ORCAP-36007): Ignoring new Component "JT21, Section 1" found on board.
+#83 WARNING(ORCAP-36008): Ignoring Component "CB1, Section 1" missing from board.
+#84 WARNING(ORCAP-36008): Ignoring Component "CB10, Section 1" missing from board.
+#85 WARNING(ORCAP-36008): Ignoring Component "CB11, Section 1" missing from board.
+#86 WARNING(ORCAP-36008): Ignoring Component "CB2, Section 1" missing from board.
+#87 WARNING(ORCAP-36008): Ignoring Component "CB3, Section 1" missing from board.
+#88 WARNING(ORCAP-36008): Ignoring Component "CB4, Section 1" missing from board.
+#89 WARNING(ORCAP-36008): Ignoring Component "CB5, Section 1" missing from board.
+#90 WARNING(ORCAP-36008): Ignoring Component "CB6, Section 1" missing from board.
+#91 WARNING(ORCAP-36008): Ignoring Component "CB7, Section 1" missing from board.
+#92 WARNING(ORCAP-36008): Ignoring Component "CB8, Section 1" missing from board.
+#93 WARNING(ORCAP-36008): Ignoring Component "CB9, Section 1" missing from board.
+#94 WARNING(ORCAP-36008): Ignoring Component "CT10, Section 1" missing from board.
+#95 WARNING(ORCAP-36008): Ignoring Component "CT11, Section 1" missing from board.
+#96 WARNING(ORCAP-36008): Ignoring Component "CT12, Section 1" missing from board.
+#97 WARNING(ORCAP-36008): Ignoring Component "CT13, Section 1" missing from board.
+#98 WARNING(ORCAP-36008): Ignoring Component "CT14, Section 1" missing from board.
+#99 WARNING(ORCAP-36008): Ignoring Component "CT15, Section 1" missing from board.
+#100 WARNING(ORCAP-36008): Ignoring Component "CT16, Section 1" missing from board.
+#101 WARNING(ORCAP-36008): Ignoring Component "CT3, Section 1" missing from board.
+#102 WARNING(ORCAP-36008): Ignoring Component "CT4, Section 1" missing from board.
+#103 WARNING(ORCAP-36008): Ignoring Component "CT5, Section 1" missing from board.
+#104 WARNING(ORCAP-36008): Ignoring Component "CT6, Section 1" missing from board.
+#105 WARNING(ORCAP-36008): Ignoring Component "CT7, Section 1" missing from board.
+#106 WARNING(ORCAP-36008): Ignoring Component "CT8, Section 1" missing from board.
+#107 WARNING(ORCAP-36008): Ignoring Component "CT9, Section 1" missing from board.
+#108 WARNING(ORCAP-36008): Ignoring Component "JT23, Section 1" missing from board.
+#109 WARNING(ORCAP-36008): Ignoring Component "R61, Section 1" missing from board.
+#110 WARNING(ORCAP-36008): Ignoring Component "RB11, Section 1" missing from board.
+#111 WARNING(ORCAP-36008): Ignoring Component "RB12, Section 1" missing from board.
+#112 WARNING(ORCAP-36008): Ignoring Component "RB13, Section 1" missing from board.
+#113 WARNING(ORCAP-36008): Ignoring Component "RB14, Section 1" missing from board.
+#114 WARNING(ORCAP-36008): Ignoring Component "RB15, Section 1" missing from board.
+#115 WARNING(ORCAP-36008): Ignoring Component "RB16, Section 1" missing from board.
+#116 WARNING(ORCAP-36008): Ignoring Component "RB2, Section 1" missing from board.
+#117 WARNING(ORCAP-36008): Ignoring Component "RB3, Section 1" missing from board.
+#118 WARNING(ORCAP-36008): Ignoring Component "RB4, Section 1" missing from board.
+#119 WARNING(ORCAP-36008): Ignoring Component "RB5, Section 1" missing from board.
+#120 WARNING(ORCAP-36008): Ignoring Component "RB6, Section 1" missing from board.
+#121 WARNING(ORCAP-36008): Ignoring Component "RB7, Section 1" missing from board.
+#122 WARNING(ORCAP-36008): Ignoring Component "RB8, Section 1" missing from board.
+#123 WARNING(ORCAP-36008): Ignoring Component "RB9, Section 1" missing from board.
+#124 WARNING(ORCAP-36008): Ignoring Component "RT2, Section 1" missing from board.
+#125 WARNING(ORCAP-36008): Ignoring Component "RT3, Section 1" missing from board.
+#126 WARNING(ORCAP-36008): Ignoring Component "RT6, Section 1" missing from board.
+#127 WARNING(ORCAP-36008): Ignoring Component "UT2, Section 1" missing from board.
+#128 WARNING(ORCAP-36008): Ignoring Component "CB12, Section 1" missing from board.
+#129 WARNING(ORCAP-36008): Ignoring Component "CB13, Section 1" missing from board.
+#130 WARNING(ORCAP-36008): Ignoring Component "RB17, Section 1" missing from board.
+#131 WARNING(ORCAP-36008): Ignoring Component "RB18, Section 1" missing from board.
+#132 WARNING(ORCAP-36008): Ignoring Component "RT4, Section 1" missing from board.
+#133 WARNING(ORCAP-36008): Ignoring Component "CB14, Section 1" missing from board.
+#134 WARNING(ORCAP-36008): Ignoring Component "CB15, Section 1" missing from board.
+#135 WARNING(ORCAP-36008): Ignoring Component "CT1, Section 1" missing from board.
+#136 WARNING(ORCAP-36008): Ignoring Component "CT2, Section 1" missing from board.
+#137 WARNING(ORCAP-36008): Ignoring Component "RB1, Section 1" missing from board.
+#138 WARNING(ORCAP-36008): Ignoring Component "CT17, Section 1" missing from board.
+#139 WARNING(ORCAP-36008): Ignoring Component "RT7, Section 1" missing from board.
+#140 WARNING(ORCAP-36008): Ignoring Component "RT8, Section 1" missing from board.
+#141 WARNING(ORCAP-36008): Ignoring Component "D1, Section 1" missing from board.
+#142 WARNING(ORCAP-36008): Ignoring Component "D2, Section 1" missing from board.
+#143 WARNING(ORCAP-36008): Ignoring Component "D3, Section 1" missing from board.
+#144 WARNING(ORCAP-36008): Ignoring Component "D4, Section 1" missing from board.
+#145 WARNING(ORCAP-36008): Ignoring Component "D5, Section 1" missing from board.
+#146 WARNING(ORCAP-36008): Ignoring Component "D6, Section 1" missing from board.
+#147 WARNING(ORCAP-36008): Ignoring Component "D7, Section 1" missing from board.
+#148 WARNING(ORCAP-36008): Ignoring Component "D8, Section 1" missing from board.
+#149 WARNING(ORCAP-36008): Ignoring Component "JT21, Section 1" missing from board.
+#150 WARNING(ORCAP-36008): Ignoring Component "RB20, Section 1" missing from board.
+#151 WARNING(ORCAP-36008): Ignoring Component "RB21, Section 1" missing from board.
+#152 WARNING(ORCAP-36008): Ignoring Component "RB22, Section 1" missing from board.
+#153 WARNING(ORCAP-36008): Ignoring Component "RB23, Section 1" missing from board.
+#154 WARNING(ORCAP-36008): Ignoring Component "RB24, Section 1" missing from board.
+#155 WARNING(ORCAP-36008): Ignoring Component "RB25, Section 1" missing from board.
+#156 WARNING(ORCAP-36008): Ignoring Component "RB26, Section 1" missing from board.
+#157 WARNING(ORCAP-36008): Ignoring Component "RB27, Section 1" missing from board.
+#158 WARNING(ORCAP-36008): Ignoring Component "J12, Section 1" missing from board.
+#159 WARNING(ORCAP-36008): Ignoring Component "J13, Section 1" missing from board.
+#160 WARNING(ORCAP-36008): Ignoring Component "RB10, Section 1" missing from board.
+#161 WARNING(ORCAP-36008): Ignoring Component "RB19, Section 1" missing from board.
+#162 WARNING(ORCAP-36008): Ignoring Component "RT1, Section 1" missing from board.
+#163 WARNING(ORCAP-36008): Ignoring Component "RT5, Section 1" missing from board.
+#164 WARNING(ORCAP-36008): Ignoring Component "RT9, Section 1" missing from board.
+.....................................
+
+
+*** List of Connectivity Changes ***
+#165 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB1.2".
+			Schematic Net: "AUXVCC3"
+			Board Net : "" 
+#166 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB1.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#167 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB10.2".
+			Schematic Net: "N6388535"
+			Board Net : "" 
+#168 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB10.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#169 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB11.2".
+			Schematic Net: "N6388535"
+			Board Net : "" 
+#170 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB11.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#171 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB2.2".
+			Schematic Net: "AUXVCC3"
+			Board Net : "" 
+#172 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB2.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#173 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB3.2".
+			Schematic Net: "AUXVCC1"
+			Board Net : "" 
+#174 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB3.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#175 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB4.2".
+			Schematic Net: "AUXVCC1"
+			Board Net : "" 
+#176 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB4.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#177 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB5.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#178 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB5.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#179 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB6.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#180 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB6.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#181 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB7.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#182 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB7.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#183 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB8.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#184 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB8.2".
+			Schematic Net: "N6581350"
+			Board Net : "" 
+#185 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB9.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#186 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB9.2".
+			Schematic Net: "N6581350"
+			Board Net : "" 
+#187 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT10.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#188 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT10.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#189 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT11.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#190 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT11.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#191 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT12.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#192 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT12.2".
+			Schematic Net: "N6581350"
+			Board Net : "" 
+#193 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT13.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#194 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT13.2".
+			Schematic Net: "N6581350"
+			Board Net : "" 
+#195 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT14.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#196 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT14.2".
+			Schematic Net: "N6581365"
+			Board Net : "" 
+#197 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT15.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#198 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT15.2".
+			Schematic Net: "N6581365"
+			Board Net : "" 
+#199 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT16.2".
+			Schematic Net: "RESET"
+			Board Net : "" 
+#200 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT16.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#201 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT3.2".
+			Schematic Net: "N4790561"
+			Board Net : "" 
+#202 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT3.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#203 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT4.2".
+			Schematic Net: "N4790859"
+			Board Net : "" 
+#204 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT4.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#205 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT5.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#206 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT5.2".
+			Schematic Net: "N6579172"
+			Board Net : "" 
+#207 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT6.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#208 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT6.2".
+			Schematic Net: "N6581365"
+			Board Net : "" 
+#209 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT7.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#210 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT7.2".
+			Schematic Net: "N6581365"
+			Board Net : "" 
+#211 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT8.2".
+			Schematic Net: "AUXVCC2"
+			Board Net : "" 
+#212 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT8.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#213 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT9.2".
+			Schematic Net: "AUXVCC2"
+			Board Net : "" 
+#214 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT9.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#215 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "JT23.1".
+			Schematic Net: "RESET"
+			Board Net : "" 
+#216 WARNING(ORCAP-36016): Connectivity Change for Pin "4" of "JT23.4".
+			Schematic Net: "TMS"
+			Board Net : "" 
+#217 WARNING(ORCAP-36016): Connectivity Change for Pin "8" of "JT23.8".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#218 WARNING(ORCAP-36016): Connectivity Change for Pin "3" of "JT23.3".
+			Schematic Net: "TDI/TCLK"
+			Board Net : "" 
+#219 WARNING(ORCAP-36016): Connectivity Change for Pin "6" of "JT23.6".
+			Schematic Net: "GND"
+			Board Net : "" 
+#220 WARNING(ORCAP-36016): Connectivity Change for Pin "5" of "JT23.5".
+			Schematic Net: "TCK"
+			Board Net : "" 
+#221 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "JT23.2".
+			Schematic Net: "TDO/TDI"
+			Board Net : "" 
+#222 WARNING(ORCAP-36016): Connectivity Change for Pin "7" of "JT23.7".
+			Schematic Net: "N6577771"
+			Board Net : "" 
+#223 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "R61.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#224 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "R61.1".
+			Schematic Net: "AUXVCC3"
+			Board Net : "" 
+#225 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB11.1".
+			Schematic Net: "BUS-INT7"
+			Board Net : "" 
+#226 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB11.2".
+			Schematic Net: "P27"
+			Board Net : "" 
+#227 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB12.1".
+			Schematic Net: "D-BUS0"
+			Board Net : "" 
+#228 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB12.2".
+			Schematic Net: "P30"
+			Board Net : "" 
+#229 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB13.1".
+			Schematic Net: "D-BUS1"
+			Board Net : "" 
+#230 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB13.2".
+			Schematic Net: "P31"
+			Board Net : "" 
+#231 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB14.1".
+			Schematic Net: "D-BUS2"
+			Board Net : "" 
+#232 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB14.2".
+			Schematic Net: "P32"
+			Board Net : "" 
+#233 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB15.1".
+			Schematic Net: "D-BUS3"
+			Board Net : "" 
+#234 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB15.2".
+			Schematic Net: "P33"
+			Board Net : "" 
+#235 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB16.1".
+			Schematic Net: "D-BUS4"
+			Board Net : "" 
+#236 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB16.2".
+			Schematic Net: "P34"
+			Board Net : "" 
+#237 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB2.2".
+			Schematic Net: "N5907204"
+			Board Net : "" 
+#238 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB2.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#239 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB3.1".
+			Schematic Net: "BUS-INT0"
+			Board Net : "" 
+#240 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB3.2".
+			Schematic Net: "P20"
+			Board Net : "" 
+#241 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB4.1".
+			Schematic Net: "BUS-INT1"
+			Board Net : "" 
+#242 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB4.2".
+			Schematic Net: "P21"
+			Board Net : "" 
+#243 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB5.1".
+			Schematic Net: "BUS-INT2"
+			Board Net : "" 
+#244 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB5.2".
+			Schematic Net: "P22"
+			Board Net : "" 
+#245 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB6.1".
+			Schematic Net: "BUS-INT3"
+			Board Net : "" 
+#246 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB6.2".
+			Schematic Net: "P23"
+			Board Net : "" 
+#247 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB7.1".
+			Schematic Net: "BUS-INT4"
+			Board Net : "" 
+#248 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB7.2".
+			Schematic Net: "P24"
+			Board Net : "" 
+#249 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB8.1".
+			Schematic Net: "BUS-INT5"
+			Board Net : "" 
+#250 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB8.2".
+			Schematic Net: "P25"
+			Board Net : "" 
+#251 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB9.1".
+			Schematic Net: "BUS-INT6"
+			Board Net : "" 
+#252 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB9.2".
+			Schematic Net: "P26"
+			Board Net : "" 
+#253 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT2.1".
+			Schematic Net: "D-BUS1"
+			Board Net : "" 
+#254 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT2.2".
+			Schematic Net: "N6465997"
+			Board Net : "" 
+#255 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT3.1".
+			Schematic Net: "D-BUS0"
+			Board Net : "" 
+#256 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT3.2".
+			Schematic Net: "N6331403"
+			Board Net : "" 
+#257 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT6.1".
+			Schematic Net: "RESET"
+			Board Net : "" 
+#258 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT6.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#259 WARNING(ORCAP-36016): Connectivity Change for Pin "RST/NMI/SBWTDIO" of "UT2.100".
+			Schematic Net: "RESET"
+			Board Net : "" 
+#260 WARNING(ORCAP-36016): Connectivity Change for Pin "PJ.2/TMS" of "UT2.98".
+			Schematic Net: "TMS"
+			Board Net : "" 
+#261 WARNING(ORCAP-36016): Connectivity Change for Pin "P3.6/PM_UCA2RXD/PM_UCA2SOMI/S34" of "UT2.57".
+			Schematic Net: "N6197448"
+			Board Net : "" 
+#262 WARNING(ORCAP-36016): Connectivity Change for Pin "P3.5/PM_UCA1TXD/PM_UCA1SIMO/S35" of "UT2.56".
+			Schematic Net: "N6197446"
+			Board Net : "" 
+#263 WARNING(ORCAP-36016): Connectivity Change for Pin "SD0P0" of "UT2.1".
+			Schematic Net: "AN00"
+			Board Net : "" 
+#264 WARNING(ORCAP-36016): Connectivity Change for Pin "DVCC" of "UT2.24".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#265 WARNING(ORCAP-36016): Connectivity Change for Pin "AVCC" of "UT2.19".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#266 WARNING(ORCAP-36016): Connectivity Change for Pin "SD0N0" of "UT2.2".
+			Schematic Net: "AN01"
+			Board Net : "" 
+#267 WARNING(ORCAP-36016): Connectivity Change for Pin "SD1P0" of "UT2.3".
+			Schematic Net: "AN10"
+			Board Net : "" 
+#268 WARNING(ORCAP-36016): Connectivity Change for Pin "SD1N0" of "UT2.4".
+			Schematic Net: "AN11"
+			Board Net : "" 
+#269 WARNING(ORCAP-36016): Connectivity Change for Pin "SD2P0" of "UT2.5".
+			Schematic Net: "AN20"
+			Board Net : "" 
+#270 WARNING(ORCAP-36016): Connectivity Change for Pin "P8.0/S0" of "UT2.93".
+			Schematic Net: "P8.0"
+			Board Net : "" 
+#271 WARNING(ORCAP-36016): Connectivity Change for Pin "SD2N0" of "UT2.6".
+			Schematic Net: "AN21"
+			Board Net : "" 
+#272 WARNING(ORCAP-36016): Connectivity Change for Pin "P8.1/TACLK/RTCCLK/CB3" of "UT2.94".
+			Schematic Net: "P8.1"
+			Board Net : "" 
+#273 WARNING(ORCAP-36016): Connectivity Change for Pin "SD3P0" of "UT2.7".
+			Schematic Net: "AN30"
+			Board Net : "" 
+#274 WARNING(ORCAP-36016): Connectivity Change for Pin "SD3N0" of "UT2.8".
+			Schematic Net: "AN31"
+			Board Net : "" 
+#275 WARNING(ORCAP-36016): Connectivity Change for Pin "SD4P0" of "UT2.12".
+			Schematic Net: "AN40"
+			Board Net : "" 
+#276 WARNING(ORCAP-36016): Connectivity Change for Pin "SD4N0" of "UT2.13".
+			Schematic Net: "AN41"
+			Board Net : "" 
+#277 WARNING(ORCAP-36016): Connectivity Change for Pin "P5.0/SDCLK/S24" of "UT2.67".
+			Schematic Net: "N6376460"
+			Board Net : "" 
+#278 WARNING(ORCAP-36016): Connectivity Change for Pin "P7.0/S8" of "UT2.85".
+			Schematic Net: "P7.0"
+			Board Net : "" 
+#279 WARNING(ORCAP-36016): Connectivity Change for Pin "P7.1/S7" of "UT2.86".
+			Schematic Net: "P7.1"
+			Board Net : "" 
+#280 WARNING(ORCAP-36016): Connectivity Change for Pin "P4.6/PM_UCB1CLK/S26" of "UT2.65".
+			Schematic Net: "MEM-SPI2"
+			Board Net : "" 
+#281 WARNING(ORCAP-36016): Connectivity Change for Pin "P7.2/S6" of "UT2.87".
+			Schematic Net: "P7.2"
+			Board Net : "" 
+#282 WARNING(ORCAP-36016): Connectivity Change for Pin "P4.5/PM_UCB1SIMO/PM_UCB1SDA/S27" of "UT2.64".
+			Schematic Net: "MEM-SPI1"
+			Board Net : "" 
+#283 WARNING(ORCAP-36016): Connectivity Change for Pin "P7.3/S5" of "UT2.88".
+			Schematic Net: "P7.3"
+			Board Net : "" 
+#284 WARNING(ORCAP-36016): Connectivity Change for Pin "P4.7/PM_TA3.0/S25" of "UT2.66".
+			Schematic Net: "MEM-SPI0"
+			Board Net : "" 
+#285 WARNING(ORCAP-36016): Connectivity Change for Pin "P7.4/S4" of "UT2.89".
+			Schematic Net: "P7.4"
+			Board Net : "" 
+#286 WARNING(ORCAP-36016): Connectivity Change for Pin "P7.5/S3" of "UT2.90".
+			Schematic Net: "P7.5"
+			Board Net : "" 
+#287 WARNING(ORCAP-36016): Connectivity Change for Pin "P7.6/S2" of "UT2.91".
+			Schematic Net: "P7.6"
+			Board Net : "" 
+#288 WARNING(ORCAP-36016): Connectivity Change for Pin "AUXVCC3" of "UT2.29".
+			Schematic Net: "AUXVCC3"
+			Board Net : "" 
+#289 WARNING(ORCAP-36016): Connectivity Change for Pin "P7.7/S1" of "UT2.92".
+			Schematic Net: "P7.7"
+			Board Net : "" 
+#290 WARNING(ORCAP-36016): Connectivity Change for Pin "XIN" of "UT2.27".
+			Schematic Net: "N4790859"
+			Board Net : "" 
+#291 WARNING(ORCAP-36016): Connectivity Change for Pin "XOUT" of "UT2.28".
+			Schematic Net: "N4790561"
+			Board Net : "" 
+#292 WARNING(ORCAP-36016): Connectivity Change for Pin "AUXVCC1" of "UT2.22".
+			Schematic Net: "AUXVCC1"
+			Board Net : "" 
+#293 WARNING(ORCAP-36016): Connectivity Change for Pin "AUXVCC2" of "UT2.21".
+			Schematic Net: "AUXVCC2"
+			Board Net : "" 
+#294 WARNING(ORCAP-36016): Connectivity Change for Pin "VREF" of "UT2.11".
+			Schematic Net: "N6388535"
+			Board Net : "" 
+#295 WARNING(ORCAP-36016): Connectivity Change for Pin "PJ.1/TDI/TCLK" of "UT2.97".
+			Schematic Net: "TDI/TCLK"
+			Board Net : "" 
+#296 WARNING(ORCAP-36016): Connectivity Change for Pin "RTCCAP0" of "UT2.31".
+			Schematic Net: "RTCAP0"
+			Board Net : "" 
+#297 WARNING(ORCAP-36016): Connectivity Change for Pin "RTCCAP1" of "UT2.30".
+			Schematic Net: "RTCAP1"
+			Board Net : "" 
+#298 WARNING(ORCAP-36016): Connectivity Change for Pin "DVSS2" of "UT2.76".
+			Schematic Net: "GND"
+			Board Net : "" 
+#299 WARNING(ORCAP-36016): Connectivity Change for Pin "DVSS1" of "UT2.25".
+			Schematic Net: "GND"
+			Board Net : "" 
+#300 WARNING(ORCAP-36016): Connectivity Change for Pin "AVSS1" of "UT2.18".
+			Schematic Net: "GND"
+			Board Net : "" 
+#301 WARNING(ORCAP-36016): Connectivity Change for Pin "AVSS2" of "UT2.10".
+			Schematic Net: "GND"
+			Board Net : "" 
+#302 WARNING(ORCAP-36016): Connectivity Change for Pin "LCDCAP/R33" of "UT2.46".
+			Schematic Net: "GND"
+			Board Net : "" 
+#303 WARNING(ORCAP-36016): Connectivity Change for Pin "SD5P0" of "UT2.14".
+			Schematic Net: "GND"
+			Board Net : "" 
+#304 WARNING(ORCAP-36016): Connectivity Change for Pin "SD5N0" of "UT2.15".
+			Schematic Net: "GND"
+			Board Net : "" 
+#305 WARNING(ORCAP-36016): Connectivity Change for Pin "SD6P0" of "UT2.16".
+			Schematic Net: "GND"
+			Board Net : "" 
+#306 WARNING(ORCAP-36016): Connectivity Change for Pin "SD6N0" of "UT2.17".
+			Schematic Net: "GND"
+			Board Net : "" 
+#307 WARNING(ORCAP-36016): Connectivity Change for Pin "P1.0/TA1.1/VEREF-/A0" of "UT2.37".
+			Schematic Net: "P10"
+			Board Net : "" 
+#308 WARNING(ORCAP-36016): Connectivity Change for Pin "P1.1/TA2.1/CBOUT/VEREF+/A1" of "UT2.36".
+			Schematic Net: "P11"
+			Board Net : "" 
+#309 WARNING(ORCAP-36016): Connectivity Change for Pin "P1.2/ACLK/A2" of "UT2.35".
+			Schematic Net: "P12"
+			Board Net : "" 
+#310 WARNING(ORCAP-36016): Connectivity Change for Pin "P1.3/ADC10CLK/A3" of "UT2.34".
+			Schematic Net: "P13"
+			Board Net : "" 
+#311 WARNING(ORCAP-36016): Connectivity Change for Pin "P1.4/MCLK/CB1/A4" of "UT2.33".
+			Schematic Net: "P14"
+			Board Net : "" 
+#312 WARNING(ORCAP-36016): Connectivity Change for Pin "P1.5/SMCLK/CB0/A5" of "UT2.32".
+			Schematic Net: "P15"
+			Board Net : "" 
+#313 WARNING(ORCAP-36016): Connectivity Change for Pin "P1.6/COM2" of "UT2.40".
+			Schematic Net: "P16"
+			Board Net : "" 
+#314 WARNING(ORCAP-36016): Connectivity Change for Pin "P1.7/COM3" of "UT2.41".
+			Schematic Net: "P17"
+			Board Net : "" 
+#315 WARNING(ORCAP-36016): Connectivity Change for Pin "P2.0/PM_TA0.0/BSL_TX/COM4" of "UT2.42".
+			Schematic Net: "P20"
+			Board Net : "" 
+#316 WARNING(ORCAP-36016): Connectivity Change for Pin "P2.1/PM_TA0.1/BSL_RX/COM5" of "UT2.43".
+			Schematic Net: "P21"
+			Board Net : "" 
+#317 WARNING(ORCAP-36016): Connectivity Change for Pin "P2.2/PM_TA0.2/COM6" of "UT2.44".
+			Schematic Net: "P22"
+			Board Net : "" 
+#318 WARNING(ORCAP-36016): Connectivity Change for Pin "P2.3/PM_TA1.0/COM7" of "UT2.45".
+			Schematic Net: "P23"
+			Board Net : "" 
+#319 WARNING(ORCAP-36016): Connectivity Change for Pin "P2.4/PM_TA2.0/R23" of "UT2.47".
+			Schematic Net: "P24"
+			Board Net : "" 
+#320 WARNING(ORCAP-36016): Connectivity Change for Pin "P2.5/PM_UCB0SOMI/PM_UCB0SCL/LCD" of "UT2.48".
+			Schematic Net: "P25"
+			Board Net : "" 
+#321 WARNING(ORCAP-36016): Connectivity Change for Pin "P2.6/PM_UCB0SIMO/PM_UCB0SDA/R03" of "UT2.49".
+			Schematic Net: "P26"
+			Board Net : "" 
+#322 WARNING(ORCAP-36016): Connectivity Change for Pin "P2.7/PM_UCB0CLK/CB2" of "UT2.50".
+			Schematic Net: "P27"
+			Board Net : "" 
+#323 WARNING(ORCAP-36016): Connectivity Change for Pin "P3.0/PM_UCA0RXD/PM_UCA0SOMI" of "UT2.51".
+			Schematic Net: "P30"
+			Board Net : "" 
+#324 WARNING(ORCAP-36016): Connectivity Change for Pin "VCORE" of "UT2.26".
+			Schematic Net: "N6579172"
+			Board Net : "" 
+#325 WARNING(ORCAP-36016): Connectivity Change for Pin "P3.1/PM_UCA0TXD/PM_UCA0SIMO/S39" of "UT2.52".
+			Schematic Net: "P31"
+			Board Net : "" 
+#326 WARNING(ORCAP-36016): Connectivity Change for Pin "P3.2/PM_UCA0CLK/S38" of "UT2.53".
+			Schematic Net: "P32"
+			Board Net : "" 
+#327 WARNING(ORCAP-36016): Connectivity Change for Pin "P3.3/PM_UCA1CLK/S37" of "UT2.54".
+			Schematic Net: "P33"
+			Board Net : "" 
+#328 WARNING(ORCAP-36016): Connectivity Change for Pin "VDSYS2" of "UT2.75".
+			Schematic Net: "N6581365"
+			Board Net : "" 
+#329 WARNING(ORCAP-36016): Connectivity Change for Pin "VDSYS1" of "UT2.23".
+			Schematic Net: "N6581365"
+			Board Net : "" 
+#330 WARNING(ORCAP-36016): Connectivity Change for Pin "P3.4/PM_UCA1RXD/PM_UCA1SOMI/S36" of "UT2.55".
+			Schematic Net: "P34"
+			Board Net : "" 
+#331 WARNING(ORCAP-36016): Connectivity Change for Pin "PJ.3/TCK" of "UT2.99".
+			Schematic Net: "TCK"
+			Board Net : "" 
+#332 WARNING(ORCAP-36016): Connectivity Change for Pin "VASYS2" of "UT2.9".
+			Schematic Net: "N6581350"
+			Board Net : "" 
+#333 WARNING(ORCAP-36016): Connectivity Change for Pin "VASYS1" of "UT2.20".
+			Schematic Net: "N6581350"
+			Board Net : "" 
+#334 WARNING(ORCAP-36016): Connectivity Change for Pin "PJ.0/TDO" of "UT2.96".
+			Schematic Net: "TDO/TDI"
+			Board Net : "" 
+#335 WARNING(ORCAP-36016): Connectivity Change for Pin "P3.7/PM_UCA2TXD/PM_UCA2SIMO/S33" of "UT2.58".
+			Schematic Net: "P37"
+			Board Net : "" 
+#336 WARNING(ORCAP-36016): Connectivity Change for Pin "TEST/SBWTCK" of "UT2.95".
+			Schematic Net: "N6577771"
+			Board Net : "" 
+#337 WARNING(ORCAP-36016): Connectivity Change for Pin "P4.0/PM_UCA2CLK/S32" of "UT2.59".
+			Schematic Net: "P40"
+			Board Net : "" 
+#338 WARNING(ORCAP-36016): Connectivity Change for Pin "P4.1/PM_UCA3RXD/PM_UCA3SOMI/S31" of "UT2.60".
+			Schematic Net: "P41"
+			Board Net : "" 
+#339 WARNING(ORCAP-36016): Connectivity Change for Pin "P4.2/PM_UCA3TXD/PM_UCA3SIMO/S30" of "UT2.61".
+			Schematic Net: "P42"
+			Board Net : "" 
+#340 WARNING(ORCAP-36016): Connectivity Change for Pin "P4.3/PM_UCA3CLK/S29" of "UT2.62".
+			Schematic Net: "P43"
+			Board Net : "" 
+#341 WARNING(ORCAP-36016): Connectivity Change for Pin "P4.4/PM_UCB1SOMI/PM_UCB1SCL/S28" of "UT2.63".
+			Schematic Net: "P44"
+			Board Net : "" 
+#342 WARNING(ORCAP-36016): Connectivity Change for Pin "P5.1/PM_SD0DIO/S23" of "UT2.68".
+			Schematic Net: "P51"
+			Board Net : "" 
+#343 WARNING(ORCAP-36016): Connectivity Change for Pin "P5.2/PM_SD1DIO/S22" of "UT2.69".
+			Schematic Net: "P52"
+			Board Net : "" 
+#344 WARNING(ORCAP-36016): Connectivity Change for Pin "P5.3/PM_SD2DIO/S21" of "UT2.70".
+			Schematic Net: "P53"
+			Board Net : "" 
+#345 WARNING(ORCAP-36016): Connectivity Change for Pin "P5.4/PM_SD3DIO/S20" of "UT2.71".
+			Schematic Net: "P54"
+			Board Net : "" 
+#346 WARNING(ORCAP-36016): Connectivity Change for Pin "P5.5/PM_SD4DIO/S19" of "UT2.72".
+			Schematic Net: "P55"
+			Board Net : "" 
+#347 WARNING(ORCAP-36016): Connectivity Change for Pin "P5.6/PM_SD5DIO/S18" of "UT2.73".
+			Schematic Net: "P56"
+			Board Net : "" 
+#348 WARNING(ORCAP-36016): Connectivity Change for Pin "P5.7/PM_SD6DIO/S17" of "UT2.74".
+			Schematic Net: "P57"
+			Board Net : "" 
+#349 WARNING(ORCAP-36016): Connectivity Change for Pin "P6.0/S16" of "UT2.77".
+			Schematic Net: "P60"
+			Board Net : "" 
+#350 WARNING(ORCAP-36016): Connectivity Change for Pin "P6.1/S15" of "UT2.78".
+			Schematic Net: "P61"
+			Board Net : "" 
+#351 WARNING(ORCAP-36016): Connectivity Change for Pin "P6.2/S14" of "UT2.79".
+			Schematic Net: "P62"
+			Board Net : "" 
+#352 WARNING(ORCAP-36016): Connectivity Change for Pin "P6.3/S13" of "UT2.80".
+			Schematic Net: "P63"
+			Board Net : "" 
+#353 WARNING(ORCAP-36016): Connectivity Change for Pin "P6.4/S12" of "UT2.81".
+			Schematic Net: "P64"
+			Board Net : "" 
+#354 WARNING(ORCAP-36016): Connectivity Change for Pin "P6.5/S11" of "UT2.82".
+			Schematic Net: "P65"
+			Board Net : "" 
+#355 WARNING(ORCAP-36016): Connectivity Change for Pin "P6.6/S10" of "UT2.83".
+			Schematic Net: "P66"
+			Board Net : "" 
+#356 WARNING(ORCAP-36016): Connectivity Change for Pin "P6.7/S9" of "UT2.84".
+			Schematic Net: "P67"
+			Board Net : "" 
+#357 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB12.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#358 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB12.2".
+			Schematic Net: "N6242904"
+			Board Net : "" 
+#359 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB13.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#360 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB13.2".
+			Schematic Net: "N6608157"
+			Board Net : "" 
+#361 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB17.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#362 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB17.2".
+			Schematic Net: "N6242401"
+			Board Net : "" 
+#363 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB18.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#364 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB18.1".
+			Schematic Net: "N6242514"
+			Board Net : "" 
+#365 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT4.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#366 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT4.1".
+			Schematic Net: "N6242345"
+			Board Net : "" 
+#367 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB14.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#368 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB14.2".
+			Schematic Net: "N6242904"
+			Board Net : "" 
+#369 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CB15.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#370 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CB15.2".
+			Schematic Net: "N6228204"
+			Board Net : "" 
+#371 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT1.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#372 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT1.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#373 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT2.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#374 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT2.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#375 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB1.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#376 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB1.1".
+			Schematic Net: "N01405"
+			Board Net : "" 
+#377 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "CT17.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#378 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "CT17.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#379 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT7.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#380 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT7.1".
+			Schematic Net: "N6580842"
+			Board Net : "" 
+#381 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT8.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+#382 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT8.1".
+			Schematic Net: "N6580834"
+			Board Net : "" 
+#383 WARNING(ORCAP-36016): Connectivity Change for Pin "CATHODE" of "D1.2".
+			Schematic Net: "N20719"
+			Board Net : "" 
+#384 WARNING(ORCAP-36016): Connectivity Change for Pin "ANODE" of "D1.1".
+			Schematic Net: "N10583"
+			Board Net : "" 
+#385 WARNING(ORCAP-36016): Connectivity Change for Pin "CATHODE" of "D2.2".
+			Schematic Net: "N20717"
+			Board Net : "" 
+#386 WARNING(ORCAP-36016): Connectivity Change for Pin "ANODE" of "D2.1".
+			Schematic Net: "N10395"
+			Board Net : "" 
+#387 WARNING(ORCAP-36016): Connectivity Change for Pin "CATHODE" of "D3.2".
+			Schematic Net: "N20715"
+			Board Net : "" 
+#388 WARNING(ORCAP-36016): Connectivity Change for Pin "ANODE" of "D3.1".
+			Schematic Net: "N09975"
+			Board Net : "" 
+#389 WARNING(ORCAP-36016): Connectivity Change for Pin "CATHODE" of "D4.2".
+			Schematic Net: "N20713"
+			Board Net : "" 
+#390 WARNING(ORCAP-36016): Connectivity Change for Pin "ANODE" of "D4.1".
+			Schematic Net: "N09723"
+			Board Net : "" 
+#391 WARNING(ORCAP-36016): Connectivity Change for Pin "CATHODE" of "D5.2".
+			Schematic Net: "N20711"
+			Board Net : "" 
+#392 WARNING(ORCAP-36016): Connectivity Change for Pin "ANODE" of "D5.1".
+			Schematic Net: "N09582"
+			Board Net : "" 
+#393 WARNING(ORCAP-36016): Connectivity Change for Pin "CATHODE" of "D6.2".
+			Schematic Net: "N20709"
+			Board Net : "" 
+#394 WARNING(ORCAP-36016): Connectivity Change for Pin "ANODE" of "D6.1".
+			Schematic Net: "N05444"
+			Board Net : "" 
+#395 WARNING(ORCAP-36016): Connectivity Change for Pin "CATHODE" of "D7.2".
+			Schematic Net: "N20707"
+			Board Net : "" 
+#396 WARNING(ORCAP-36016): Connectivity Change for Pin "ANODE" of "D7.1".
+			Schematic Net: "N00962"
+			Board Net : "" 
+#397 WARNING(ORCAP-36016): Connectivity Change for Pin "CATHODE" of "D8.2".
+			Schematic Net: "N20705"
+			Board Net : "" 
+#398 WARNING(ORCAP-36016): Connectivity Change for Pin "ANODE" of "D8.1".
+			Schematic Net: "N00960"
+			Board Net : "" 
+#399 WARNING(ORCAP-36016): Connectivity Change for Pin "16" of "JT21.16".
+			Schematic Net: "P7.0"
+			Board Net : "" 
+#400 WARNING(ORCAP-36016): Connectivity Change for Pin "14" of "JT21.14".
+			Schematic Net: "P7.1"
+			Board Net : "" 
+#401 WARNING(ORCAP-36016): Connectivity Change for Pin "12" of "JT21.12".
+			Schematic Net: "P7.2"
+			Board Net : "" 
+#402 WARNING(ORCAP-36016): Connectivity Change for Pin "10" of "JT21.10".
+			Schematic Net: "P7.3"
+			Board Net : "" 
+#403 WARNING(ORCAP-36016): Connectivity Change for Pin "8" of "JT21.8".
+			Schematic Net: "P7.4"
+			Board Net : "" 
+#404 WARNING(ORCAP-36016): Connectivity Change for Pin "6" of "JT21.6".
+			Schematic Net: "P7.5"
+			Board Net : "" 
+#405 WARNING(ORCAP-36016): Connectivity Change for Pin "4" of "JT21.4".
+			Schematic Net: "P7.6"
+			Board Net : "" 
+#406 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "JT21.2".
+			Schematic Net: "P7.7"
+			Board Net : "" 
+#407 WARNING(ORCAP-36016): Connectivity Change for Pin "13" of "JT21.13".
+			Schematic Net: "N00962"
+			Board Net : "" 
+#408 WARNING(ORCAP-36016): Connectivity Change for Pin "15" of "JT21.15".
+			Schematic Net: "N00960"
+			Board Net : "" 
+#409 WARNING(ORCAP-36016): Connectivity Change for Pin "11" of "JT21.11".
+			Schematic Net: "N05444"
+			Board Net : "" 
+#410 WARNING(ORCAP-36016): Connectivity Change for Pin "9" of "JT21.9".
+			Schematic Net: "N09582"
+			Board Net : "" 
+#411 WARNING(ORCAP-36016): Connectivity Change for Pin "7" of "JT21.7".
+			Schematic Net: "N09723"
+			Board Net : "" 
+#412 WARNING(ORCAP-36016): Connectivity Change for Pin "5" of "JT21.5".
+			Schematic Net: "N09975"
+			Board Net : "" 
+#413 WARNING(ORCAP-36016): Connectivity Change for Pin "3" of "JT21.3".
+			Schematic Net: "N10395"
+			Board Net : "" 
+#414 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "JT21.1".
+			Schematic Net: "N10583"
+			Board Net : "" 
+#415 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB20.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#416 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB20.2".
+			Schematic Net: "N20719"
+			Board Net : "" 
+#417 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB21.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#418 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB21.2".
+			Schematic Net: "N20715"
+			Board Net : "" 
+#419 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB22.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#420 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB22.2".
+			Schematic Net: "N20717"
+			Board Net : "" 
+#421 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB23.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#422 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB23.2".
+			Schematic Net: "N20705"
+			Board Net : "" 
+#423 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB24.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#424 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB24.2".
+			Schematic Net: "N20711"
+			Board Net : "" 
+#425 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB25.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#426 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB25.2".
+			Schematic Net: "N20713"
+			Board Net : "" 
+#427 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB26.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#428 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB26.2".
+			Schematic Net: "N20707"
+			Board Net : "" 
+#429 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB27.1".
+			Schematic Net: "GND"
+			Board Net : "" 
+#430 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB27.2".
+			Schematic Net: "N20709"
+			Board Net : "" 
+#431 WARNING(ORCAP-36016): Connectivity Change for Pin "22" of "J12.22".
+			Schematic Net: "AN00"
+			Board Net : "" 
+#432 WARNING(ORCAP-36016): Connectivity Change for Pin "24" of "J12.24".
+			Schematic Net: "AN01"
+			Board Net : "" 
+#433 WARNING(ORCAP-36016): Connectivity Change for Pin "26" of "J12.26".
+			Schematic Net: "AN10"
+			Board Net : "" 
+#434 WARNING(ORCAP-36016): Connectivity Change for Pin "28" of "J12.28".
+			Schematic Net: "AN11"
+			Board Net : "" 
+#435 WARNING(ORCAP-36016): Connectivity Change for Pin "30" of "J12.30".
+			Schematic Net: "AN20"
+			Board Net : "" 
+#436 WARNING(ORCAP-36016): Connectivity Change for Pin "20" of "J12.20".
+			Schematic Net: "P8.0"
+			Board Net : "" 
+#437 WARNING(ORCAP-36016): Connectivity Change for Pin "32" of "J12.32".
+			Schematic Net: "AN21"
+			Board Net : "" 
+#438 WARNING(ORCAP-36016): Connectivity Change for Pin "18" of "J12.18".
+			Schematic Net: "P8.1"
+			Board Net : "" 
+#439 WARNING(ORCAP-36016): Connectivity Change for Pin "31" of "J12.31".
+			Schematic Net: "N6376460"
+			Board Net : "" 
+#440 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "J12.2".
+			Schematic Net: "P7.0"
+			Board Net : "" 
+#441 WARNING(ORCAP-36016): Connectivity Change for Pin "4" of "J12.4".
+			Schematic Net: "P7.1"
+			Board Net : "" 
+#442 WARNING(ORCAP-36016): Connectivity Change for Pin "6" of "J12.6".
+			Schematic Net: "P7.2"
+			Board Net : "" 
+#443 WARNING(ORCAP-36016): Connectivity Change for Pin "8" of "J12.8".
+			Schematic Net: "P7.3"
+			Board Net : "" 
+#444 WARNING(ORCAP-36016): Connectivity Change for Pin "10" of "J12.10".
+			Schematic Net: "P7.4"
+			Board Net : "" 
+#445 WARNING(ORCAP-36016): Connectivity Change for Pin "12" of "J12.12".
+			Schematic Net: "P7.5"
+			Board Net : "" 
+#446 WARNING(ORCAP-36016): Connectivity Change for Pin "14" of "J12.14".
+			Schematic Net: "P7.6"
+			Board Net : "" 
+#447 WARNING(ORCAP-36016): Connectivity Change for Pin "16" of "J12.16".
+			Schematic Net: "P7.7"
+			Board Net : "" 
+#448 WARNING(ORCAP-36016): Connectivity Change for Pin "29" of "J12.29".
+			Schematic Net: "P51"
+			Board Net : "" 
+#449 WARNING(ORCAP-36016): Connectivity Change for Pin "27" of "J12.27".
+			Schematic Net: "P52"
+			Board Net : "" 
+#450 WARNING(ORCAP-36016): Connectivity Change for Pin "25" of "J12.25".
+			Schematic Net: "P53"
+			Board Net : "" 
+#451 WARNING(ORCAP-36016): Connectivity Change for Pin "23" of "J12.23".
+			Schematic Net: "P54"
+			Board Net : "" 
+#452 WARNING(ORCAP-36016): Connectivity Change for Pin "21" of "J12.21".
+			Schematic Net: "P55"
+			Board Net : "" 
+#453 WARNING(ORCAP-36016): Connectivity Change for Pin "19" of "J12.19".
+			Schematic Net: "P56"
+			Board Net : "" 
+#454 WARNING(ORCAP-36016): Connectivity Change for Pin "17" of "J12.17".
+			Schematic Net: "P57"
+			Board Net : "" 
+#455 WARNING(ORCAP-36016): Connectivity Change for Pin "15" of "J12.15".
+			Schematic Net: "P60"
+			Board Net : "" 
+#456 WARNING(ORCAP-36016): Connectivity Change for Pin "13" of "J12.13".
+			Schematic Net: "P61"
+			Board Net : "" 
+#457 WARNING(ORCAP-36016): Connectivity Change for Pin "11" of "J12.11".
+			Schematic Net: "P62"
+			Board Net : "" 
+#458 WARNING(ORCAP-36016): Connectivity Change for Pin "9" of "J12.9".
+			Schematic Net: "P63"
+			Board Net : "" 
+#459 WARNING(ORCAP-36016): Connectivity Change for Pin "7" of "J12.7".
+			Schematic Net: "P64"
+			Board Net : "" 
+#460 WARNING(ORCAP-36016): Connectivity Change for Pin "5" of "J12.5".
+			Schematic Net: "P65"
+			Board Net : "" 
+#461 WARNING(ORCAP-36016): Connectivity Change for Pin "3" of "J12.3".
+			Schematic Net: "P66"
+			Board Net : "" 
+#462 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "J12.1".
+			Schematic Net: "P67"
+			Board Net : "" 
+#463 WARNING(ORCAP-36016): Connectivity Change for Pin "14" of "J13.14".
+			Schematic Net: "N6197448"
+			Board Net : "" 
+#464 WARNING(ORCAP-36016): Connectivity Change for Pin "12" of "J13.12".
+			Schematic Net: "N6197446"
+			Board Net : "" 
+#465 WARNING(ORCAP-36016): Connectivity Change for Pin "30" of "J13.30".
+			Schematic Net: "MEM-SPI2"
+			Board Net : "" 
+#466 WARNING(ORCAP-36016): Connectivity Change for Pin "28" of "J13.28".
+			Schematic Net: "MEM-SPI1"
+			Board Net : "" 
+#467 WARNING(ORCAP-36016): Connectivity Change for Pin "32" of "J13.32".
+			Schematic Net: "MEM-SPI0"
+			Board Net : "" 
+#468 WARNING(ORCAP-36016): Connectivity Change for Pin "17" of "J13.17".
+			Schematic Net: "P10"
+			Board Net : "" 
+#469 WARNING(ORCAP-36016): Connectivity Change for Pin "19" of "J13.19".
+			Schematic Net: "P11"
+			Board Net : "" 
+#470 WARNING(ORCAP-36016): Connectivity Change for Pin "21" of "J13.21".
+			Schematic Net: "P12"
+			Board Net : "" 
+#471 WARNING(ORCAP-36016): Connectivity Change for Pin "23" of "J13.23".
+			Schematic Net: "P13"
+			Board Net : "" 
+#472 WARNING(ORCAP-36016): Connectivity Change for Pin "25" of "J13.25".
+			Schematic Net: "P14"
+			Board Net : "" 
+#473 WARNING(ORCAP-36016): Connectivity Change for Pin "27" of "J13.27".
+			Schematic Net: "P15"
+			Board Net : "" 
+#474 WARNING(ORCAP-36016): Connectivity Change for Pin "29" of "J13.29".
+			Schematic Net: "P16"
+			Board Net : "" 
+#475 WARNING(ORCAP-36016): Connectivity Change for Pin "31" of "J13.31".
+			Schematic Net: "P17"
+			Board Net : "" 
+#476 WARNING(ORCAP-36016): Connectivity Change for Pin "15" of "J13.15".
+			Schematic Net: "P20"
+			Board Net : "" 
+#477 WARNING(ORCAP-36016): Connectivity Change for Pin "13" of "J13.13".
+			Schematic Net: "P21"
+			Board Net : "" 
+#478 WARNING(ORCAP-36016): Connectivity Change for Pin "11" of "J13.11".
+			Schematic Net: "P22"
+			Board Net : "" 
+#479 WARNING(ORCAP-36016): Connectivity Change for Pin "9" of "J13.9".
+			Schematic Net: "P23"
+			Board Net : "" 
+#480 WARNING(ORCAP-36016): Connectivity Change for Pin "7" of "J13.7".
+			Schematic Net: "P24"
+			Board Net : "" 
+#481 WARNING(ORCAP-36016): Connectivity Change for Pin "5" of "J13.5".
+			Schematic Net: "P25"
+			Board Net : "" 
+#482 WARNING(ORCAP-36016): Connectivity Change for Pin "3" of "J13.3".
+			Schematic Net: "P26"
+			Board Net : "" 
+#483 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "J13.1".
+			Schematic Net: "P27"
+			Board Net : "" 
+#484 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "J13.2".
+			Schematic Net: "P30"
+			Board Net : "" 
+#485 WARNING(ORCAP-36016): Connectivity Change for Pin "4" of "J13.4".
+			Schematic Net: "P31"
+			Board Net : "" 
+#486 WARNING(ORCAP-36016): Connectivity Change for Pin "6" of "J13.6".
+			Schematic Net: "P32"
+			Board Net : "" 
+#487 WARNING(ORCAP-36016): Connectivity Change for Pin "8" of "J13.8".
+			Schematic Net: "P33"
+			Board Net : "" 
+#488 WARNING(ORCAP-36016): Connectivity Change for Pin "10" of "J13.10".
+			Schematic Net: "P34"
+			Board Net : "" 
+#489 WARNING(ORCAP-36016): Connectivity Change for Pin "16" of "J13.16".
+			Schematic Net: "P37"
+			Board Net : "" 
+#490 WARNING(ORCAP-36016): Connectivity Change for Pin "18" of "J13.18".
+			Schematic Net: "P40"
+			Board Net : "" 
+#491 WARNING(ORCAP-36016): Connectivity Change for Pin "20" of "J13.20".
+			Schematic Net: "P41"
+			Board Net : "" 
+#492 WARNING(ORCAP-36016): Connectivity Change for Pin "22" of "J13.22".
+			Schematic Net: "P42"
+			Board Net : "" 
+#493 WARNING(ORCAP-36016): Connectivity Change for Pin "24" of "J13.24".
+			Schematic Net: "P43"
+			Board Net : "" 
+#494 WARNING(ORCAP-36016): Connectivity Change for Pin "26" of "J13.26".
+			Schematic Net: "P44"
+			Board Net : "" 
+#495 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB10.2".
+			Schematic Net: "+5V"
+			Board Net : "" 
+#496 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB10.1".
+			Schematic Net: "N6595699"
+			Board Net : "" 
+#497 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RB19.1".
+			Schematic Net: "N6595749"
+			Board Net : "" 
+#498 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RB19.2".
+			Schematic Net: "VBATT"
+			Board Net : "" 
+#499 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT1.1".
+			Schematic Net: "N6595827"
+			Board Net : "" 
+#500 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT1.2".
+			Schematic Net: "BURN"
+			Board Net : "" 
+#501 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT5.1".
+			Schematic Net: "N6595809"
+			Board Net : "" 
+#502 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT5.2".
+			Schematic Net: "BATT_POS"
+			Board Net : "" 
+#503 WARNING(ORCAP-36016): Connectivity Change for Pin "1" of "RT9.1".
+			Schematic Net: "N6595593"
+			Board Net : "" 
+#504 WARNING(ORCAP-36016): Connectivity Change for Pin "2" of "RT9.2".
+			Schematic Net: "3.3V"
+			Board Net : "" 
+.....................................
+
+
+Exiting the Swp file dumping process ...

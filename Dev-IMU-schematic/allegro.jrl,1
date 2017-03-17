@@ -1,0 +1,41 @@
+\t (00:00:39) allegro 16.6-2015 S051 (v16-6-112EA) Windows 32
+\t (00:00:39)     Journal start - Mon Mar 06 11:52:38 2017
+\t (00:00:39)         Host=SSEP-5 User=cjodell2 Pid=6308 CPUs=4
+\t (00:00:39) CmdLine= C:\Cadence\SPB_16.6\tools\pcb\bin\allegro.exe
+\t (00:00:39) 
+\d (00:00:39) Design opened: C:/Users/cjodell2/Desktop/ARC-proto-board-REV2.1/Proto-board-silk.brd
+\i (00:00:39) generaledit 
+\i (00:00:40) zoom out 1 
+\i (00:00:40) setwindow pcb
+\i (00:00:40) zoom out 1812.57 1687.52
+\i (00:00:40) trapsize 2639
+\i (00:00:41) zoom out 1 
+\i (00:00:41) setwindow pcb
+\i (00:00:41) zoom out 330.20 2188.90
+\i (00:00:41) trapsize 5278
+\i (00:00:41) zoom in 1 
+\i (00:00:41) setwindow pcb
+\i (00:00:41) zoom in -2641.12 1133.37
+\i (00:00:41) trapsize 2639
+\i (00:00:43) setwindow form.vf_vis
+\i (00:00:43) FORM vf_vis 1 all_colorvisible YES 
+\i (00:00:44) FORM vf_vis 2 all_colorvisible YES 
+\i (00:00:45) FORM vf_vis 3 all_colorvisible YES 
+\i (00:00:46) FORM vf_vis 4 all_colorvisible YES 
+\i (00:00:47) FORM vf_vis 3 all_colorvisible NO 
+\i (00:00:47) FORM vf_vis 2 all_colorvisible NO 
+\i (00:00:49) setwindow pcb
+\i (00:00:49) zoom in 1 
+\i (00:00:49) setwindow pcb
+\i (00:00:49) zoom in 1744.62 88.40
+\i (00:00:49) trapsize 1319
+\i (00:00:50) zoom out 1 
+\i (00:00:50) setwindow pcb
+\i (00:00:50) zoom out 1744.62 88.40
+\i (00:00:50) trapsize 2639
+\i (00:00:51) zoom in 1 
+\i (00:00:51) setwindow pcb
+\i (00:00:51) zoom in 1834.34 2690.29
+\i (00:00:51) trapsize 1319
+\i (00:00:55) exit 
+\t (00:00:56)     Journal end - Mon Mar 06 11:52:55 2017

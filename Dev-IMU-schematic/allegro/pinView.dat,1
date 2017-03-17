@@ -1,0 +1,600 @@
+A!NET_NAME!REFDES!PIN_NUMBER!FUNC_LOGICAL_PATH!COMP_DEVICE_TYPE!FUNC_SCH_SIZE!FUNC_HAS_FIXED_SIZE!FUNC_DES!PIN_NO_SWAP_PIN!PIN_NO_PIN_ESCAPE!PIN_PIN_ESCAPE!PIN_NO_DRC!PIN_NO_SHAPE_CONNECT!
+J!Z:/cadencework/ARC-stuff/boards/ARC-proto-board-REV2.1/Proto-board-done.brd!Tue Aug 18 14:45:36 2015!-3000.00!-3500.00!19000.00!13500.00!0.01!mils!SCHEMATIC!61.600000 mil!4!OUT OF DATE!
+S!GND!JT22!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6595188@arclib.\con6.normal\(chips)!CON6_DF13-6P-125DS_CON6!!!F52!!!!!!
+S!N6595827!JT22!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6595188@arclib.\con6.normal\(chips)!CON6_DF13-6P-125DS_CON6!!!F52!!!!!!
+S!N6595809!JT22!3!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6595188@arclib.\con6.normal\(chips)!CON6_DF13-6P-125DS_CON6!!!F52!!!!!!
+S!N6595749!JT22!4!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6595188@arclib.\con6.normal\(chips)!CON6_DF13-6P-125DS_CON6!!!F52!!!!!!
+S!N6595699!JT22!5!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6595188@arclib.\con6.normal\(chips)!CON6_DF13-6P-125DS_CON6!!!F52!!!!!!
+S!N6595593!JT22!6!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6595188@arclib.\con6.normal\(chips)!CON6_DF13-6P-125DS_CON6!!!F52!!!!!!
+S!RESET!QT2!3!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6655524@arclib.\mosfet-n.normal\(chips)!MOSFET-N_SOT23_3.5A!!!F44!!!!!!
+S!N5907204!QT2!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6655524@arclib.\mosfet-n.normal\(chips)!MOSFET-N_SOT23_3.5A!!!F44!!!!!!
+S!GND!QT2!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6655524@arclib.\mosfet-n.normal\(chips)!MOSFET-N_SOT23_3.5A!!!F44!!!!!!
+S!3.3V!UT3!2!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587741@arclib.\protoarea.normal\(chips)!PROTOAREA_PROTO14X16_!!!F4!!!!!!
+S!+5V!UT3!1!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587741@arclib.\protoarea.normal\(chips)!PROTOAREA_PROTO14X16_!!!F4!!!!!!
+S!GND!UT3!3!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587741@arclib.\protoarea.normal\(chips)!PROTOAREA_PROTO14X16_!!!F4!!!!!!
+S!GND!UT3!4!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587741@arclib.\protoarea.normal\(chips)!PROTOAREA_PROTO14X16_!!!F4!!!!!!
+S!N5929899!UT1!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6583397@arclib.\sp0503.normal\(chips)!SP0503_SOT143-4_5.5V!!!F1!!!!!!
+S!N5929949!UT1!3!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6583397@arclib.\sp0503.normal\(chips)!SP0503_SOT143-4_5.5V!!!F1!!!!!!
+S!N6242904!UT1!4!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6583397@arclib.\sp0503.normal\(chips)!SP0503_SOT143-4_5.5V!!!F1!!!!!!
+S!GND!UT1!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6583397@arclib.\sp0503.normal\(chips)!SP0503_SOT143-4_5.5V!!!F1!!!!!!
+S!GND!CT4!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6480994@arclib.\c.normal\(chips)!C_C0603_24P!!!F89!!!!!!
+S!N4790859!CT4!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6480994@arclib.\c.normal\(chips)!C_C0603_24P!!!F89!!!!!!
+S!GND!CT3!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6481474@arclib.\c.normal\(chips)!C_C0603_24P!!!F88!!!!!!
+S!N4790561!CT3!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6481474@arclib.\c.normal\(chips)!C_C0603_24P!!!F88!!!!!!
+S!GND!CB12!1!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599092@arclib.\c.normal\(chips)!C_C0603_2.2U!!!F83!!!!!!
+S!N6242904!CB12!2!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599092@arclib.\c.normal\(chips)!C_C0603_2.2U!!!F83!!!!!!
+S!N6242514!UB2!8!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)!MAX893L_SOIC8_MAX893L!!!F2!!!!!!
+S!GND!UB2!4!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)!MAX893L_SOIC8_MAX893L!!!F2!!!!!!
+S!N6242904!UB2!1!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)!MAX893L_SOIC8_MAX893L!!!F2!!!!!!
+S!N6242904!UB2!2!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)!MAX893L_SOIC8_MAX893L!!!F2!!!!!!
+S!N6608157!UB2!6!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)!MAX893L_SOIC8_MAX893L!!!F2!!!!!!
+S!N6608157!UB2!7!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)!MAX893L_SOIC8_MAX893L!!!F2!!!!!!
+S!N6242345!UB2!3!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)!MAX893L_SOIC8_MAX893L!!!F2!!!!!!
+S!N6242401!UB2!5!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)!MAX893L_SOIC8_MAX893L!!!F2!!!!!!
+S!N5932866!JT4!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582865@arclib.\con2.normal\(chips)!CON2_CON2_CON2!!!F59!!!!!!
+S!N5932854!JT4!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582865@arclib.\con2.normal\(chips)!CON2_CON2_CON2!!!F59!!!!!!
+S!N5932930!JT2!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582919@arclib.\con2.normal\(chips)!CON2_CON2_CON2!!!F58!!!!!!
+S!N5932918!JT2!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582919@arclib.\con2.normal\(chips)!CON2_CON2_CON2!!!F58!!!!!!
+S!N5932842!JT7!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582553@arclib.\con2.normal\(chips)!CON2_CON2_CON2!!!F61!!!!!!
+S!N5932830!JT7!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582553@arclib.\con2.normal\(chips)!CON2_CON2_CON2!!!F61!!!!!!
+S!N5932954!JT6!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582569@arclib.\con2.normal\(chips)!CON2_CON2_CON2!!!F60!!!!!!
+S!N5932942!JT6!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582569@arclib.\con2.normal\(chips)!CON2_CON2_CON2!!!F60!!!!!!
+S!GND!CT1!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582290@arclib.\c.normal\(chips)!C_C0603_100NF!!!F84!!!!!!
+S!3.3V!CT1!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582290@arclib.\c.normal\(chips)!C_C0603_100NF!!!F84!!!!!!
+S!N6595827!RT1!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594805@arclib.\r.normal\(chips)!R_R0603_10K!!!F37!!!!!!
+S!BURN!RT1!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594805@arclib.\r.normal\(chips)!R_R0603_10K!!!F37!!!!!!
+S!N6595809!RT5!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594789@arclib.\r.normal\(chips)!R_R0603_10K!!!F36!!!!!!
+S!BATT_POS!RT5!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594789@arclib.\r.normal\(chips)!R_R0603_10K!!!F36!!!!!!
+S!N6595749!RB19!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594773@arclib.\r.normal\(chips)!R_R0603_10K!!!F35!!!!!!
+S!VBATT!RB19!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594773@arclib.\r.normal\(chips)!R_R0603_10K!!!F35!!!!!!
+S!N6595699!RB10!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594757@arclib.\r.normal\(chips)!R_R0603_10K!!!F34!!!!!!
+S!+5V!RB10!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594757@arclib.\r.normal\(chips)!R_R0603_10K!!!F34!!!!!!
+S!N6595593!RT9!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594741@arclib.\r.normal\(chips)!R_R0603_10K!!!F33!!!!!!
+S!3.3V!RT9!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594741@arclib.\r.normal\(chips)!R_R0603_10K!!!F33!!!!!!
+S!D-BUS0!RT3!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6633009@arclib.\r.normal\(chips)!R_R0603_10K!!!F39!!!!!!
+S!N6331403!RT3!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6633009@arclib.\r.normal\(chips)!R_R0603_10K!!!F39!!!!!!
+S!D-BUS1!RT2!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6632933@arclib.\r.normal\(chips)!R_R0603_10K!!!F38!!!!!!
+S!N6465997!RT2!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6632933@arclib.\r.normal\(chips)!R_R0603_10K!!!F38!!!!!!
+S!GND!RB17!1!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242464@arclib.\r.normal\(chips)!R_R0603_4.7K!!!F21!!!!!!
+S!N6242401!RB17!2!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242464@arclib.\r.normal\(chips)!R_R0603_4.7K!!!F21!!!!!!
+S!N01405!RB1!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581373@arclib.\r.normal\(chips)!R_R0603_4.7K!!!F22!!!!!!
+S!3.3V!RB1!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581373@arclib.\r.normal\(chips)!R_R0603_4.7K!!!F22!!!!!!
+S!GND!RB23!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5925908@arclib.\r.normal\(chips)!R_R0603_1K!!!F32!!!!!!
+S!N20705!RB23!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5925908@arclib.\r.normal\(chips)!R_R0603_1K!!!F32!!!!!!
+S!GND!RB20!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926171@arclib.\r.normal\(chips)!R_R0603_1K!!!F31!!!!!!
+S!N20719!RB20!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926171@arclib.\r.normal\(chips)!R_R0603_1K!!!F31!!!!!!
+S!GND!RB22!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926155@arclib.\r.normal\(chips)!R_R0603_1K!!!F30!!!!!!
+S!N20717!RB22!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926155@arclib.\r.normal\(chips)!R_R0603_1K!!!F30!!!!!!
+S!GND!RB21!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926139@arclib.\r.normal\(chips)!R_R0603_1K!!!F29!!!!!!
+S!N20715!RB21!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926139@arclib.\r.normal\(chips)!R_R0603_1K!!!F29!!!!!!
+S!GND!RB25!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926123@arclib.\r.normal\(chips)!R_R0603_1K!!!F28!!!!!!
+S!N20713!RB25!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926123@arclib.\r.normal\(chips)!R_R0603_1K!!!F28!!!!!!
+S!GND!RB24!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926080@arclib.\r.normal\(chips)!R_R0603_1K!!!F27!!!!!!
+S!N20711!RB24!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926080@arclib.\r.normal\(chips)!R_R0603_1K!!!F27!!!!!!
+S!GND!RB27!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926035@arclib.\r.normal\(chips)!R_R0603_1K!!!F26!!!!!!
+S!N20709!RB27!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926035@arclib.\r.normal\(chips)!R_R0603_1K!!!F26!!!!!!
+S!GND!RB26!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5925992@arclib.\r.normal\(chips)!R_R0603_1K!!!F25!!!!!!
+S!N20707!RB26!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5925992@arclib.\r.normal\(chips)!R_R0603_1K!!!F25!!!!!!
+S!GND!CT16!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566486@arclib.\c.normal\(chips)!C_C0603_10N!!!F82!!!!!!
+S!RESET!CT16!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566486@arclib.\c.normal\(chips)!C_C0603_10N!!!F82!!!!!!
+S!N5929949!JT1!3!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581187@arclib.\miniusb.normal\(chips)!MINIUSB_MINIUSBCONNSMD_MINI USB!!!F63!!!!!!
+S!N5929899!JT1!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581187@arclib.\miniusb.normal\(chips)!MINIUSB_MINIUSBCONNSMD_MINI USB!!!F63!!!!!!
+S!GND!JT1!5!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581187@arclib.\miniusb.normal\(chips)!MINIUSB_MINIUSBCONNSMD_MINI USB!!!F63!!!!!!
+S!!JT1!4!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581187@arclib.\miniusb.normal\(chips)!MINIUSB_MINIUSBCONNSMD_MINI USB!!!F63!!!!!!
+S!N6242904!JT1!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581187@arclib.\miniusb.normal\(chips)!MINIUSB_MINIUSBCONNSMD_MINI USB!!!F63!!!!!!
+S!N6581350!PT3!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6592551@arclib.\test_pin.normal\(chips)!TEST_PIN_TEST_PIN_TP!!!F48!!!!!!
+S!N6581365!PT2!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6592565@arclib.\test_pin.normal\(chips)!TEST_PIN_TEST_PIN_TP!!!F47!!!!!!
+S!N6579172!PT1!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6592579@arclib.\test_pin.normal\(chips)!TEST_PIN_TEST_PIN_TP!!!F46!!!!!!
+S!GND!RB2!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6656973@arclib.\r.normal\(chips)!R_R0603_47K!!!F40!!!!!!
+S!N5907204!RB2!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6656973@arclib.\r.normal\(chips)!R_R0603_47K!!!F40!!!!!!
+S!N6242345!RT4!1!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599046@arclib.\r.normal\(chips)!R_R0603_47K!!!F41!!!!!!
+S!3.3V!RT4!2!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599046@arclib.\r.normal\(chips)!R_R0603_47K!!!F41!!!!!!
+S!N6242514!RB18!1!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242571@arclib.\r.normal\(chips)!R_R0603_47K!!!F42!!!!!!
+S!3.3V!RB18!2!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242571@arclib.\r.normal\(chips)!R_R0603_47K!!!F42!!!!!!
+S!RESET!RT6!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566470@arclib.\r.normal\(chips)!R_R0603_47K!!!F43!!!!!!
+S!3.3V!RT6!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566470@arclib.\r.normal\(chips)!R_R0603_47K!!!F43!!!!!!
+S!N6580834!RT8!1!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580816@arclib.\r.normal\(chips)!R_R0603_100K!!!F24!!!!!!
+S!3.3V!RT8!2!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580816@arclib.\r.normal\(chips)!R_R0603_100K!!!F24!!!!!!
+S!N6580842!RT7!1!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580800@arclib.\r.normal\(chips)!R_R0603_100K!!!F23!!!!!!
+S!3.3V!RT7!2!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580800@arclib.\r.normal\(chips)!R_R0603_100K!!!F23!!!!!!
+S!BUS-INT1!RB4!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6471556@arclib.\r.normal\(chips)!R_R0603_120!!!F20!!!!!!
+S!P21!RB4!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6471556@arclib.\r.normal\(chips)!R_R0603_120!!!F20!!!!!!
+S!BUS-INT2!RB5!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6247687@arclib.\r.normal\(chips)!R_R0603_120!!!F19!!!!!!
+S!P22!RB5!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6247687@arclib.\r.normal\(chips)!R_R0603_120!!!F19!!!!!!
+S!BUS-INT5!RB8!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248881@arclib.\r.normal\(chips)!R_R0603_120!!!F18!!!!!!
+S!P25!RB8!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248881@arclib.\r.normal\(chips)!R_R0603_120!!!F18!!!!!!
+S!BUS-INT0!RB3!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6242858@arclib.\r.normal\(chips)!R_R0603_120!!!F17!!!!!!
+S!P20!RB3!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6242858@arclib.\r.normal\(chips)!R_R0603_120!!!F17!!!!!!
+S!BUS-INT3!RB6!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248085@arclib.\r.normal\(chips)!R_R0603_120!!!F16!!!!!!
+S!P23!RB6!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248085@arclib.\r.normal\(chips)!R_R0603_120!!!F16!!!!!!
+S!BUS-INT4!RB7!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248479@arclib.\r.normal\(chips)!R_R0603_120!!!F15!!!!!!
+S!P24!RB7!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248479@arclib.\r.normal\(chips)!R_R0603_120!!!F15!!!!!!
+S!BUS-INT6!RB9!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6249285@arclib.\r.normal\(chips)!R_R0603_120!!!F14!!!!!!
+S!P26!RB9!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6249285@arclib.\r.normal\(chips)!R_R0603_120!!!F14!!!!!!
+S!BUS-INT7!RB11!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6249689@arclib.\r.normal\(chips)!R_R0603_120!!!F13!!!!!!
+S!P27!RB11!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6249689@arclib.\r.normal\(chips)!R_R0603_120!!!F13!!!!!!
+S!D-BUS3!RB15!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6629821@arclib.\r.normal\(chips)!R_R0603_120!!!F12!!!!!!
+S!P33!RB15!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6629821@arclib.\r.normal\(chips)!R_R0603_120!!!F12!!!!!!
+S!D-BUS0!RB12!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6628450@arclib.\r.normal\(chips)!R_R0603_120!!!F11!!!!!!
+S!P30!RB12!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6628450@arclib.\r.normal\(chips)!R_R0603_120!!!F11!!!!!!
+S!D-BUS1!RB13!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6259634@arclib.\r.normal\(chips)!R_R0603_120!!!F10!!!!!!
+S!P31!RB13!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6259634@arclib.\r.normal\(chips)!R_R0603_120!!!F10!!!!!!
+S!D-BUS2!RB14!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6260146@arclib.\r.normal\(chips)!R_R0603_120!!!F9!!!!!!
+S!P32!RB14!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6260146@arclib.\r.normal\(chips)!R_R0603_120!!!F9!!!!!!
+S!D-BUS4!RB16!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6629898@arclib.\r.normal\(chips)!R_R0603_120!!!F8!!!!!!
+S!P34!RB16!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6629898@arclib.\r.normal\(chips)!R_R0603_120!!!F8!!!!!!
+S!GND!SWT1!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566642@arclib.\sw-pb-tact.normal\(chips)!SW-PB-TACT_SW_PB_!!!F7!!!!!!
+S!RESET!SWT1!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566642@arclib.\sw-pb-tact.normal\(chips)!SW-PB-TACT_SW_PB_!!!F7!!!!!!
+S!RESET!SWT1!3!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566642@arclib.\sw-pb-tact.normal\(chips)!SW-PB-TACT_SW_PB_!!!F7!!!!!!
+S!GND!SWT1!4!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566642@arclib.\sw-pb-tact.normal\(chips)!SW-PB-TACT_SW_PB_!!!F7!!!!!!
+S!N6376460!UB4!2!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)!MICRO_SD_USD_!!!F5!!!!!!
+S!MEM-SPI2!UB4!5!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)!MICRO_SD_USD_!!!F5!!!!!!
+S!MEM-SPI0!UB4!3!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)!MICRO_SD_USD_!!!F5!!!!!!
+S!MEM-SPI1!UB4!7!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)!MICRO_SD_USD_!!!F5!!!!!!
+S!N6580842!UB4!8!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)!MICRO_SD_USD_!!!F5!!!!!!
+S!N6580834!UB4!1!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)!MICRO_SD_USD_!!!F5!!!!!!
+S!3.3V!UB4!4!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)!MICRO_SD_USD_!!!F5!!!!!!
+S!GND!UB4!6!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)!MICRO_SD_USD_!!!F5!!!!!!
+S!GND!CB10!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6640299@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F103!!!!!!
+S!N6388535!CB10!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6640299@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F103!!!!!!
+S!GND!CT2!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582192@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F104!!!!!!
+S!3.3V!CT2!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582192@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F104!!!!!!
+S!GND!CB6!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582375@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F111!!!!!!
+S!3.3V!CB6!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582375@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F111!!!!!!
+S!GND!CT7!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586716@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F105!!!!!!
+S!N6581365!CT7!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586716@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F105!!!!!!
+S!GND!CT11!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582391@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F102!!!!!!
+S!3.3V!CT11!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582391@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F102!!!!!!
+S!GND!CT9!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587680@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F110!!!!!!
+S!AUXVCC2!CT9!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587680@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F110!!!!!!
+S!GND!CB3!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587611@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F109!!!!!!
+S!AUXVCC1!CB3!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587611@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F109!!!!!!
+S!GND!CB9!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586515@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F108!!!!!!
+S!N6581350!CB9!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586515@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F108!!!!!!
+S!GND!CT13!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586582@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F107!!!!!!
+S!N6581350!CT13!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586582@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F107!!!!!!
+S!GND!CT15!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586649@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F106!!!!!!
+S!N6581365!CT15!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586649@arclib.\c.normal\(chips)!C_C0603_4.7U!!!F106!!!!!!
+S!GND!CB13!1!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599117@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F91!!!!!!
+S!N6608157!CB13!2!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599117@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F91!!!!!!
+S!GND!CB11!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6640146@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F92!!!!!!
+S!N6388535!CB11!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6640146@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F92!!!!!!
+S!GND!CB14!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5922885@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F94!!!!!!
+S!N6242904!CB14!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5922885@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F94!!!!!!
+S!GND!CB5!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582827@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F96!!!!!!
+S!3.3V!CB5!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582827@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F96!!!!!!
+S!GND!CT6!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586206@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F95!!!!!!
+S!N6581365!CT6!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586206@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F95!!!!!!
+S!GND!CT10!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582910@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F93!!!!!!
+S!3.3V!CT10!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582910@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F93!!!!!!
+S!GND!CB1!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587995@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F90!!!!!!
+S!AUXVCC3!CB1!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587995@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F90!!!!!!
+S!GND!CT8!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583163@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F101!!!!!!
+S!AUXVCC2!CT8!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583163@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F101!!!!!!
+S!GND!CB4!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583137@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F100!!!!!!
+S!AUXVCC1!CB4!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583137@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F100!!!!!!
+S!GND!CB8!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582996@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F99!!!!!!
+S!N6581350!CB8!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582996@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F99!!!!!!
+S!GND!CT12!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586190@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F98!!!!!!
+S!N6581350!CT12!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586190@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F98!!!!!!
+S!GND!CT14!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583012@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F97!!!!!!
+S!N6581365!CT14!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583012@arclib.\c.normal\(chips)!C_C0603_0.1U!!!F97!!!!!!
+S!GND!CT17!1!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580864@arclib.\c.normal\(chips)!C_C0805_10UF!!!F87!!!!!!
+S!3.3V!CT17!2!@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580864@arclib.\c.normal\(chips)!C_C0805_10UF!!!F87!!!!!!
+S!GND!CB7!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583188@arclib.\c.normal\(chips)!C_C0805_10UF!!!F86!!!!!!
+S!3.3V!CB7!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583188@arclib.\c.normal\(chips)!C_C0805_10UF!!!F86!!!!!!
+S!GND!CT5!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6579156@arclib.\c.normal\(chips)!C_C0603_0.47U!!!F81!!!!!!
+S!N6579172!CT5!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6579156@arclib.\c.normal\(chips)!C_C0603_0.47U!!!F81!!!!!!
+S!GND!CB2!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6588015@arclib.\c.normal\(chips)!C_C0603_0.47U!!!F80!!!!!!
+S!AUXVCC3!CB2!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6588015@arclib.\c.normal\(chips)!C_C0603_0.47U!!!F80!!!!!!
+S!AUXVCC1!UT2!22!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AUXVCC2!UT2!21!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AUXVCC3!UT2!29!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!3.3V!UT2!19!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!18!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!10!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!!UT2!38!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!!UT2!39!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!3.3V!UT2!24!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!25!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!76!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!46!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P10!UT2!37!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P11!UT2!36!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P12!UT2!35!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P13!UT2!34!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P14!UT2!33!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P15!UT2!32!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P16!UT2!40!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P17!UT2!41!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P20!UT2!42!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P21!UT2!43!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P22!UT2!44!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P23!UT2!45!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P24!UT2!47!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P25!UT2!48!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P26!UT2!49!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P27!UT2!50!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P30!UT2!51!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P31!UT2!52!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P32!UT2!53!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P33!UT2!54!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P34!UT2!55!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6197446!UT2!56!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6197448!UT2!57!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P37!UT2!58!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P40!UT2!59!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P41!UT2!60!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P42!UT2!61!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P43!UT2!62!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P44!UT2!63!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!MEM-SPI1!UT2!64!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!MEM-SPI2!UT2!65!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!MEM-SPI0!UT2!66!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6376460!UT2!67!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P51!UT2!68!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P52!UT2!69!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P53!UT2!70!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P54!UT2!71!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P55!UT2!72!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P56!UT2!73!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P57!UT2!74!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P67!UT2!77!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P66!UT2!78!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P65!UT2!79!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P64!UT2!80!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P63!UT2!81!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P62!UT2!82!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P61!UT2!83!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P60!UT2!84!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P7.7!UT2!85!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P7.6!UT2!86!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P7.5!UT2!87!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P7.4!UT2!88!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P7.3!UT2!89!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P7.2!UT2!90!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P7.1!UT2!91!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P7.0!UT2!92!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P8.1!UT2!93!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!P8.0!UT2!94!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!TDO/TDI!UT2!96!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!TDI/TCLK!UT2!97!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!TMS!UT2!98!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!TCK!UT2!99!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!RESET!UT2!100!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!RTCAP0!UT2!31!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!RTCAP1!UT2!30!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN01!UT2!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN00!UT2!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN11!UT2!4!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN10!UT2!3!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN21!UT2!6!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN20!UT2!5!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN31!UT2!8!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN30!UT2!7!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN41!UT2!13!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!AN40!UT2!12!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!15!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!14!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!17!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!GND!UT2!16!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6577771!UT2!95!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6581350!UT2!20!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6581350!UT2!9!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6579172!UT2!26!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6581365!UT2!23!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6581365!UT2!75!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N6388535!UT2!11!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N4790859!UT2!27!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N4790561!UT2!28!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6575999@arclib.\msp430f67xxapn.normal\(chips)!MSP430F67XXAPN_100LQFP_MSP430F6!!!F6!!!!!!
+S!N5932830!UB1!23!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5929949!UB1!4!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5929899!UB1!5!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5932918!UB1!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5932854!UB1!27!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5932866!UB1!28!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!GND!UB1!3!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!10!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!13!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!14!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!15!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!16!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!17!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!18!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!19!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!20!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!21!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!!UB1!22!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!GND!UB1!PAD!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!3.3V!UB1!7!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5932930!UB1!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N01405!UB1!9!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5932842!UB1!24!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N6193207!UB1!25!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5932942!UB1!12!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N6193209!UB1!26!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N6242904!UB1!8!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!3.3V!UB1!6!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!N5932954!UB1!11!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)!CP2102_5X5MMQFN-28_CP2102!!!F0!!!!!!
+S!GND!CB15!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5923286@arclib.\c.normal\(chips)!C_C0805_22U!!!F85!!!!!!
+S!N6228204!CB15!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5923286@arclib.\c.normal\(chips)!C_C0805_22U!!!F85!!!!!!
+S!GND!UB3!2!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5921577@arclib.\mic5209.normal\(chips)!MIC5209_SOT_223_3.3V!!!F3!!!!!!
+S!N6242904!UB3!1!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5921577@arclib.\mic5209.normal\(chips)!MIC5209_SOT_223_3.3V!!!F3!!!!!!
+S!N6228204!UB3!3!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5921577@arclib.\mic5209.normal\(chips)!MIC5209_SOT_223_3.3V!!!F3!!!!!!
+S!GND!UB3!TAB!@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5921577@arclib.\mic5209.normal\(chips)!MIC5209_SOT_223_3.3V!!!F3!!!!!!
+S!N6242904!JT12!1!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!AN40!JT12!10!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!AN31!JT12!11!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!AN30!JT12!12!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!GND!JT12!2!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!+5V!JT12!3!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!N6388535!JT12!4!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!3.3V!JT12!5!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!VBATT!JT12!6!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!RTCAP0!JT12!7!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!RTCAP1!JT12!8!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!AN41!JT12!9!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)!CON12_CON12_CON12!!!F64!!!!!!
+S!DUMMY_LOAD!JT19!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6583826@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F70!!!!!!
+S!SW_GND!JT19!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6583826@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F70!!!!!!
+S!SEP_SW1!JT19!3!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6583826@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F70!!!!!!
+S!SW_GND!JT19!4!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6583826@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F70!!!!!!
+S!SEP_SW2!JT19!5!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6583826@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F70!!!!!!
+S!SW_GND!JT19!6!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6583826@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F70!!!!!!
+S!PCM_IN!JT17!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372981@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F69!!!!!!
+S!BCR_OUT!JT17!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372981@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F69!!!!!!
+S!BATT_POS!JT17!3!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372981@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F69!!!!!!
+S!BCR_OUT!JT17!4!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372981@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F69!!!!!!
+S!!JT17!5!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372981@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F69!!!!!!
+S!DUMMY_LOAD!JT17!6!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372981@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F69!!!!!!
+S!AUXVCC1!JT8!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6638972@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F71!!!!!!
+S!GND!JT8!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6638972@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F71!!!!!!
+S!AUXVCC2!JT8!3!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6638972@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F71!!!!!!
+S!GND!JT8!4!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6638972@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F71!!!!!!
+S!AUXVCC3!JT8!5!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6638972@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F71!!!!!!
+S!GND!JT8!6!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6638972@arclib.\con6a.normal\(chips)!CON6A_CON6A_CON6A!!!F71!!!!!!
+S!P60!JT18!1!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P7.3!JT18!10!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P65!JT18!11!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P7.2!JT18!12!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P66!JT18!13!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P7.1!JT18!14!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P67!JT18!15!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P7.0!JT18!16!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P57!JT18!17!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P8.0!JT18!18!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P56!JT18!19!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P7.7!JT18!2!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P8.1!JT18!20!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P55!JT18!21!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!AN00!JT18!22!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P54!JT18!23!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!AN01!JT18!24!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P53!JT18!25!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!AN10!JT18!26!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P52!JT18!27!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!AN11!JT18!28!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P51!JT18!29!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P61!JT18!3!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!AN20!JT18!30!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!N6376460!JT18!31!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!AN21!JT18!32!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P7.6!JT18!4!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P62!JT18!5!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P7.5!JT18!6!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P63!JT18!7!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P7.4!JT18!8!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P64!JT18!9!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587065@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F66!!!!!!
+S!P27!JT3!1!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P34!JT3!10!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P22!JT3!11!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!N6197446!JT3!12!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P21!JT3!13!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!N6197448!JT3!14!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P20!JT3!15!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P37!JT3!16!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P10!JT3!17!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P40!JT3!18!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P11!JT3!19!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P30!JT3!2!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P41!JT3!20!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P12!JT3!21!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P42!JT3!22!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P13!JT3!23!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P43!JT3!24!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P14!JT3!25!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P44!JT3!26!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P15!JT3!27!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!MEM-SPI1!JT3!28!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P16!JT3!29!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P26!JT3!3!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!MEM-SPI2!JT3!30!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P17!JT3!31!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!MEM-SPI0!JT3!32!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P31!JT3!4!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P25!JT3!5!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P32!JT3!6!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P24!JT3!7!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P33!JT3!8!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!P23!JT3!9!@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586394@connector.\con32a.normal\(chips)!CON32A_CON32A_CON32A!!!F65!!!!!!
+S!RESET!JT23!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@connector.\con8.normal\(chips)!CON8_FPC_CONN_52207-0819_CON8!!!F62!!!!!!
+S!TDO/TDI!JT23!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@connector.\con8.normal\(chips)!CON8_FPC_CONN_52207-0819_CON8!!!F62!!!!!!
+S!TDI/TCLK!JT23!3!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@connector.\con8.normal\(chips)!CON8_FPC_CONN_52207-0819_CON8!!!F62!!!!!!
+S!TMS!JT23!4!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@connector.\con8.normal\(chips)!CON8_FPC_CONN_52207-0819_CON8!!!F62!!!!!!
+S!TCK!JT23!5!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@connector.\con8.normal\(chips)!CON8_FPC_CONN_52207-0819_CON8!!!F62!!!!!!
+S!GND!JT23!6!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@connector.\con8.normal\(chips)!CON8_FPC_CONN_52207-0819_CON8!!!F62!!!!!!
+S!N6577771!JT23!7!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@connector.\con8.normal\(chips)!CON8_FPC_CONN_52207-0819_CON8!!!F62!!!!!!
+S!3.3V!JT23!8!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@connector.\con8.normal\(chips)!CON8_FPC_CONN_52207-0819_CON8!!!F62!!!!!!
+S!N10583!DT1!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926989@discrete.\led.normal\(chips)!LED_D1206_RED!!!F79!!!!!!
+S!N20719!DT1!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926989@discrete.\led.normal\(chips)!LED_D1206_RED!!!F79!!!!!!
+S!N10395!DT2!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927020@discrete.\led.normal\(chips)!LED_D1206_RED!!!F78!!!!!!
+S!N20717!DT2!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927020@discrete.\led.normal\(chips)!LED_D1206_RED!!!F78!!!!!!
+S!N09975!DT3!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927052@discrete.\led.normal\(chips)!LED_D1206_RED!!!F77!!!!!!
+S!N20715!DT3!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927052@discrete.\led.normal\(chips)!LED_D1206_RED!!!F77!!!!!!
+S!N09723!DT4!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927084@discrete.\led.normal\(chips)!LED_D1206_RED!!!F76!!!!!!
+S!N20713!DT4!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927084@discrete.\led.normal\(chips)!LED_D1206_RED!!!F76!!!!!!
+S!N09582!DT5!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927116@discrete.\led.normal\(chips)!LED_D1206_RED!!!F75!!!!!!
+S!N20711!DT5!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927116@discrete.\led.normal\(chips)!LED_D1206_RED!!!F75!!!!!!
+S!N05444!DT6!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927178@discrete.\led.normal\(chips)!LED_D1206_RED!!!F74!!!!!!
+S!N20709!DT6!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927178@discrete.\led.normal\(chips)!LED_D1206_RED!!!F74!!!!!!
+S!N00962!DT7!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927210@discrete.\led.normal\(chips)!LED_D1206_RED!!!F73!!!!!!
+S!N20707!DT7!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927210@discrete.\led.normal\(chips)!LED_D1206_RED!!!F73!!!!!!
+S!N00960!DT8!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927242@discrete.\led.normal\(chips)!LED_D1206_RED!!!F72!!!!!!
+S!N20705!DT8!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927242@discrete.\led.normal\(chips)!LED_D1206_RED!!!F72!!!!!!
+S!N6320719!JT15!1!@schematic.top(sch_1):ins6615551@connector.\con3.normal\(chips)!CON3_CON3_CON3!!!F57!!!!!!
+S!3.3V!JT15!2!@schematic.top(sch_1):ins6615551@connector.\con3.normal\(chips)!CON3_CON3_CON3!!!F57!!!!!!
+S!N6228204!JT15!3!@schematic.top(sch_1):ins6615551@connector.\con3.normal\(chips)!CON3_CON3_CON3!!!F57!!!!!!
+S!I2C-ON!JT20!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372272@arclib.\con3.normal\(chips)!CON3_CON3_CON3!!!F56!!!!!!
+S!P-I2C-SCL!JT20!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372272@arclib.\con3.normal\(chips)!CON3_CON3_CON3!!!F56!!!!!!
+S!P-I2C-SDA!JT20!3!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372272@arclib.\con3.normal\(chips)!CON3_CON3_CON3!!!F56!!!!!!
+S!N10583!JT21!1!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!P7.4!JT21!10!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!N05444!JT21!11!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!P7.5!JT21!12!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!N00962!JT21!13!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!P7.6!JT21!14!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!N00960!JT21!15!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!P7.7!JT21!16!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!P7.0!JT21!2!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!N10395!JT21!3!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!P7.1!JT21!4!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!N09975!JT21!5!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!P7.2!JT21!6!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!N09723!JT21!7!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!P7.3!JT21!8!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!N09582!JT21!9!@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926825@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F68!!!!!!
+S!N5907204!JT5!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!RST4!JT5!10!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!N5907204!JT5!11!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!RST5!JT5!12!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!N5907204!JT5!13!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!RST6!JT5!14!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!N5907204!JT5!15!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!RST7!JT5!16!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!RST0!JT5!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!N5907204!JT5!3!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!RST1!JT5!4!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!N5907204!JT5!5!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!RST2!JT5!6!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!N5907204!JT5!7!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!RST3!JT5!8!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!N5907204!JT5!9!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)!CON16A_CON16A_CON16A!!!F67!!!!!!
+S!N6242904!JT11!1!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242069@schematic.\con2ap_0.normal\(chips)!CON2AP_0_CON2AP_CON2AP!!!F51!!!!!!
+S!N6608157!JT11!2!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242069@schematic.\con2ap_0.normal\(chips)!CON2AP_0_CON2AP_CON2AP!!!F51!!!!!!
+S!N6197448!JT9!1!@schematic.top(sch_1):ins6615496@connector.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F54!!!!!!
+S!N6193209!JT9!2!@schematic.top(sch_1):ins6615496@connector.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F54!!!!!!
+S!N6197446!JT9!3!@schematic.top(sch_1):ins6615496@connector.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F54!!!!!!
+S!N6193207!JT9!4!@schematic.top(sch_1):ins6615496@connector.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F54!!!!!!
+S!N6242514!JT16!1!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6598862@arclib.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F55!!!!!!
+S!P8.1!JT16!2!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6598862@arclib.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F55!!!!!!
+S!N6242345!JT16!3!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6598862@arclib.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F55!!!!!!
+S!P8.0!JT16!4!@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6598862@arclib.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F55!!!!!!
+S!3.3V!JT10!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6456380@connector.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F53!!!!!!
+S!N6465997!JT10!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6456380@connector.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F53!!!!!!
+S!3.3V!JT10!3!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6456380@connector.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F53!!!!!!
+S!N6331403!JT10!4!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6456380@connector.\con4a.normal\(chips)!CON4A_CON4A_CON4A!!!F53!!!!!!
+S!!JT13!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BUS-INT1!JT13!10!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BUS-INT2!JT13!11!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BUS-INT3!JT13!12!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BUS-INT4!JT13!13!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BUS-INT5!JT13!14!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BUS-INT6!JT13!15!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BUS-INT7!JT13!16!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!D-BUS0!JT13!17!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!D-BUS1!JT13!18!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!19!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!20!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!D-BUS2!JT13!21!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!D-BUS3!JT13!22!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!D-BUS4!JT13!23!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!I2C-ON!JT13!24!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!25!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!26!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!27!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!28!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!29!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!3!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!30!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!31!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!N6608157!JT13!32!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!33!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!34!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!35!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!36!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!37!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!38!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!39!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!4!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!40!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!P-I2C-SDA!JT13!41!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!42!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!P-I2C-SCL!JT13!43!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!44!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!45!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!46!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!47!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!48!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!49!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BURN!JT13!5!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!50!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!51!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!52!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!6!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!7!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!!JT13!8!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!BUS-INT0!JT13!9!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F50!!!!!!
+S!RST0!JT14!1!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!10!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!11!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!12!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!13!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!14!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!15!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!16!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!17!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!18!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!19!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!RST1!JT14!2!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!20!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!21!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!22!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!23!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!24!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!+5V!JT14!25!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!+5V!JT14!26!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!N6320719!JT14!27!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!N6320719!JT14!28!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!29!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!RST2!JT14!3!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!GND!JT14!30!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!31!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!PWR_GND!JT14!32!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!BATT_POS!JT14!33!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!BATT_POS!JT14!34!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!PCM_IN!JT14!35!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!PCM_IN!JT14!36!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!DUMMY_LOAD!JT14!37!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!DUMMY_LOAD!JT14!38!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!SEP_SW1!JT14!39!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!RST3!JT14!4!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!SEP_SW2!JT14!40!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!BCR_OUT!JT14!41!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!BCR_OUT!JT14!42!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!BCR_OUT!JT14!43!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!BCR_OUT!JT14!44!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!VBATT!JT14!45!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!VBATT!JT14!46!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!SW_GND!JT14!47!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!SW_GND!JT14!48!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!49!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!RST4!JT14!5!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!50!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!51!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!52!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!RST5!JT14!6!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!RST6!JT14!7!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!RST7!JT14!8!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!!JT14!9!@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)!CON_2X26_SSQ-126-D_52 PIN!!!F49!!!!!!
+S!N4790859!QT1!1!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6647944@arclib.\xtal.normal\(chips)!XTAL_ECX-31B_32.768KHZ!!!F45!!!!!!
+S!N4790561!QT1!2!@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6647944@arclib.\xtal.normal\(chips)!XTAL_ECX-31B_32.768KHZ!!!F45!!!!!!

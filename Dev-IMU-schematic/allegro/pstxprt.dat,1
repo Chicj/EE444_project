@@ -1,0 +1,1140 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 16.5.0 p001Aug-18-2015 at 15:27:02 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='SCHEMATIC';
+ POST_TIME='Apr 21 2011 10:02:30';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ CB1 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6587995@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587995@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6587995@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB10 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6640299@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6640299@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6640299@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB11 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6640146@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6640146@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6640146@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB12 'C_C0603_2.2U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):USB_LIM@SCHEMATIC.LIM(SCH_1):INS6599092@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599092@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_usb_lim@schematic.lim(sch_1):page5_ins6599092@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB13 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):USB_LIM@SCHEMATIC.LIM(SCH_1):INS6599117@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599117@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_usb_lim@schematic.lim(sch_1):page5_ins6599117@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB14 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS5922885@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5922885@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins5922885@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB15 'C_C0805_22U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS5923286@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5923286@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins5923286@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB2 'C_C0603_0.47U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6588015@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6588015@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6588015@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB3 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6587611@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587611@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6587611@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB4 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6583137@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583137@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6583137@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB5 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6582827@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582827@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6582827@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB6 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6582375@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582375@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6582375@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB7 'C_C0805_10UF':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6583188@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583188@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6583188@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB8 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6582996@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582996@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6582996@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CB9 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6586515@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586515@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6586515@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT1 'C_C0603_100NF':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6582290@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582290@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6582290@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT10 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6582910@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582910@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6582910@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT11 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6582391@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6582391@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6582391@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT12 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6586190@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586190@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6586190@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT13 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6586582@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586582@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6586582@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT14 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6583012@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583012@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6583012@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT15 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6586649@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586649@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6586649@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT16 'C_C0603_10N':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6566486@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566486@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6566486@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT17 'C_C0805_10UF':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):ADCS-MEM@SCHEMATIC.MEM(SCH_1):INS6580864@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580864@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):\page1_adcs-mem\@schematic.mem(sch_1):page6_ins6580864@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT2 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6582192@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582192@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6582192@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT3 'C_C0603_24P':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6481474@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6481474@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6481474@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT4 'C_C0603_24P':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6480994@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6480994@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6480994@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT5 'C_C0603_0.47U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6579156@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6579156@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6579156@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT6 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6586206@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586206@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6586206@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT7 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6586716@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6586716@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6586716@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT8 'C_C0603_0.1U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6583163@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6583163@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6583163@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CT9 'C_C0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6587680@ARCLIB.C.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6587680@arclib.\c.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6587680@arclib.\c.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 'LED_D1206_RED':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5926989@ARCLIB.LED.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926989@arclib.\led.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5926989@arclib.\led.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D2 'LED_D1206_ORANGE':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5927020@ARCLIB.LED.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927020@arclib.\led.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5927020@arclib.\led.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 'LED_D1206_GREEN':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5927052@ARCLIB.LED.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927052@arclib.\led.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5927052@arclib.\led.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D4 'LED_D1206_YELLOW':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5927084@ARCLIB.LED.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927084@arclib.\led.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5927084@arclib.\led.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D5 'LED_D1206_RED':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5927116@ARCLIB.LED.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927116@arclib.\led.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5927116@arclib.\led.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D6 'LED_D1206_ORANGE':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5927178@ARCLIB.LED.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927178@arclib.\led.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5927178@arclib.\led.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D7 'LED_D1206_GREEN':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5927210@ARCLIB.LED.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927210@arclib.\led.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5927210@arclib.\led.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D8 'LED_D1206_YELLOW':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5927242@ARCLIB.LED.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5927242@arclib.\led.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5927242@arclib.\led.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J12 'CON32A_CON32A_CON32A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):MAIN PROTOTYPE AREA@SCHEMATIC.MP_A(SCH_1):INS6600282@CONNECTOR.CON32A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6600282@connector.\con32a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):\page1_main prototype area\@schematic.mp_a(sch_1):page4_ins6600282@connector.\con32a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J13 'CON32A_CON32A_CON32A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):MAIN PROTOTYPE AREA@SCHEMATIC.MP_A(SCH_1):INS6600114@CONNECTOR.CON32A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6600114@connector.\con32a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):\page1_main prototype area\@schematic.mp_a(sch_1):page4_ins6600114@connector.\con32a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT1 'MINIUSB_MINIUSBCONNSMD_MINI USB':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6581187@ARCLIB.MINIUSB.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581187@arclib.\miniusb.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6581187@arclib.\miniusb.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT10 'CON4A_CON4A_CON4A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6456380@CONNECTOR.CON4A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6456380@connector.\con4a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6456380@connector.\con4a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT11 'CON2AP_0_CON2AP_CON2AP':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):USB_LIM@SCHEMATIC.LIM(SCH_1):INS6242069@SCHEMATIC.CON2AP_0.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242069@schematic.\con2ap_0.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_usb_lim@schematic.lim(sch_1):page5_ins6242069@schematic.\con2ap_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT12 'CON12_CON12_CON12':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):MAIN PROTOTYPE AREA@SCHEMATIC.MP_A(SCH_1):INS6586727@CONNECTOR.CON12.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6586727@connector.\con12.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):\page1_main prototype area\@schematic.mp_a(sch_1):page4_ins6586727@connector.\con12.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT13 'CON_2X26_SSQ-126-D_52 PIN':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6587564@ARCLIB.CON_2X26.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587564@arclib.\con_2x26.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6587564@arclib.\con_2x26.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT14 'CON_2X26_SSQ-126-D_52 PIN':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6587962@ARCLIB.CON_2X26.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6587962@arclib.\con_2x26.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6587962@arclib.\con_2x26.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT15 'CON3_CON3_CON3':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):INS6615551@CONNECTOR.CON3.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):ins6615551@connector.\con3.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_ins6615551@connector.\con3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT16 'CON4A_CON4A_CON4A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):USB_LIM@SCHEMATIC.LIM(SCH_1):INS6598862@ARCLIB.CON4A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6598862@arclib.\con4a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_usb_lim@schematic.lim(sch_1):page5_ins6598862@arclib.\con4a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT17 'CON6A_CON6A_CON6A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6372981@ARCLIB.CON6A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372981@arclib.\con6a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6372981@arclib.\con6a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT19 'CON6A_CON6A_CON6A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6583826@ARCLIB.CON6A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6583826@arclib.\con6a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6583826@arclib.\con6a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT2 'CON2_CON2_CON2':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6582919@ARCLIB.CON2.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582919@arclib.\con2.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6582919@arclib.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT20 'CON3_CON3_CON3':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6372272@ARCLIB.CON3.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6372272@arclib.\con3.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6372272@arclib.\con3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT21 'CON16A_CON16A_CON16A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5931294@CONNECTOR.CON16A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5931294@connector.\con16a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5931294@connector.\con16a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT22 'CON6_DF13-6P-125DS_CON6':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6595188@ARCLIB.CON6.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6595188@arclib.\con6.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6595188@arclib.\con6.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT23 'CON8_FPC_CONN_52207-0819_CON8':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6631964@ARCLIB.CON8.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6631964@arclib.\con8.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6631964@arclib.\con8.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT4 'CON2_CON2_CON2':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6582865@ARCLIB.CON2.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582865@arclib.\con2.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6582865@arclib.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT5 'CON16A_CON16A_CON16A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6371865@CONNECTOR.CON16A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6371865@connector.\con16a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6371865@connector.\con16a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT6 'CON2_CON2_CON2':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6582569@ARCLIB.CON2.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582569@arclib.\con2.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6582569@arclib.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT7 'CON2_CON2_CON2':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6582553@ARCLIB.CON2.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6582553@arclib.\con2.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6582553@arclib.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT8 'CON6A_CON6A_CON6A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6638972@ARCLIB.CON6A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6638972@arclib.\con6a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6638972@arclib.\con6a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JT9 'CON4A_CON4A_CON4A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):INS6615496@CONNECTOR.CON4A.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):ins6615496@connector.\con4a.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_ins6615496@connector.\con4a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ PT1 'TEST_PIN_TEST_PIN_TP':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6592579@ARCLIB.TEST_PIN.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6592579@arclib.\test_pin.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6592579@arclib.\test_pin.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ PT2 'TEST_PIN_TEST_PIN_TP':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6592565@ARCLIB.TEST_PIN.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6592565@arclib.\test_pin.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6592565@arclib.\test_pin.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ PT3 'TEST_PIN_TEST_PIN_TP':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6592551@ARCLIB.TEST_PIN.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6592551@arclib.\test_pin.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6592551@arclib.\test_pin.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ QT1 'XTAL_ECX-31B_32.768KHZ':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6647944@ARCLIB.XTAL.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6647944@arclib.\xtal.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6647944@arclib.\xtal.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ QT2 'MOSFET-N_SOT23_3.5A':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6655524@ARCLIB.MOSFET-N.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6655524@arclib.\mosfet-n.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6655524@arclib.\mosfet-n.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R61 'R_R0603_0.0':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6663581@ARCLIB.R.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6663581@arclib.\r.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6663581@arclib.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB1 'R_R0603_4.7K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6581373@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6581373@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6581373@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB10 'R_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6594757@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594757@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6594757@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB11 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6249689@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6249689@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6249689@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB12 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6628450@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6628450@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6628450@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB13 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6259634@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6259634@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6259634@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB14 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6260146@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6260146@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6260146@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB15 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6629821@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6629821@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6629821@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB16 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6629898@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6629898@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6629898@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB17 'R_R0603_4.7K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):USB_LIM@SCHEMATIC.LIM(SCH_1):INS6242464@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242464@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_usb_lim@schematic.lim(sch_1):page5_ins6242464@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB18 'R_R0603_47K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):USB_LIM@SCHEMATIC.LIM(SCH_1):INS6242571@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242571@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_usb_lim@schematic.lim(sch_1):page5_ins6242571@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB19 'R_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6594773@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594773@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6594773@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB2 'R_R0603_47K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6656973@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6656973@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6656973@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB20 'R_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5926171@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926171@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5926171@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB21 'R_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5926139@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926139@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5926139@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB22 'R_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5926155@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926155@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5926155@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB23 'R_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5925908@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5925908@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5925908@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB24 'R_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5926080@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926080@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5926080@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB25 'R_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5926123@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926123@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5926123@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB26 'R_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5925992@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5925992@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5925992@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB27 'R_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):VO@SCHEMATIC.LED(SCH_1):INS5926035@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):vo@schematic.led(sch_1):ins5926035@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_vo@schematic.led(sch_1):page7_ins5926035@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB3 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6242858@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6242858@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6242858@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB4 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6471556@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6471556@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6471556@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB5 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6247687@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6247687@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6247687@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB6 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6248085@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248085@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6248085@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB7 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6248479@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248479@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6248479@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB8 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6248881@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6248881@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6248881@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RB9 'R_R0603_120':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6249285@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6249285@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6249285@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT1 'R_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6594805@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594805@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6594805@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT2 'R_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6632933@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6632933@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6632933@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT3 'R_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6633009@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6633009@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6633009@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT4 'R_R0603_47K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):USB_LIM@SCHEMATIC.LIM(SCH_1):INS6599046@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6599046@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_usb_lim@schematic.lim(sch_1):page5_ins6599046@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT5 'R_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6594789@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594789@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6594789@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT6 'R_R0603_47K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6566470@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566470@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6566470@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT7 'R_R0603_100K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):ADCS-MEM@SCHEMATIC.MEM(SCH_1):INS6580800@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580800@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):\page1_adcs-mem\@schematic.mem(sch_1):page6_ins6580800@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT8 'R_R0603_100K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):ADCS-MEM@SCHEMATIC.MEM(SCH_1):INS6580816@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580816@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):\page1_adcs-mem\@schematic.mem(sch_1):page6_ins6580816@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RT9 'R_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):HEADER_A1@SCHEMATIC.HEADER(SCH_1):INS6594741@ARCLIB.R.NORMAL(SCH_1)':
+ C_PATH='@schematic.top(sch_1):header_a1@schematic.header(sch_1):ins6594741@arclib.\r.normal\(sch_1)',
+ P_PATH='@schematic.top(sch_1):page1_header_a1@schematic.header(sch_1):page3_ins6594741@arclib.\r.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SWT1 'SW-PB-TACT_SW_PB_':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6566642@ARCLIB.SW-PB-TACT.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6566642@arclib.\sw-pb-tact.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6566642@arclib.\sw-pb-tact.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ UB1 'CP2102_5X5MMQFN-28_CP2102':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6584467@ARCLIB.CP2102.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6584467@arclib.\cp2102.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6584467@arclib.\cp2102.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ UB2 'MAX893L_SOIC8_MAX893L':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):USB_LIM@SCHEMATIC.LIM(SCH_1):INS6242137@ARCLIB.MAX893L.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):usb_lim@schematic.lim(sch_1):ins6242137@arclib.\max893l.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_usb_lim@schematic.lim(sch_1):page5_ins6242137@arclib.\max893l.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ UB3 'MIC5209_SOT_223_3.3V':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS5921577@ARCLIB.MIC5209.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins5921577@arclib.\mic5209.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins5921577@arclib.\mic5209.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ UB4 'MICRO_SD_USD_':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):ADCS-MEM@SCHEMATIC.MEM(SCH_1):INS6580742@ARCLIB.MICRO_SD.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):\adcs-mem\@schematic.mem(sch_1):ins6580742@arclib.\micro_sd.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):\page1_adcs-mem\@schematic.mem(sch_1):page6_ins6580742@arclib.\micro_sd.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ UT1 'SP0503_SOT143-4_5.5V':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):DBG_USB@SCHEMATIC.USB(SCH_1):INS6583397@ARCLIB.SP0503.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):dbg_usb@schematic.usb(sch_1):ins6583397@arclib.\sp0503.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_dbg_usb@schematic.usb(sch_1):page5_ins6583397@arclib.\sp0503.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ UT2 'MSP430F67XXAPN_100LQFP_MSP430F6':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):CPU_A1@SCHEMATIC.CPU(SCH_1):INS6673384@ARCLIB.MSP430F67XXAPN.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):cpu_a1@schematic.cpu(sch_1):ins6673384@arclib.\msp430f67xxapn.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):page1_cpu_a1@schematic.cpu(sch_1):page2_ins6673384@arclib.\msp430f67xxapn.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ UT3 'PROTOAREA_PROTO14X16_':;
+
+SECTION_NUMBER 1
+ '@SCHEMATIC.TOP(SCH_1):MAIN PROTOTYPE AREA@SCHEMATIC.MP_A(SCH_1):INS6587741@ARCLIB.PROTOAREA.NORMAL(CHIPS)':
+ C_PATH='@schematic.top(sch_1):\main prototype area\@schematic.mp_a(sch_1):ins6587741@arclib.\protoarea.normal\(chips)',
+ P_PATH='@schematic.top(sch_1):\page1_main prototype area\@schematic.mp_a(sch_1):page4_ins6587741@arclib.\protoarea.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.
