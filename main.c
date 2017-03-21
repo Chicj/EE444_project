@@ -52,7 +52,7 @@ void main(void){
   initARCbus(0x14);   // Default addr for "SYS" subsystem, should be changed for specific subsystems.
   
   //init I2C on P4.1SDA and P4.0SCA
-  initI2C(4,1,0);
+  initI2C(4,5,4);
 
   // initialize stacks (3) 
   memset(terminal_stack,0xcd,sizeof(terminal_stack));                                           //write known values into the stack 
