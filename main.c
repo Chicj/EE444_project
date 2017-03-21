@@ -4,6 +4,7 @@
 //
 //*****************************************************************************************
 #include <msp430.h> // prune these 
+//#include <msp430f6779a.h>
 #include <ctl.h>
 #include <i2c.h>              
 #include <ARCbus.h>
