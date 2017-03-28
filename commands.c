@@ -78,7 +78,7 @@ int I2C_txrx(char **argv, unsigned short argc){
   short resp, i = 0;
 
   if (argc > 3){
-    printf("Too many arguments.\n");
+    printf("Too many arguments.\n\r");
     printf("Usage: I2C_rx [addr] [reg addr] [# registers to read]");
     return -1;
   }
@@ -87,26 +87,30 @@ int I2C_txrx(char **argv, unsigned short argc){
   addr=strtoul(argv[1], NULL, 0);
   // register address and data to be written
   reg_addr=strtoul(argv[2], NULL, 0);
-  tx_buf[0]=
   rx_len=strtoul(argv[3], NULL, 0);
 
   resp = i2c_txrx(addr, tx_buf, 1, rx_buf, rx_len);
   if (resp == -1){
-    printf("I2C error: NACK.\n");
+    printf("I2C error: NACK.\n\r");
     return resp;
   }
   else if (resp == -2){
-    printf("I2C error: Timeout.\n");
+    printf("I2C error: Timeout.\n\r");
     return resp;
   }
-  else {
+  else if (resp>=0){
     rx_buf[rx_len] = '\0';
     while (rx_buf[i] != '\0'){
-      printf("Register address: 0x%X, Value: %X\n", reg_addr+i, rx_buf[i]);
+      printf("Register address: 0x%X, Value: %X\n\r", reg_addr+i, rx_buf[i]);
       i++;
     }
-    printf("I2C success.\n");
+    printf("I2C success. returned %i\n\r",resp);
     return 0;
+    
+  }
+  else{
+    printf("Unknown Error, check wiki %i.\n\r",resp);
+    return resp;
   }
 }
 
@@ -115,8 +119,8 @@ int I2C_txrx(char **argv, unsigned short argc){
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
-                   {"i2c_tx","stuff_tx",I2C_tx},
-                   {"i2c_txrx","stuff_txrx",I2C_txrx},
+                   {"i2c_tx","stuff_tx.\n\rDefault IMU adress is 0x28.\n\r",I2C_tx},
+                   {"i2c_txrx","stuff_txrx.\n\rDefault IMU adress is 0x28.\n\r",I2C_txrx},
                    ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
                    {NULL,NULL,NULL}};

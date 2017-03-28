@@ -1,185 +1,20 @@
-\t (00:00:25) allegro 16.6-2015 S051 (v16-6-112EA) Windows 32
-\t (00:00:25)     Journal start - Thu Mar 16 15:34:58 2017
-\t (00:00:25)         Host=SSEP-5 User=cjodell2 Pid=7000 CPUs=4
-\t (00:00:25) CmdLine= C:\Cadence\SPB_16.6\tools\pcb\bin\allegro.exe
-\t (00:00:25) 
-\d (00:00:25) Design opened: C:/Users/cjodell2/Desktop/EE444_project/Dev-IMU-schematic/Proto-board-silk.brd
-\i (00:00:25) generaledit 
-\i (00:00:27) setwindow form.vf_vis
-\i (00:00:27) FORM vf_vis 1 all_colorvisible YES 
-\i (00:00:38) setwindow pcb
-\i (00:00:38) color192 
-\i (00:00:38) setwindow cvf.dialog
-\i (00:00:38) cvf layer_mode
-\i (00:00:38) setwindow pcb
-\i (00:00:38) generaledit 
-\i (00:00:40) setwindow cvf.dialog
-\i (00:00:40) cvf nets_mode
-\i (00:00:46) cvf select_color_cell 8
-\i (00:01:00) cvf nets_color net/gnd 9
-\i (00:01:01) cvf nets_color net/i2c-on 9
-\i (00:01:03) cvf nets_visible net/i2c-on FALSE
-\i (00:01:05) cvf cancel
-\i (00:01:07) setwindow pcb
-\i (00:01:07) prepopup -41.09 1669.13
-\i (00:01:08) drag_start grid -255.23 1839.65
-\i (00:01:08) drag_stop -76.78 1835.69
-\i (00:01:09) setwindow form.find
-\i (00:01:09) FORM find all_off  
-\i (00:01:09) FORM find nets YES 
-\i (00:59:40) setwindow pcb
-\i (00:59:40) xhilite 
-\i (00:59:40) xname_flush 
-\i (00:59:40) done 
-\i (00:59:40) generaledit 
-\i (00:59:41) xdehilite 
-\i (00:59:41) xname_flush 
-\i (00:59:41) done 
-\i (00:59:41) generaledit 
-\i (00:59:44) xhilite 
-\i (00:59:44) xname_flush 
-\i (00:59:44) done 
-\i (00:59:44) generaledit 
-\i (00:59:47) xdehilite 
-\i (00:59:47) xname_flush 
-\i (00:59:47) done 
-\i (00:59:47) xhilite 
-\i (00:59:47) xname_flush 
-\i (00:59:47) done 
-\i (00:59:47) generaledit 
-\i (00:59:49) xdehilite 
-\i (00:59:49) xname_flush 
-\i (00:59:49) done 
-\i (00:59:49) xhilite 
-\i (00:59:49) xname_flush 
-\i (00:59:49) done 
-\i (00:59:49) generaledit 
-\i (00:59:50) xdehilite 
-\i (00:59:50) xname_flush 
-\i (00:59:50) done 
-\i (00:59:50) generaledit 
-\i (00:59:52) xhilite 
-\i (00:59:52) xname_flush 
-\i (00:59:52) done 
-\i (00:59:52) generaledit 
-\i (00:59:53) xdehilite 
-\i (00:59:53) xname_flush 
-\i (00:59:53) done 
-\i (00:59:53) generaledit 
-\i (00:59:54) xhilite 
-\i (00:59:54) xname_flush 
-\i (00:59:54) done 
-\i (00:59:54) generaledit 
-\i (00:59:55) xdehilite 
-\i (00:59:56) xname_flush 
-\i (00:59:56) done 
-\i (00:59:56) xhilite 
-\i (00:59:56) xname_flush 
-\i (00:59:56) done 
-\i (00:59:56) generaledit 
-\i (01:00:00) xdehilite 
-\i (01:00:00) xname_flush 
-\i (01:00:00) done 
-\i (01:00:00) xhilite 
-\i (01:00:01) xname_flush 
-\i (01:00:01) done 
-\i (01:00:01) generaledit 
-\i (01:00:04) xdehilite 
-\i (01:00:04) xname_flush 
-\i (01:00:04) done 
-\i (01:00:04) xhilite 
-\i (01:00:04) xname_flush 
-\i (01:00:04) done 
-\i (01:00:04) generaledit 
-\i (01:00:06) xdehilite 
-\i (01:00:06) xname_flush 
-\i (01:00:06) done 
-\i (01:00:06) xhilite 
-\i (01:00:06) xname_flush 
-\i (01:00:06) done 
-\i (01:00:06) generaledit 
-\i (01:00:07) xdehilite 
-\i (01:00:07) xname_flush 
-\i (01:00:07) done 
-\i (01:00:08) xhilite 
-\i (01:00:08) xname_flush 
-\i (01:00:08) done 
-\i (01:00:08) generaledit 
-\i (01:00:09) xdehilite 
-\i (01:00:09) xname_flush 
-\i (01:00:09) done 
-\i (01:00:09) generaledit 
-\i (01:00:10) xhilite 
-\i (01:00:10) xname_flush 
-\i (01:00:10) done 
-\i (01:00:10) generaledit 
-\i (01:00:11) xdehilite 
-\i (01:00:11) xname_flush 
-\i (01:00:11) done 
-\i (01:00:11) xhilite 
-\i (01:00:11) xname_flush 
-\i (01:00:11) done 
-\i (01:00:11) generaledit 
-\i (01:00:12) xdehilite 
-\i (01:00:12) xname_flush 
-\i (01:00:12) done 
-\i (01:00:12) generaledit 
-\i (01:00:13) xhilite 
-\i (01:00:13) xname_flush 
-\i (01:00:13) done 
-\i (01:00:13) generaledit 
-\i (01:00:15) xdehilite 
-\i (01:00:15) xname_flush 
-\i (01:00:15) done 
-\i (01:00:15) xhilite 
-\i (01:00:15) xname_flush 
-\i (01:00:15) done 
-\i (01:00:15) generaledit 
-\i (01:00:18) xdehilite 
-\i (01:00:18) xname_flush 
-\i (01:00:18) done 
-\i (01:00:18) generaledit 
-\i (01:00:30) xhilite 
-\i (01:00:30) xname_flush 
-\i (01:00:30) done 
-\i (01:00:30) generaledit 
-\i (01:00:30) xdehilite 
-\i (01:00:30) xname_flush 
-\i (01:00:30) done 
-\i (01:00:30) xhilite 
-\i (01:00:30) xname_flush 
-\i (01:00:30) done 
-\i (01:00:30) generaledit 
-\i (01:00:32) xdehilite 
-\i (01:00:32) xname_flush 
-\i (01:00:32) done 
-\i (01:00:32) generaledit 
-\i (01:00:36) xhilite 
-\i (01:00:36) xname_flush 
-\i (01:00:36) done 
-\i (01:00:36) generaledit 
-\i (01:00:42) xhilite 
-\i (01:00:42) xname_flush 
-\i (01:00:42) done 
-\i (01:00:42) generaledit 
-\i (01:00:43) xdehilite 
-\i (01:00:43) xname_flush 
-\i (01:00:43) done 
-\i (01:00:43) generaledit 
-\i (01:00:54) xhilite 
-\i (01:00:54) xNet 3.3V 
-\i (01:00:54) xname_flush 
-\i (01:00:54) trapsize 2532
-\t (01:00:55) Net "3.3V" highlighted.
-\i (01:00:55) done 
-\i (01:00:55) generaledit 
-\i (01:00:58) xdehilite 
-\i (01:00:58) xNet 3.3V 
-\i (01:00:58) xname_flush 
-\t (01:00:58) Net "3.3V" dehighlighted.
-\i (01:00:58) done 
-\i (01:00:58) generaledit 
-\i (02:25:42) exit 
-\e (02:25:42) Do you want to save the changes you made to Proto-board-silk.brd?
-\i (02:25:45) fillin no 
-\t (02:25:51)     Journal end - Thu Mar 16 18:00:23 2017
+\t (00:00:03) allegro 16.6-2015 S051 (v16-6-112EA) Windows 32
+\t (00:00:03)     Journal start - Thu Mar 23 15:46:05 2017
+\t (00:00:03)         Host=SSEP-5 User=cjodell2 Pid=6844 CPUs=4
+\t (00:00:03) CmdLine= C:\Cadence\SPB_16.6\tools\pcb\bin\allegro.exe
+\t (00:00:03) 
+   (00:00:04) *Error* load: can't access file - "./FloWare/flw_startup"
+   (00:00:04) *Error* eval: undefined function - _FLW_STARTUP_main
+\t (00:00:06) Starting new design...
+\i (00:00:08) trapsize 1051
+\i (00:00:08) trapsize 1020
+\i (00:00:08) trapsize 1056
+\i (00:00:09) trapsize 1213
+\i (00:00:10) generaledit 
+\i (00:00:13) open 
+\i (00:00:36) fillin "Z:\DARS\DSC\Motor Driver\Board\board2\dev-template-board-two.brd"
+\i (00:00:36) cd "Z:\DARS\DSC\Motor Driver\Board\board2"
+\t (00:00:36) Opening existing design...
+\i (00:00:38) fillin yes 
+\i (00:00:38) trapsize 167
+\t (00:00:39)     Journal end - Thu Mar 23 15:46:40 2017
