@@ -14,6 +14,7 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <SDlib.h>
 #include <i2c.h>
 
+#include "bno055.h" // for pin defines 
 //*********************************************************** passing arguments over the terminal *********************************************
 int example_command(char **argv,unsigned short argc){
   int i,j;
@@ -72,9 +73,8 @@ int I2C_tx(char **argv, unsigned short argc){
 }
 
 int I2C_txrx(char **argv, unsigned short argc){
-  unsigned char tx_buf[1];
-  unsigned char rx_buf[100];
-  unsigned short addr, reg_addr, rx_len;
+  unsigned char tx_buf[1],rx_buf[100],reg_addr;
+  unsigned short addr, rx_len;
   short resp, i = 0;
 
   if (argc > 3){
@@ -88,8 +88,10 @@ int I2C_txrx(char **argv, unsigned short argc){
   // register address and data to be written
   reg_addr=strtoul(argv[2], NULL, 0);
   rx_len=strtoul(argv[3], NULL, 0);
+  
+  resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);
 
-  resp = i2c_txrx(addr, tx_buf, 1, rx_buf, rx_len);
+  //TODO this wont work with tx_buf --> resp = i2c_txrx(addr, tx_buf, 1, rx_buf, rx_len);
   if (resp == -1){
     printf("I2C error: NACK.\n\r");
     return resp;
@@ -99,8 +101,8 @@ int I2C_txrx(char **argv, unsigned short argc){
     return resp;
   }
   else if (resp>=0){
-    rx_buf[rx_len] = '\0';
-    while (rx_buf[i] != '\0'){
+    //TODO do we need this --> rx_buf[rx_len] = '\0';
+    while (rx_len >= i){ // bad to trigger off of 0 --> while (rx_buf[i] != '\0'){
       printf("Register address: 0x%X, Value: %X\n\r", reg_addr+i, rx_buf[i]);
       i++;
     }
@@ -114,14 +116,38 @@ int I2C_txrx(char **argv, unsigned short argc){
   }
 }
 
+int pageID_cmd(char **argv, unsigned short argc){
+unsigned char rx_buff[100], tx_buff[2];
+unsigned short resp, pageid;
+
+  resp = i2c_txrx(BNO055_PAGE_ID_ADDR, tx_buff, 1, rx_buff, 1);   //read existing page ID
+  pageid = rx_buff[0];                                            //set page ID
+
+  if (*argv[1] == 0x30|| *argv[1]== 0x31){              // check input args for a 1 or 0
+    pageid= strtol(argv[1],NULL,0);                   // pars input
+    resp = i2c_tx(BNO055_PAGE_ID_ADDR, tx_buff, 2);   //  write new page ID
+    if(resp == 1){
+      printf("PageID changed from 0x%x to 0x%x.\r\n",rx_buff[0],pageid);
+    }
+      else 
+    printf("Erorr writing page ID.\r\n");
+  }
+  else{
+    printf("PageID is set to 0x%x\r\n",pageid);
+  }
+
+return 0;
+}
+
 
 
 //table of commands with help
-const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
+const CMD_SPEC cmd_tbl[]={{"help"" [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
-                   {"i2c_tx","stuff_tx.\n\rDefault IMU adress is 0x28.\n\r",I2C_tx},
-                   {"i2c_txrx","stuff_txrx.\n\rDefault IMU adress is 0x28.\n\r",I2C_txrx},
-                   ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
+                   {"i2c_tx","Usage: I2C_tx [addr (0x28)] [reg addr] [data]\n\r",I2C_tx},
+                   {"i2c_txrx"," Usage: I2C_rx [addr (0x28)] [reg addr] [# registers to read]\n\rDefault IMU adress is 0x28.\n\r",I2C_txrx},
+                   {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
+
+                   //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
                    {NULL,NULL,NULL}};
-

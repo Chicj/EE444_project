@@ -85,8 +85,8 @@ static struct bno055_t *p_bno055;
  *	affect the reference value of the parameter
  *	(Better case don't change the reference value of the parameter)
  */
-BNO055_RETURN_FUNCTION_TYPE bno055_init(struct bno055_t *bno055)
-{
+BNO055_RETURN_FUNCTION_TYPE bno055_init(struct bno055_t *bno055) 
+
 	/* Variable used to return value of
 	communication routine*/
 	BNO055_RETURN_FUNCTION_TYPE com_rslt = BNO055_ERROR;

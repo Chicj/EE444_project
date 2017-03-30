@@ -24,9 +24,7 @@
       <file file_name="commands.c" />
       <file file_name="ctl.h" />
       <file file_name="msp430f6779a.h" />
-      <file file_name="bno055.c" />
       <file file_name="bno055.h" />
-      <file file_name="bno055_support.c" />
     </folder>
     <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
