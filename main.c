@@ -4,10 +4,9 @@
 //
 //*****************************************************************************************
 #include <msp430.h> // prune these 
-//#include <msp430f6779a.h>
+#include <msp430f6779a.h>
 #include <ctl.h>
 #include <i2c.h>              
-#include <ARCbus.h>
 #include <Error.h>
 #include <terminal.h>      
 #include <string.h>           // for memset function
@@ -34,24 +33,16 @@ int __getchar(void){
 
 //******************************************* Example_Bare_bones main loop
 void main(void){
-  //DO this first
-  ARC_setup();
 
   //turn on LED's this will flash the LED's during startup
   P7DIR=0xFF;
   //init complete turn on LED0 and all others off
   P7OUT=0xFF;
 
-  //TESTING: set log level to report everything by default
-  set_error_level(0);
-
   //initialize UART
   //UCA2_init_UART(UART_PORT,UART_TX_PIN_NUM,UART_RX_PIN_NUM);
   UCA2_init_UART(3,5,6);
-
-  //setup bus interface
-  initARCbus(0x14);   // Default addr for "SYS" subsystem, should be changed for specific subsystems.
-  
+ 
   //init I2C on P4.5 SDA and P4.4 SCL
   initI2C(4,5,4);
 
@@ -63,8 +54,8 @@ void main(void){
   // creating the tasks
   ctl_task_run(&terminal_task,BUS_PRI_LOW,terminal,"EE444 IMU Project code","terminal",sizeof(terminal_stack)/sizeof(terminal_stack[0])-2,terminal_stack-1,0);
 
-  //main loop <-- this is an ARCbus function 
-  mainLoop(); 
+  _EINT();  // set global IR enable 
+  LMP0();     // wait in lowpower mode 
 
 }
 

@@ -10,7 +10,6 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <terminal.h>
 #include <commandLib.h>
 #include <stdlib.h>
-#include <ARCbus.h>
 #include <SDlib.h>
 #include <i2c.h>
 

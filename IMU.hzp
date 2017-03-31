@@ -31,10 +31,10 @@
     </folder>
     <configuration
       Name="Debug"
-      linker_additional_files="$(IMU_lib_prefix)/lib/BUSlib_Debug.hza;$(IMU_lib_prefix)/lib/Error_printf_Debug.hza;$(IMU_lib_prefix)/lib/termlib_Debug.hza;$(IMU_lib_prefix)/lib/commandLib_Debug.hza;$(IMU_lib_prefix)/lib/SD-lib_err_Debug.hza;$(IMU_lib_prefix)/lib/UART_UCA2_Debug.hza;$(IMU_lib_prefix)/lib/SD-lib_UCA1_Debug.hza;$(IMU_lib_prefix)/lib/I2Clib_Debug.hza;" />
+      linker_additional_files="$(IMU_lib_prefix)/lib/termlib_Debug.hza;$(IMU_lib_prefix)/lib/I2Clib_Debug.hza;$(IMU_lib_prefix)/lib/SD-lib_err_Debug.hza;$(IMU_lib_prefix)/lib/SD-lib_UCA1_Debug.hza;$(IMU_lib_prefix)/lib/UART_UCA2_Debug.hza;" />
     <configuration
       Name="Release"
-      linker_additional_files="$(IMU_lib_prefix)/lib/BUSlib_Release.hza;$(IMU_lib_prefix)/lib/Error_printg_Release.hza;$(IMU_lib_prefix)/lib/termlib_Release.hza;$(IMU_lib_prefix)/lib/UART_UCA2_Release.hza;$(IMU_lib_prefix)/lib/commandLib_Release.hza;$(IMU_lib_prefix)/lib/SD-lib_err_Release.hza;$(IMU_lib_prefix)/lib/SD-lib_UCA1_Release.hza;$(IMU_lib_prefix)/lib/I2Clib_Release.hza;" />
+      linker_additional_files="$(IMU_lib_prefix)/lib/termlib_Release.hza;$(IMU_lib_prefix)/lib/I2Clib_Release.hza;$(IMU_lib_prefix)/lib/SD-lib_err_Release.hza;$(IMU_lib_prefix)/lib/SD-lib_UCA1_Release.hza;$(IMU_lib_prefix)/lib/UART_UCA2_Release.hza;" />
   </project>
   <configuration
     Name="MSP430 Debug"
