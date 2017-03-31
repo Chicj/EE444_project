@@ -46,7 +46,7 @@ int I2C_tx(char **argv, unsigned short argc){
   short resp;
 
   if (argc > 4) {
-    printf("Too many arguments.\n");
+    printf("Too many arguments.\r\n");
     printf("Usage: I2C_tx [addr] [reg addr] [data]");
     return -1;
   }
@@ -59,15 +59,15 @@ int I2C_tx(char **argv, unsigned short argc){
 
   resp = i2c_tx(addr, tx_buf, 2);
   if (resp == -1){
-    printf("I2C error: NACK.\n");
+    printf("I2C error: NACK.\r\n");
     return resp;
   }
   else if (resp == -2){
-    printf("I2C error: Timeout.\n");
+    printf("I2C error: Timeout.\r\n");
     return resp;
   }
   else {
-    printf("I2C success.\n");
+    printf("I2C success.\r\n");
     return 0;
   }
 }
@@ -83,15 +83,12 @@ int I2C_txrx(char **argv, unsigned short argc){
     return -1;
   }
 
-  // I2C address
-  addr=strtoul(argv[1], NULL, 0);
-  // register address and data to be written
-  reg_addr=strtoul(argv[2], NULL, 0);
-  rx_len=strtoul(argv[3], NULL, 0);
+  addr=strtoul(argv[1], NULL, 0);        // grab i2c address 
+  reg_addr=strtoul(argv[2], NULL, 0);    // register address and data to be written
+  rx_len=strtoul(argv[3], NULL, 0);     // how much data to read
   
-  resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);
+  resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);   // do i2c things
 
-  //TODO this wont work with tx_buf --> resp = i2c_txrx(addr, tx_buf, 1, rx_buf, rx_len);
   if (resp == -1){
     printf("I2C error: NACK.\n\r");
     return resp;
@@ -101,8 +98,7 @@ int I2C_txrx(char **argv, unsigned short argc){
     return resp;
   }
   else if (resp>=0){
-    //TODO do we need this --> rx_buf[rx_len] = '\0';
-    while (rx_len >= i){ // bad to trigger off of 0 --> while (rx_buf[i] != '\0'){
+    while (rx_len > i){ // clock out rx_buf
       printf("Register address: 0x%X, Value: %X\n\r", reg_addr+i, rx_buf[i]);
       i++;
     }
@@ -117,20 +113,27 @@ int I2C_txrx(char **argv, unsigned short argc){
 }
 
 int pageID_cmd(char **argv, unsigned short argc){
-unsigned char rx_buff[100], tx_buff[2];
-unsigned short resp, pageid;
+unsigned char rx_buf[100], tx_buf[1];
+unsigned short resp, pageid, addr = BNO055_I2C_ADDR1;
 
-  resp = i2c_txrx(BNO055_PAGE_ID_ADDR, tx_buff, 1, rx_buff, 1);   //read existing page ID
-  pageid = rx_buff[0];                                            //set page ID
+ // resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);
+  tx_buf[0] = BNO055_I2C_ADDR1;
 
-  if (*argv[1] == 0x30|| *argv[1]== 0x31){              // check input args for a 1 or 0
+  resp = i2c_txrx(addr, tx_buf, 1, rx_buf, 1);          //read existing page ID
+  pageid = rx_buf[0];                                     //set page ID
+
+  if (*argv[1] == 0x30|| *argv[1]== 0x31){             // check input args for a 1 or 0
     pageid= strtol(argv[1],NULL,0);                   // pars input
-    resp = i2c_tx(BNO055_PAGE_ID_ADDR, tx_buff, 2);   //  write new page ID
+      tx_buf[0] = 0x01; // test
+
+      resp = i2c_tx(addr, argv[1], 1);   //  write new page ID  ... what will happen if i use an signed char insted of an unsigned char
+   
     if(resp == 1){
-      printf("PageID changed from 0x%x to 0x%x.\r\n",rx_buff[0],pageid);
+      printf("PageID changed from 0x%x to 0x%x.\r\n",rx_buf[0],pageid);
     }
-      else 
-    printf("Erorr writing page ID.\r\n");
+    else {
+      printf("Erorr writing page ID.\r\nResponce = %i", resp);
+    }
   }
   else{
     printf("PageID is set to 0x%x\r\n",pageid);
