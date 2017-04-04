@@ -118,14 +118,14 @@ unsigned short resp, pageid, addr = BNO055_I2C_ADDR1;
  // resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);
   tx_buf[0] = BNO055_I2C_ADDR1;
 
-  resp = i2c_txrx(addr, tx_buf, 1, rx_buf, 1);          //read existing page ID
+  resp = i2c_txrx(addr, tx_buf, 2, rx_buf, 2);          //read existing page ID
   pageid = rx_buf[0];                                     //set page ID
 
   if (*argv[1] == 0x30|| *argv[1]== 0x31){             // check input args for a 1 or 0
     pageid= strtol(argv[1],NULL,0);                   // pars input
       tx_buf[0] = 0x01; // test
 
-      resp = i2c_tx(addr, argv[1], 1);   //  write new page ID  ... what will happen if i use an signed char insted of an unsigned char
+      resp = i2c_tx(addr, (unsigned char *) *argv[1], 1);   //  write new page ID  ... what will happen if i use an signed char insted of an unsigned char
    
     if(resp == 1){
       printf("PageID changed from 0x%x to 0x%x.\r\n",rx_buf[0],pageid);
@@ -141,13 +141,28 @@ unsigned short resp, pageid, addr = BNO055_I2C_ADDR1;
 return 0;
 }
 
+int data_cmd(char **argv,unsigned short argc){
 
+return 0;
+}
+
+int setup_cmd(char **argv,unsigned short argc){ // note sensor settings can only be written when in configmode
+unsigned char mode,rx_buf[2],tx_buf=[2],addr;
+
+addr=(unsigned char)argv[1]; // save user input address 
+
+i2c_txrx(addr,tx_buff,1,rx_buf,2);
+
+return 0;
+}
 
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"" [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
                    {"i2c_tx","Usage: I2C_tx [addr (0x28)] [reg addr] [data]\n\r",I2C_tx},
                    {"i2c_txrx"," Usage: I2C_rx [addr (0x28)] [reg addr] [# registers to read]\n\rDefault IMU adress is 0x28.\n\r",I2C_txrx},
+                   {"data","get sum data?",data_cmd},
+                   {"setup","get sum data?",setup_cmd},
                    {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
