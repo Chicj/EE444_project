@@ -112,8 +112,9 @@ int I2C_txrx(char **argv, unsigned short argc){
 }
 
 int pageID_cmd(char **argv, unsigned short argc){
-unsigned char rx_buf[100], tx_buf[1];
-unsigned short resp, pageid, addr = BNO055_I2C_ADDR1;
+  unsigned char rx_buf[100], tx_buf[1];
+  unsigned short pageid, addr = BNO055_I2C_ADDR1;
+  short resp;
 
  // resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);
   tx_buf[0] = BNO055_I2C_ADDR1;
@@ -138,7 +139,7 @@ unsigned short resp, pageid, addr = BNO055_I2C_ADDR1;
     printf("PageID is set to 0x%x\r\n",pageid);
   }
 
-return 0;
+  return 0;
 }
 
 int data_cmd(char **argv,unsigned short argc){
@@ -147,23 +148,122 @@ return 0;
 }
 
 int setup_cmd(char **argv,unsigned short argc){ // note sensor settings can only be written when in configmode
-unsigned char mode,rx_buf[2],tx_buf=[2],addr;
+  unsigned char tx_buf[2];
+  unsigned short addr;
+  short resp;
 
-addr=(unsigned char)argv[1]; // save user input address 
+  addr=strtoul(argv[1], NULL, 0);          // save user input address
+  tx_buf[0] = BNO055_OPR_MODE_ADDR;
+  tx_buf[1] = BNO055_OPERATION_MODE_IMUPLUS;
 
-i2c_txrx(addr,tx_buff,1,rx_buf,2);
+  resp = i2c_tx(addr, tx_buf, 2);
+  if (resp == -1){
+    printf("I2C error: NACK.\r\n");
+    return resp;
+  }
+  else if (resp == -2){
+    printf("I2C error: Timeout.\r\n");
+    return resp;
+  }
+  else if (resp >= 0) {
+    printf("I2C success.\r\n");
+    return 0;
+  }
+  else {
+    printf("Unknown I2C error: %i \r\n",resp);
+    return resp;
+  }
+}
 
-return 0;
+int reset_cmd(char **argv,unsigned short argc){
+  unsigned char tx_buf[2];
+  unsigned short addr;
+  short resp;
+
+  addr=strtoul(argv[1], NULL, 0);          // save user input address
+  tx_buf[0] = BNO055_SYS_TRIGGER_ADDR;
+  tx_buf[1] = BNO055_SYS_RST_MSK;
+
+  resp = i2c_tx(addr, tx_buf, 2);
+  if (resp == -1){
+    printf("I2C error: NACK.\r\n");
+    return resp;
+  }
+  else if (resp == -2){
+    printf("I2C error: Timeout.\r\n");
+    return resp;
+  }
+  else if (resp >= 0) {
+    printf("I2C success.\r\n");
+    return 0;
+  }
+  else {
+    printf("Unknown I2C error: %i \r\n",resp);
+    return resp;
+  }
+}
+
+int read_Quat(char **argv,unsigned short argc){
+  unsigned char tx_buf[1],rx_buf[100],reg_addr;
+  unsigned short addr, rx_len;
+  short resp, i=0,j=0;
+
+  if (argc > 3){
+    printf("Too many arguments.\n\r");
+    printf("Usage: I2C_rx [addr] [reg addr] [# registers to read]");
+    return -1;
+  }
+
+  addr=strtoul(argv[1], NULL, 0);        // grab i2c address 
+  reg_addr=BNO055_QUATERNION_DATA_W_LSB_ADDR;    // register address and data to be written
+  rx_len=8;     // how much data to read
+  
+  /*for (i=0; i<10; i++) {
+    resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);   // do i2c things
+    if (resp < 1) break;
+    else{
+      while (rx_len > j){ // clock out rx_buf
+        printf("Register address: 0x%X, Value: %X\n\r", reg_addr+j, rx_buf[j]);
+        j++;
+      }
+    }
+    i++;
+    __delay_cycles(10000);
+  }*/
+  
+  resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);   // do i2c things
+  if (resp == -1){
+    printf("I2C error: NACK.\n\r");
+    return resp;
+  }
+  else if (resp == -2){
+    printf("I2C error: Timeout.\n\r");
+    return resp;
+  }
+  else if (resp>=0){
+    while (rx_len > j){ // clock out rx_buf
+      printf("Register address: 0x%X, Value: %X\n\r", reg_addr+j, rx_buf[j]);
+      j++;
+    }
+    printf("I2C success. returned %i\n\r",resp);
+    return 0;
+  }
+  else{
+    printf("Unknown Error, check wiki %i.\n\r",resp);
+    return resp;
+  }
 }
 
 //table of commands with help
-const CMD_SPEC cmd_tbl[]={{"help"" [command]",helpCmd},
+const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
                    {"i2c_tx","Usage: I2C_tx [addr (0x28)] [reg addr] [data]\n\r",I2C_tx},
                    {"i2c_txrx"," Usage: I2C_rx [addr (0x28)] [reg addr] [# registers to read]\n\rDefault IMU adress is 0x28.\n\r",I2C_txrx},
                    {"data","get sum data?",data_cmd},
                    {"setup","get sum data?",setup_cmd},
+                   {"reset","Reset IMU", reset_cmd},
                    {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
+                   {"quat","Reads all quaternion data registers", read_Quat},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
