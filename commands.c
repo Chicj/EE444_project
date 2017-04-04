@@ -23,6 +23,7 @@ int example_command(char **argv,unsigned short argc){
     printf("argv[%i] = 0x%p\r\n\t""string = \"%s\"\r\n",i,argv[i],argv[i]);
     //print out the string as an array of hex values
     j=0;
+    //test
     printf("\t""hex = {");
     do{
       //check if this is the first element
