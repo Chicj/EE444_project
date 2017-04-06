@@ -12,8 +12,8 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <stdlib.h>
 #include <SDlib.h>
 #include <i2c.h>
-
-#include "bno055.h" // for pin defines 
+#include <bno055.h> // for pin defines 
+#include "IMU.h"
 //*********************************************************** passing arguments over the terminal *********************************************
 int example_command(char **argv,unsigned short argc){
   int i,j;
@@ -111,7 +111,7 @@ int I2C_txrx(char **argv, unsigned short argc){
     return resp;
   }
 }
-
+/*
 int pageID_cmd(char **argv, unsigned short argc){
   unsigned char rx_buf[100], tx_buf[1];
   unsigned short pageid, addr = BNO055_I2C_ADDR1;
@@ -138,6 +138,39 @@ int pageID_cmd(char **argv, unsigned short argc){
   }
   else{
     printf("PageID is set to 0x%x\r\n",pageid);
+  }
+
+  return 0;
+}
+
+int data_cmd(char **argv,unsigned short argc){
+
+return 0;
+}
+
+*/
+
+int pageID_cmd(char **argv, unsigned short argc){
+  unsigned char rx_buff[2],tx_buff[1]={BNO055_PAGE_ID_ADDR};
+  unsigned short pageid;
+  short resp;
+ 
+  resp = i2c_txrx(addr, tx_buff, 1, rx_buff, 2);       //read existing page ID, read 2 bytes throw one away--> i2c errata
+
+  if (*argv[1] == 0x30|| *argv[1] == 0x31){              // check input args for a 1 or 0
+    pageid= strtoul(argv[1],NULL,0);                   // pars input is this bad ? 
+    resp=bno055_pageid(addr, &pageid);                  //  write new page ID  
+    
+    if(resp == 1){
+      resp = i2c_txrx(addr, tx_buff, 1, rx_buff, 2);       //read existing page ID, read 2 bytes throw one away--> i2c errata
+      printf("PageID changed from 0x%x to 0x%x.\r\n",rx_buff[0],pageid);
+    }
+    else {
+      printf("Erorr writing page ID.\r\nResponce = %i", resp);
+    }
+  }
+  else{
+    printf("PageID is set to 0x%x\r\n",rx_buff[0]);
   }
 
   return 0;
