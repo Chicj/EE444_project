@@ -28,6 +28,7 @@
       <file file_name="IMU.c" />
       <file file_name="BNO055_H.h" />
       <file file_name="BNO055.h" />
+      <file file_name="ISR.c" />
     </folder>
     <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
