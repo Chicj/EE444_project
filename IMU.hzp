@@ -27,13 +27,10 @@
       <file file_name="crt0.asm" />
       <file file_name="IMU.c" />
       <file file_name="BNO055.h" />
-<<<<<<< HEAD
       <file file_name="ISR.c" />
-=======
       <file file_name="IMU.h" />
->>>>>>> cd271282e6014c36a0cb62a6df723af3f2d66b85
     </folder>
-    <folder Name="System Files">
+        <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
     </folder>
     <configuration

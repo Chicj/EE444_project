@@ -152,7 +152,7 @@ return 0;
 
 int pageID_cmd(char **argv, unsigned short argc){
   unsigned char rx_buff[2],tx_buff[1]={BNO055_PAGE_ID_ADDR};
-  unsigned short pageid;
+  unsigned short pageid, addr;
   short resp;
  
   resp = i2c_txrx(addr, tx_buff, 1, rx_buff, 2);       //read existing page ID, read 2 bytes throw one away--> i2c errata
@@ -288,6 +288,34 @@ int read_Quat(char **argv,unsigned short argc){
   }
 }
 
+int status_cmd(char **argv,unsigned short argc){
+short resp;
+
+resp = bno055_status();
+if (resp == -1){
+    printf("I2C error: NACK.\n\r");
+    return resp;
+  }
+  else if (resp == -2){
+    printf("I2C error: Timeout.\n\r");
+    return resp;
+  }
+  else if (resp>=0){
+    printf("I2C success. returned %i\n\r",resp);
+    printf("Calibration status is s0x%x.\n\r",glb_buff[0]);
+    printf("ST_result is 0x%x.\n\r",glb_buff[1]);
+    printf("Int_sta is 0x%x.\n\r",glb_buff[2]);
+    printf("Sys_clk status is 0x%x.\n\r",glb_buff[3]);
+    printf("Sys_status is 0x%x.\n\r",glb_buff[4]);
+    return 0;
+  }
+  else{
+    printf("Unknown Error, check wiki %i.\n\r",resp);
+    return resp;
+  }
+return 0;
+}
+
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
@@ -298,6 +326,8 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"reset","Reset IMU", reset_cmd},
                    {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
                    {"quat","Reads all quaternion data registers", read_Quat},
+                   {"status","Reads all relavtent IMU status registers", status_cmd},
+
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
