@@ -303,45 +303,50 @@ if (resp == -1){
   }
   else if (resp>=0){
     printf("I2C success. returned %i args.\n\r",resp);      // check i2c args have been grabbed 
+    printf("**************************************\r\n");
     printf("Calibration status is 0x%x.\n\r",glb_buff[0]);  //parsing calibration test
     if(glb_buff[0] == 0 ){
       printf("IMU is not calibrated.\r\n");}
     else if (glb_buff[0] > 0 ){
       printf("System calibration status is",glb_buff[0] &= BIT7+BIT6);
-      printf("Gyro status is",glb_buff[0] ^=BIT5+BIT4);
-      printf("ACC calibration status is",glb_buff[0] ^=BIT3+BIT2);
-      printf("MAG calibration status is",glb_buff[0] ^=BIT1+BIT0);
+      printf("Gyro status is",glb_buff[0] &=  BIT5+BIT4);
+      printf("ACC calibration status is",glb_buff[0] &= BIT3+BIT2);
+      printf("MAG calibration status is",glb_buff[0] &= BIT1+BIT0);
     }
     else if(glb_buff[0] == 'f'){
       printf("IMU is calibrated.\r\n");}
+    printf("**************************************\r\n");
     printf("ST_result is 0x%x.\n\r",glb_buff[1]); // Parsing Self test 
       if(glb_buff[1] == 0x0f){
         printf("All self tests passed.\r\n");}
       else{
         printf("Some self tests failed.\r\n");}
-
+    printf("**************************************\r\n");
     printf("Int_sta is 0x%x.\n\r",glb_buff[2]); // check interrupt status of sensors
+    printf("**************************************\r\n");
     if(glb_buff[2] != 0)
       printf("Some interrupt has been triggered.\r\n");
     else
     printf("No tinterrupts have been triggered.\r\n");
-
+    printf("**************************************\r\n");
     printf("Sys_clk status is 0x%x.\n\r",glb_buff[3]);  // check system clock 
+    printf("**************************************\r\n");
     printf("Sys_status is 0x%x.\n\r",glb_buff[4]);      // check over all system status 
     if(glb_buff[4] == 0)
       printf("IMU is idle.\r\n");
-    if(glb_buff[4] == 1)
+    else if(glb_buff[4] == 1)
       printf("IMU System Error.\r\n");  //TODO read 0x39 if this happens 
-    if(glb_buff[4] == 2)
+    else if(glb_buff[4] == 2) 
       printf("IMU is initializing paeripherals.\r\n");
-    if(glb_buff[4] == 3)
+    else if(glb_buff[4] == 3)
       printf("IMU is in System Initialization.\r\n");
-    if(glb_buff[4] == 4)
+    else if(glb_buff[4] == 4)
       printf("IMU is excuting selftest.\r\n");
-    if(glb_buff[4] == 5)
+    else if(glb_buff[4] == 5)
       printf("IMU is running sensor fusion algorithm.\r\n");
-    else
+    else if(glb_buff[4] == 6)
       printf("IMU is running without fusion algorithm.\r\n");
+    else
     return 0;
   }
   else{ // bad i2c_txrx 
@@ -349,6 +354,15 @@ if (resp == -1){
     return resp;
   }
 return 0;
+}
+
+// reads and changes the op mode of the IMU 
+int opperationmode_cmd(char **argv,unsigned short argc){
+
+
+//short bno055_oprmode(mode);
+
+ return 0;
 }
 
 //table of commands with help
@@ -362,6 +376,7 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
                    {"quat","Reads all quaternion data registers", read_Quat},
                    {"status","Reads all relavtent IMU status registers", status_cmd},
+                   {"opp","Reads all relavtent IMU status registers", opperationmode_cmd},
 
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
