@@ -49,7 +49,7 @@ void main(void){
  
   //Caleb Alkire 4/4/17 GPS uart communication setup
   //Reset values, and enable register editing
-  P3SEL0 |= BIT4 | BIT5;
+  P3SEL0 |= BIT0 | BIT1;
   UCA0CTL1 = UCSWRST;
   //ACLK chosen, UCA0 needs 32kHz signal to communicate with GPS
   UCA0CTL1 |= UCSSEL__ACLK;
