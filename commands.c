@@ -3,7 +3,7 @@ The commands.c file is for commands that will be displayed through the serial te
 In order to add a command you must create a function as seen below.
 Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd}" table at the end of the file.
 **********************************************************************************************************************************************/
-#include <msp430.h>   // prune these 
+#include <msp430.h>     // prune these 
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -12,7 +12,9 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <stdlib.h>
 #include <SDlib.h>
 #include <i2c.h>
-#include <bno055.h> // for pin defines 
+#include <bno055.h>     // for pin defines 
+#include <UCA2_uart.h>  // for check keys
+#include <ctl.h>        // for delay
 #include "IMU.h"
 //*********************************************************** passing arguments over the terminal *********************************************
 int example_command(char **argv,unsigned short argc){
@@ -191,54 +193,36 @@ int reset_cmd(char **argv,unsigned short argc){
 }
 
 int read_Quat(char **argv,unsigned short argc){
-  unsigned char tx_buf[1],rx_buf[100],reg_addr;
-  unsigned short addr, rx_len;
-  short resp, i=0,j=0;
+  unsigned char reg_addr = 0x20;
+  short resp, j=0;
 
-  if (argc > 3){
-    printf("Too many arguments.\n\r");
-    printf("Usage: I2C_rx [addr] [reg addr] [# registers to read]");
+  if (argc != 0){
+    printf("Usage: quat\n\r");
     return -1;
   }
-
-  addr=strtoul(argv[1], NULL, 0);        // grab i2c address 
-  reg_addr=BNO055_QUATERNION_DATA_W_LSB_ADDR;    // register address and data to be written
-  rx_len=8;     // how much data to read
-  
-  /*for (i=0; i<10; i++) {
-    resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);   // do i2c things
-    if (resp < 1) break;
-    else{
-      while (rx_len > j){ // clock out rx_buf
-        printf("Register address: 0x%X, Value: %X\n\r", reg_addr+j, rx_buf[j]);
+  while(UCA2_CheckKey()==EOF){
+    resp = bno055_get_quat();
+    if (resp >= 0){
+      while (8 > j){ // clock out rx_buf
+        printf("Register address: 0x%X, Value: %X\n\r", reg_addr+j, glb_buff[j]);
         j++;
       }
+      j = 0;
+      printf("I2C success. returned %i\n\r",resp);
     }
-    i++;
-    __delay_cycles(10000);
-  }*/
-  
-  resp = i2c_txrx(addr,&reg_addr, 1, rx_buf, rx_len);   // do i2c things
-  if (resp == -1){
-    printf("I2C error: NACK.\n\r");
-    return resp;
-  }
-  else if (resp == -2){
-    printf("I2C error: Timeout.\n\r");
-    return resp;
-  }
-  else if (resp>=0){
-    while (rx_len > j){ // clock out rx_buf
-      printf("Register address: 0x%X, Value: %X\n\r", reg_addr+j, rx_buf[j]);
-      j++;
+    else if (resp == -1){
+      printf("I2C error: NACK.\n\r");
     }
-    printf("I2C success. returned %i\n\r",resp);
-    return 0;
+    else if (resp == -2){
+      printf("I2C error: Timeout.\n\r");
+    }
+
+    else{
+      printf("Unknown Error, check wiki %i.\n\r",resp);
+    }
+      
   }
-  else{
-    printf("Unknown Error, check wiki %i.\n\r",resp);
-    return resp;
-  }
+  return resp;
 }
 
 // TODO pars more of the data ? 
@@ -312,13 +296,57 @@ int status_cmd(char **argv,unsigned short argc){
 }
 
 // reads and changes the op mode of the IMU 
-int get_opr_cmd(char **argv,unsigned short argc){
+int get_oprcmd(char **argv,unsigned short argc){
   short resp;
   resp = bno055_get_oprmode();
 
   if (resp > 0){
     printf("OPR_MODE is: %s.\n\r", opr_mode_strings[glb_buff[0]]);
     printf("PWR_MODE is: %s.\n\r", pwr_mode_strings[glb_buff[1]]);
+  }
+  else if (resp == -1){
+    printf("I2C error: NACK.\n\r");
+  }
+  else if (resp == -2){
+    printf("I2C error: Timeout.\n\r");
+  }
+  else{ // bad i2c_txrx 
+    printf("Unknown Error, check wiki %i.\n\r",resp);
+  }
+  return resp;
+}
+
+int set_oprmode_default(char **argv, unsigned short argc){
+  short resp;
+  resp = bno055_set_oprmode_default();
+  if (resp > 0){
+    printf("Opr mode set to IMU.\n\r");
+  }
+  else if (resp == -1){
+    printf("I2C error: NACK.\n\r");
+  }
+  else if (resp == -2){
+    printf("I2C error: Timeout.\n\r");
+  }
+  else{ // bad i2c_txrx 
+    printf("Unknown Error, check wiki %i.\n\r",resp);
+  }
+  return resp;
+}
+
+int set_oprmode(char **argv, unsigned short argc){
+  short resp, opr_mode, i;
+  if (argc != 2) {
+    printf("Usage: set_opr_mode [opr_mode#].\n");
+    for (i = 0; i < 13; i++){
+      printf("Operating mode #%d: %s\n\r",i,opr_mode_strings[i]);
+    }
+  }
+  opr_mode = strtoul(argv[1], NULL, 0);
+  resp = bno055_set_oprmode(opr_mode);
+
+  if (resp > 0){
+    printf("Opr mode set to %s.\n\r");
   }
   else if (resp == -1){
     printf("I2C error: NACK.\n\r");
@@ -342,8 +370,9 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
                    {"quat","Reads all quaternion data registers", read_Quat},
                    {"status","Reads all relavtent IMU status registers", status_cmd},
-                   {"get_opr","Reads all relavtent IMU status registers", get_opr_cmd},
-
+                   {"readOpr","Reads IMU operation mode and power mode", get_oprcmd},
+                   {"setOprDefault","Set IMU operation mode to default (IMU mode)", set_oprmode_default},
+                   {"setOpr","Set IMU operation mode to passed num", set_oprmode},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list

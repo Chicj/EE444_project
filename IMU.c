@@ -19,7 +19,7 @@ const char *sys_err_strings[] = {"No Error", "Peripheral Initialization Error", 
 short bno055_reset(void)
 {
   unsigned char tx_buf[2]={BNO055_SYS_TRIGGER_ADDR, BNO055_SYS_RST_MSK};
-  return i2c_tx(addr, tx_buf, 1);
+  return i2c_tx(addr, tx_buf, 2);
 }
 
 //TODO test this 
@@ -27,7 +27,7 @@ short bno055_reset(void)
 short bno055_pageid(unsigned char page){
   unsigned char tx_buf[1];
   tx_buf[0] = page;
-  return i2c_tx(addr, tx_buf, 1);//set pageid
+  return i2c_tx(addr, tx_buf, 2);//set pageid
 }
 
 // This command will check the status of the IMU board reads 0x35 --> 0x39
@@ -40,8 +40,12 @@ short bno055_status(void)
 // Get IMU Operating Mode
 short bno055_get_oprmode(void)
 {
+  unsigned short resp;
   unsigned char tx_buf[2] = {BNO055_OPR_MODE_ADDR};
-  return i2c_txrx(addr, tx_buf, 1, glb_buff, 2); // read opr_mode 
+  resp = i2c_txrx(addr, tx_buf, 1, glb_buff, 2); // read opr_mode
+  glb_buff[0] &= BNO055_OPERATION_MODE_MSK;
+  glb_buff[1] &= BNO055_POWER_MODE_MSK;
+  return resp;
 }
 
 // Set IMU Operating Mode to IMU (Fusion mode with Gyro+Accel)
@@ -68,8 +72,8 @@ short bno55_syserr(void)
 // Get IMU Quaternion data
 short bno055_get_quat(void)
 {
-  unsigned char tx_buf[1] = {BNO055_SYS_ERR_ADDR};
-  return i2c_txrx(addr, tx_buf, 1, glb_buff, 2);// read sys_err reg
+  unsigned char tx_buf[1] = {BNO055_QUATERNION_DATA_W_LSB_ADDR};
+  return i2c_txrx(addr, tx_buf, 1, glb_buff, 8);// read sys_err reg
 }
 
 // Get IMU power mode
