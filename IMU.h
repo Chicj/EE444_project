@@ -4,11 +4,21 @@
 extern unsigned short addr;  // set global address for now 
 extern unsigned char glb_buff[10];  // global buffer 
 
-short bno055_pageid(unsigned short addr,unsigned char *page);
-short bno055_status(void);
-short bno055_oprmode(unsigned char *op_mode);
+extern const char *opr_mode_strings[];
+extern const char *pwr_mode_strings[];
+extern const char *sys_status_strings[];
+extern const char *sys_err_strings[];
 
-extern char *configmode[13];
+short bno055_pageid(unsigned char page);
+short bno055_reset(void);
+short bno055_status(void);
+short bno055_get_oprmode(void);
+short bno055_set_oprmode_default(void);
+short bno055_set_oprmode(unsigned char op_mode);
+short bno055_get_quat(void);
+short bno055_get_pwrmode(unsigned char op_mode);
+
+
 
 #endif
 

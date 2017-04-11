@@ -15945,93 +15945,45 @@ u8 *gyro_awake_durn_u8);
  */
 BNO055_RETURN_FUNCTION_TYPE bno055_set_gyro_any_motion_awake_durn(
 u8 gyro_awake_durn_u8);
+
 /**********************************************************************************
                       Enums from adifruit lib
 ***********************************************************************************/
+typedef struct
+{
+  uint8_t  accel_rev;
+  uint8_t  mag_rev;
+  uint8_t  gyro_rev;
+  uint16_t sw_rev;
+  uint8_t  bl_rev;
+} adafruit_bno055_rev_info_t;
+
 typedef enum
-    {
-      POWER_MODE_NORMAL                                       = 0X00,
-      POWER_MODE_LOWPOWER                                     = 0X01,
-      POWER_MODE_SUSPEND                                      = 0X02
-    } adafruit_bno055_powermode_t;
+{
+  VECTOR_ACCELEROMETER = BNO055_ACCEL_DATA_X_LSB_ADDR,
+  VECTOR_MAGNETOMETER  = BNO055_MAG_DATA_X_LSB_ADDR,
+  VECTOR_GYROSCOPE     = BNO055_GYRO_DATA_X_LSB_ADDR,
+  VECTOR_EULER         = BNO055_EULER_H_LSB_ADDR,
+  VECTOR_LINEARACCEL   = BNO055_LINEAR_ACCEL_DATA_X_LSB_ADDR,
+  VECTOR_GRAVITY       = BNO055_GRAVITY_DATA_X_LSB_ADDR
+} adafruit_vector_type_t;
 
-    typedef enum
-    {
-      /* Operation mode settings*/
-      OPERATION_MODE_CONFIG                                   = 0X00,
-      OPERATION_MODE_ACCONLY                                  = 0X01,
-      OPERATION_MODE_MAGONLY                                  = 0X02,
-      OPERATION_MODE_GYRONLY                                  = 0X03,
-      OPERATION_MODE_ACCMAG                                   = 0X04,
-      OPERATION_MODE_ACCGYRO                                  = 0X05,
-      OPERATION_MODE_MAGGYRO                                  = 0X06,
-      OPERATION_MODE_AMG                                      = 0X07,
-      OPERATION_MODE_IMUPLUS                                  = 0X08,
-      OPERATION_MODE_COMPASS                                  = 0X09,
-      OPERATION_MODE_M4G                                      = 0X0A,
-      OPERATION_MODE_NDOF_FMC_OFF                             = 0X0B,
-      OPERATION_MODE_NDOF                                     = 0X0C
-    } adafruit_bno055_opmode_t;
-
-    typedef enum
-    {
-      REMAP_CONFIG_P0                                         = 0x21,
-      REMAP_CONFIG_P1                                         = 0x24, // default
-      REMAP_CONFIG_P2                                         = 0x24,
-      REMAP_CONFIG_P3                                         = 0x21,
-      REMAP_CONFIG_P4                                         = 0x24,
-      REMAP_CONFIG_P5                                         = 0x21,
-      REMAP_CONFIG_P6                                         = 0x21,
-      REMAP_CONFIG_P7                                         = 0x24
-    } adafruit_bno055_axis_remap_config_t;
-
-    typedef enum
-    {
-      REMAP_SIGN_P0                                           = 0x04,
-      REMAP_SIGN_P1                                           = 0x00, // default
-      REMAP_SIGN_P2                                           = 0x06,
-      REMAP_SIGN_P3                                           = 0x02,
-      REMAP_SIGN_P4                                           = 0x03,
-      REMAP_SIGN_P5                                           = 0x01,
-      REMAP_SIGN_P6                                           = 0x07,
-      REMAP_SIGN_P7                                           = 0x05
-    } adafruit_bno055_axis_remap_sign_t;
-
-    typedef struct
-    {
-      uint8_t  accel_rev;
-      uint8_t  mag_rev;
-      uint8_t  gyro_rev;
-      uint16_t sw_rev;
-      uint8_t  bl_rev;
-    } adafruit_bno055_rev_info_t;
-
-    typedef enum
-    {
-      VECTOR_ACCELEROMETER = BNO055_ACCEL_DATA_X_LSB_ADDR,
-      VECTOR_MAGNETOMETER  = BNO055_MAG_DATA_X_LSB_ADDR,
-      VECTOR_GYROSCOPE     = BNO055_GYRO_DATA_X_LSB_ADDR,
-      VECTOR_EULER         = BNO055_EULER_H_LSB_ADDR,
-      VECTOR_LINEARACCEL   = BNO055_LINEAR_ACCEL_DATA_X_LSB_ADDR,
-      VECTOR_GRAVITY       = BNO055_GRAVITY_DATA_X_LSB_ADDR
-    } adafruit_vector_type_t;
-
-    typedef enum 
-    {
-      CONFIGMODE  = BNO055_OPERATION_MODE_CONFIG			
-      ACCONLY = BNO055_OPERATION_MODE_ACCONLY			
-      MAGONLY = BNO055_OPERATION_MODE_MAGONLY			
-      GYROONLY  = BNO055_OPERATION_MODE_GYRONLY			
-      ACCMAG  = BNO055_OPERATION_MODE_ACCMAG			
-      ACCGYRO = BNO055_OPERATION_MODE_ACCGYRO			
-      MAGGYRO = BNO055_OPERATION_MODE_MAGGYRO			
-      AMG = BNO055_OPERATION_MODE_AMG				
-      IMU = BNO055_OPERATION_MODE_IMUPLUS			
-      COMPASS = BNO055_OPERATION_MODE_COMPASS			
-      M4G = BNO055_OPERATION_MODE_M4G				
-      NDOF_FMC_OFF  = BNO055_OPERATION_MODE_NDOF_FMC_OFF		
-      NDOF  = BNO055_OPERATION_MODE_NDOF				
-  }bno055_oppmode
+typedef enum 
+{
+  CONFIGMODE  = BNO055_OPERATION_MODE_CONFIG			
+  ACCONLY = BNO055_OPERATION_MODE_ACCONLY			
+  MAGONLY = BNO055_OPERATION_MODE_MAGONLY			
+  GYROONLY  = BNO055_OPERATION_MODE_GYRONLY			
+  ACCMAG  = BNO055_OPERATION_MODE_ACCMAG			
+  ACCGYRO = BNO055_OPERATION_MODE_ACCGYRO			
+  MAGGYRO = BNO055_OPERATION_MODE_MAGGYRO			
+  AMG = BNO055_OPERATION_MODE_AMG				
+  IMU = BNO055_OPERATION_MODE_IMUPLUS			
+  COMPASS = BNO055_OPERATION_MODE_COMPASS			
+  M4G = BNO055_OPERATION_MODE_M4G				
+  NDOF_FMC_OFF  = BNO055_OPERATION_MODE_NDOF_FMC_OFF		
+  NDOF  = BNO055_OPERATION_MODE_NDOF				
+}bno055_oppmode
 
 #endif
 
