@@ -29,9 +29,12 @@
       <file file_name="BNO055.h" />
       <file file_name="ISR.c" />
       <file file_name="IMU.h" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> c21305fa63de48d5bc81ab50a2bf093359e3eba2
     </folder>
-    <folder Name="System Files">
+        <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
     </folder>
     <configuration
