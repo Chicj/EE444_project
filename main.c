@@ -11,8 +11,8 @@
 #include <terminal.h>      
 #include <string.h>           // for memset function
 #include <UCA2_uart.h>        // UART setup 
+#include "gps.h"
 
-//mutex for crc
 extern CTL_MUTEX_t crc_mutex;
 
 CTL_TASK_t terminal_task,idle_task; // name your task (first thing to do when setting up a new task (1))
@@ -35,38 +35,20 @@ int __getchar(void){
 
 //******************************************* Example_Bare_bones main loop
 void main(void){
-
-
-
-
   //turn on LED's this will flash the LED's during startup
   P7DIR=0xFF;
   //init complete turn on LED0 and all others off
   P7OUT=0xFF;
-
+  //init gps UART
+  gps_setup();
   //initialize UART
   UCA2_init_UART(3,5,6);  //UCA2_init_UART(UART_PORT,UART_TX_PIN_NUM,UART_RX_PIN_NUM);
- 
-  //Caleb Alkire 4/4/17 GPS uart communication setup
-  //Reset values, and enable register editing
-  P3SEL0 |= BIT0 | BIT1;
-  UCA0CTL1 = UCSWRST;
-  //ACLK chosen, UCA0 needs 32kHz signal to communicate with GPS
-  UCA0CTL1 |= UCSSEL__ACLK;
-
-  //Set baud rate to 406800
-  UCA0BR1 |= 6;
-  UCA0MCTLW |= UCBRF_0 + UCBRS7;
-
-  //Re-enable the module, and allow interrupts
-  UCA0CTL1 &= ~UCSWRST;
-  UCA0IE |=  UCRXIE;
 
   //init I2C on P4.5 SDA and P4.4 SCL
   initI2C(4,5,4);
   
   // initialize tasking things  
-  //create a main task with maximum priority so other tasks can be created without interruption
+  //create a main task (terminal task) with maximum priority so other tasks can be created without interruption
   //this should be called before other tasks are created
   //also enables inturrupts
   ctl_task_init(&idle_task, 255, "idle");
