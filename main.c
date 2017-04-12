@@ -12,6 +12,7 @@
 #include <string.h>           // for memset function
 #include <UCA2_uart.h>        // UART setup 
 #include "gps.h"
+#include <pathfinding.h>
 
 extern CTL_MUTEX_t crc_mutex;
 
@@ -43,6 +44,9 @@ void main(void){
   gps_setup();
   //initialize UART
   UCA2_init_UART(3,5,6);  //UCA2_init_UART(UART_PORT,UART_TX_PIN_NUM,UART_RX_PIN_NUM);
+
+  //initialize pathfinding
+  initPathfinding();
 
   //init I2C on P4.5 SDA and P4.4 SCL
   initI2C(4,5,4);

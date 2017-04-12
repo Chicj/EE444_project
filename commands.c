@@ -15,7 +15,9 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <bno055.h>     // for pin defines 
 #include <UCA2_uart.h>  // for check keys
 #include <ctl.h>        // for delay
-#include "IMU.h"
+#include <IMU.h>
+#include <pathfinding.h>
+
 //*********************************************************** passing arguments over the terminal *********************************************
 int example_command(char **argv,unsigned short argc){
   int i,j;
@@ -41,6 +43,56 @@ int example_command(char **argv,unsigned short argc){
   }
   return 0;
 }
+
+
+void spoofGPS (char **argv,unsigned short argc)
+{
+  // argv[0] = "sgps";
+  float templat = strtof(argv[1],NULL);
+  float templon = strtof(argv[2],NULL);
+  float tempalt = strtof(argv[3],NULL);
+
+  float trgt = tWP;
+  
+  printf("\n\r");
+
+  pathfindGPS (templat, templon, tempalt);
+
+  printf("Distance: %f m\n\r", pathfindDistance());
+
+  pathfindTarget();
+
+  if (trgt != tWP)
+  {
+    printf("WAYPOINT REACHED!\n\r");
+    printf("New Distance: %f m\n\r", pathfindDistance());
+    printf("New Target: %i %f %f %f\n\r", tWP, tpos[0], tpos[1], tpos[2]); // print next target waypoint location
+  } 
+  else
+  {
+    printf("Target: %i %f %f %f\n\r", tWP, tpos[0], tpos[1], tpos[2]); // print next target waypoint location
+  }
+  
+  pathfindHeading();
+  printf("Rotate: %3.1f deg\n\r", pathfindPoint());
+
+  printf("\n\r");
+}
+
+
+void spoofIMU (char **argv,unsigned short argc)
+{
+  // argv[0] = "simu";
+  float temphed = strtof(argv[1],NULL);
+
+  printf("\n\r");
+
+  pathfindIMU(temphed);
+  printf("Rotate: %3.1f deg\n\r", pathfindPoint());
+
+  printf("\n\r");
+}
+
 
 int I2C_tx(char **argv, unsigned short argc){
   unsigned char tx_buf[2];
@@ -373,6 +425,8 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"readOpr","Reads IMU operation mode and power mode", get_oprcmd},
                    {"setOprDefault","Set IMU operation mode to default (IMU mode)", set_oprmode_default},
                    {"setOpr","Set IMU operation mode to passed num", set_oprmode},
+                   {"sgps","[sgps] [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates.",spoofGPS},
+                   {"simu","[simu] [hed]""Spoofs astronaut's IMU heading.",spoofIMU},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
