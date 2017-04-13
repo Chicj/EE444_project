@@ -76,6 +76,13 @@ short bno055_get_quat(void)
   return i2c_txrx(addr, tx_buf, 1, glb_buff, 8);// read sys_err reg
 }
 
+// Get IMU Euler data
+short bno055_get_euler(void) // NOT FULLY TESTED!
+{
+  unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};
+  return i2c_txrx(addr, tx_buf, 1, glb_buff, 8);// read sys_err reg
+}
+
 // Get IMU power mode
 //TODO set power mode 
 short bno055_get_pwrmode(unsigned char op_mode){

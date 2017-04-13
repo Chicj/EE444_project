@@ -17,6 +17,7 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <ctl.h>        // for delay
 #include <IMU.h>
 #include <pathfinding.h>
+#include <math.h>
 
 //*********************************************************** passing arguments over the terminal *********************************************
 int example_command(char **argv,unsigned short argc){
@@ -247,6 +248,7 @@ int reset_cmd(char **argv,unsigned short argc){
 int read_Quat(char **argv,unsigned short argc){
   unsigned char reg_addr = 0x20;
   short resp, j=0;
+  unsigned long int count = 0;
 
   if (argc != 0){
     printf("Usage: quat\n\r");
@@ -272,10 +274,87 @@ int read_Quat(char **argv,unsigned short argc){
     else{
       printf("Unknown Error, check wiki %i.\n\r",resp);
     }
-      
+    count = 0;
+    while (count < 100000){count++;}
   }
   return resp;
 }
+
+
+int read_Euler(char **argv,unsigned short argc){ // NOT WORKING YET!
+  unsigned char reg_addr = 0x20;
+  short resp, j=0;
+  unsigned long int count = 0;
+//  unsigned int quat[4];
+  float quat[4];
+  float euler[3];
+  float angle;
+  float axis[3];
+
+  if (argc != 0){
+    printf("Usage: quat\n\r");
+    return -1;
+  }
+
+  printf("\n\r");
+
+  while(UCA2_CheckKey()==EOF){
+    resp = bno055_get_quat();
+    if (resp >= 0){
+
+      printf("qw: %4x  |  qx: %4x  |  qy: %4x  | qz: %4x\n\r", (glb_buff[1] << 8) + glb_buff[0], (glb_buff[3] << 8) + glb_buff[2], (glb_buff[5] << 8) + glb_buff[4], (glb_buff[7] << 8) + glb_buff[6]);
+      
+      // 1 Quaternion (unit less) = 2^14 LSB
+      quat[0] = ((glb_buff[1] << 8) + glb_buff[0]) / 0x3FFF; // q[w]
+      quat[1] = ((glb_buff[3] << 8) + glb_buff[2]) / 0x3FFF; // q[x]
+      quat[2] = ((glb_buff[5] << 8) + glb_buff[4]) / 0x3FFF; // q[y]
+      quat[3] = ((glb_buff[7] << 8) + glb_buff[6]) / 0x3FFF; // q[z]      
+
+      printf("qw: %3f  |  qx: %3f  |  qy: %3f  |  qz: %3f\n\r", quat[0], quat[1], quat[2], quat[3]);
+
+//      euler[0] = atan2((2 * quat[2] * quat[0]) - (2 * quat[1] * quat[3]), 1 - (2 * pow(quat[2],2)) - (2 * pow(quat[3],2))); // heading
+//      euler[1] = asin((2 * quat[1] * quat[2]) + (2 * quat[3] * quat[0])); // attitude
+//      euler[2] = atan2((2 * quat[1] * quat[0]) - (2 * quat[2] * quat[3]), 1 - (2 * pow(quat[1],2)) - (2 * pow(quat[3],2))); // bank
+      
+      // 1 degree = 16 LSB, 1 radian = 900 LSB
+      euler[0] = atan2((2 * quat[2] * quat[0]) - (2 * quat[1] * quat[3]), pow(quat[1],2) - pow(quat[2],2) - pow(quat[3],2) + pow(quat[0],2));
+      euler[1] = asin(2 * ((quat[1] * quat[2]) + (quat[3] * quat[0])) / (pow(quat[1],2) + pow(quat[2],2) + pow(quat[3],2) + pow(quat[0],2)));
+      euler[2] = atan2((2 * quat[1] * quat[0]) - (2 * quat[2] * quat[3]), -pow(quat[1],2) + pow(quat[2],2) - pow(quat[3],2) + pow(quat[0],2));
+
+      printf("hed: %f  |  att: %f  |  bnk: %f\n\r", euler[0] * 180 / M_PI, euler[1] * 180 / M_PI, euler[2] * 180 / M_PI);
+
+//      angle = 2 * acos(quat[0]); // angle
+//      axis[0] = quat[1] / sqrt(1 - pow(quat[0],2)); // x
+//      axis[1] = quat[2] / sqrt(1 - pow(quat[0],2)); // y
+//      axis[2] = quat[3] / sqrt(1 - pow(quat[0],2)); // z
+//
+//      printf("ang: %f  |  x: %f  |  y: %f  |  z: %f\n\r", angle, axis[0], axis[1], axis[2]);
+    }
+    else if (resp == -1){
+      printf("I2C error: NACK.\n\r");
+    }
+    else if (resp == -2){
+      printf("I2C error: Timeout.\n\r");
+    }
+    else{
+      printf("Unknown Error, check wiki %i.\n\r",resp);
+    }
+
+//    resp = bno055_get_euler();
+//    if (resp >= 0){      
+//      euler[0] = (glb_buff[1] << 8) + glb_buff[0]; // q[w]
+//      euler[1] = (glb_buff[3] << 8) + glb_buff[2]; // q[w]
+//      euler[2] = (glb_buff[5] << 8) + glb_buff[4]; // q[w]
+//
+//      printf("hed: %04x  |  att: %04x  |  bnk: %04x\n\r", euler[0] * 180 / M_PI, euler[1] * 180 / M_PI, euler[2] * 180 / M_PI);
+//    }
+
+    count = 0;
+    while (count < 100000){count++;}
+  }
+  return resp;
+}
+
 
 // TODO pars more of the data ? 
 int status_cmd(char **argv,unsigned short argc){
@@ -421,6 +500,7 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"reset","Reset IMU", reset_cmd},
                    {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
                    {"quat","Reads all quaternion data registers", read_Quat},
+                   {"euler","Reads all quaternion data registers and converts them to euler angles", read_Euler},
                    {"status","Reads all relavtent IMU status registers", status_cmd},
                    {"readOpr","Reads IMU operation mode and power mode", get_oprcmd},
                    {"setOprDefault","Set IMU operation mode to default (IMU mode)", set_oprmode_default},
@@ -430,4 +510,4 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
-                   {NULL,NULL,NULL}};
+                   {NULL,NULL,NULL}};//
