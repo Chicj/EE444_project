@@ -2,7 +2,8 @@
 #define __IMU_H
 
 extern unsigned short addr;  // set global address for now 
-extern unsigned char glb_buff[10];  // global buffer 
+extern unsigned char glb_buff[10];  // global buffer
+extern unsigned char eul_buff[8];  // global buffer 
 
 extern const char *opr_mode_strings[];
 extern const char *pwr_mode_strings[];

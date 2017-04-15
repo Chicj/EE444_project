@@ -1,9 +1,12 @@
 #include <bno055.h>
 #include "i2c.h"
 #include "IMU.h"
+#include <ctl.h>
+#include <pathfinding.h>
 
 unsigned short addr = BNO055_I2C_ADDR1; // global IMU addr
-unsigned char glb_buff[10];  // global buffer 
+unsigned char glb_buff[10];  // global buffer
+unsigned char eul_buff[8];
 const char *opr_mode_strings[] = {"CONFIGMODE", "ACCONLY", "MAGONLY", "GYROONLY", "ACCMAG", "ACCGYRO", "MAGGYRO", "AMG", "IMU", "COMPASS", "M4G", "NDOF_FMC_OFF", "NDOF"};
 const char *pwr_mode_strings[] = {"Normal Mode", "Low Power Mode", "Suspend Mode"};
 const char *sys_status_strings[] = {"System Idle", "System Error", "Initializing Peripherals", "System Initialization", "Executing Selftest", "Sensor Fusion Algorithm Running", "System Running Without Fusion Algorithm"};
@@ -79,8 +82,11 @@ short bno055_get_quat(void)
 // Get IMU Euler data
 short bno055_get_euler(void) // Seems to work...
 {
+  unsigned short resp;
   unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};
-  return i2c_txrx(addr, tx_buf, 1, glb_buff, 8);// read sys_err reg
+  resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8);// read sys_err reg
+  ctl_events_set_clear(&PF_events, IMU_EV, 0);
+  return resp;
 }
 
 // Get IMU power mode
@@ -89,4 +95,6 @@ short bno055_get_pwrmode(unsigned char op_mode){
   unsigned char tx_buf[1] = {BNO055_PWR_MODE_ADDR};
   return i2c_txrx(addr, tx_buf, 1, glb_buff, 2);
 }
+
+
 

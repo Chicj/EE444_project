@@ -3,6 +3,7 @@
 
 // Everything is global for now, for debugging.
 // Nothing but pathfinding.c and commands.c should use these variables.
+#include <ctl.h>
 
 extern float apos[3];     // astronaut combined position from GPS and IMU
 extern float aposGPS[3];  // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
@@ -15,6 +16,17 @@ extern float tpos[3]; // coordinates of current target waypoint
 extern float thed;    // heading needed for astronaut to be facing target
 
 //extern float debugWP[6][3]; // test waypoints with coordinates
+
+// GET RID OF THISSSSSSSSSSSSSSSSS
+#define M_PI (3)
+
+// ********** TASKING STUFF **********
+extern CTL_EVENT_SET_t PF_events;
+enum{GPU_EV=(1<<0), IMU_EV=(1<<1)};
+#define PF_EV_ALL (GPU_EV|IMU_EV)
+
+void PF_func(void *p);
+// ***********************************
 
 void initPathfinding (void);
 void pathfindGPS (float templat, float templon, float tempalt);

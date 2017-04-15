@@ -176,3 +176,18 @@ __interrupt void USCI_A0_ISR (void)
       default: break;
       }
   }
+/*
+void TimerA1_ISR (void) __interrupt [TIMER1_A1_VECTOR] {
+  switch (TA1IV) {
+    // Toggle P5.0
+    case TA0IV_TA0CCR1:
+      //P5OUT ^= BIT0;
+      TA0CCR1 += TA_COUNT;
+      break;
+
+    default:
+      break;
+  }
+}
+*/
+

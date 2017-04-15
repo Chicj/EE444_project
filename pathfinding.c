@@ -9,6 +9,7 @@ http://www.movable-type.co.uk/scripts/latlong.html
 #include <math.h>
 #include <stdio.h>
 #include <pathfinding.h>
+#include <ctl.h>
 
 float apos[3] = {0.0,0.0,0.0};    // astronaut combined position from GPS and IMU
 float aposGPS[3] = {0.0,0.0,0.0}; // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
@@ -19,6 +20,24 @@ float arot = 0.0;                 // astronaut rotation needed to be facing targ
 int tWP = 0;                    // current target waypoint
 float tpos[3] = {0.0,0.0,0.0};  // coordinates of current target waypoint
 float thed = 0.0;               // heading needed for astronaut to be facing target
+
+CTL_EVENT_SET_t PF_events;
+
+void PF_func(void *p) __toplevel{
+  unsigned int e;
+  for (;;) {
+    e=ctl_events_wait(CTL_EVENT_WAIT_ANY_EVENTS_WITH_AUTO_CLEAR, &PF_events, PF_EV_ALL, CTL_TIMEOUT_NONE, 0);
+    // GPU STUFF HAPPENED
+    if (e & GPU_EV){
+
+    }
+    // IMU STUFF HAPPENED
+    if (e & IMU_EV){
+
+    }
+  }
+}
+
 
 //float debugWP[5][3] = { // test waypoints with coordinates
 //  {64.856272,-147.819532,177.4}, // Flag Circle
