@@ -10,6 +10,7 @@ http://www.movable-type.co.uk/scripts/latlong.html
 #include <stdio.h>
 #include <pathfinding.h>
 #include <ctl.h>
+#include <IMU.h>
 
 float apos[3] = {0.0,0.0,0.0};    // astronaut combined position from GPS and IMU
 float aposGPS[3] = {0.0,0.0,0.0}; // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
@@ -48,7 +49,7 @@ void PF_func(void *p) __toplevel{
 //}; // elevation of 177.4 may not be reachable at all locations, taken at flag circle.
 
 float debugWP[6][3] = { // test waypoints with coordinates
-  {10.0,10.0,0.0},
+  {-10.0,-10.0,0.0},
   {10.0,20.0,0.0},
   {-10.0,-10.0,0.0},
   {-20.0,20.0,0.0},
@@ -66,31 +67,20 @@ void initPathfinding (void)
 }
 
 
-// Takes latitude, longitude, and altitude from GPS and applies it to global position variable.
+// Takes latitude, longitude, and altitude from spoofed GPS and applies it to global position variable.
 void pathfindGPS (float templat, float templon, float tempalt)
 {
-  // remember where the last GPS ping was
-  aposGPS[0] = templat; // latGPS
-  aposGPS[1] = templon; // lonGPS
-  aposGPS[2] = tempalt; // altGPS
-
   // set current position to GPS ping
-  apos[0] = aposGPS[0]; // alat
-  apos[1] = aposGPS[1]; // alon
-  apos[2] = aposGPS[2]; // aalt
+  apos[0] = templat; // alat
+  apos[1] = templon; // alon
+  apos[2] = tempalt; // aalt
 }
 
 
-// Takes relative x, y, and z distances from IMU and applies it to relative position variable.
-void pathfindIMU (/*float dx, float dy, float dz,*/ float dhed)
+// update astronaut heading from spoofed IMU
+void pathfindIMU (float temphed)
 {
-//  // update the relative position from IMU.
-//  aposIMU[0] += dx; // latIMU
-//  aposIMU[1] += dy; // lonIMU
-//  aposIMU[2] += dz; // altIMU
-
-  // update astronaut heading from IMU
-  ahed = dhed * M_PI / 180; // hedIMU
+  ahed = temphed;// * M_PI / 180; // radians?
 }
 
 
@@ -111,7 +101,7 @@ void pathfindIMU (/*float dx, float dy, float dz,*/ float dhed)
 //}
 
 
-// determine appropriate target waypoint and determine heading to target waypoint
+// determine/update appropriate target waypoint
 void pathfindTarget (void)
 {
   // if within range of target waypoint, set next waypoint on path as target
@@ -150,6 +140,7 @@ void pathfindHeading (void)
   //thed = atan2((tpos[1] - apos[1]), (tpos[0] - apos[0])); // angle from north to target (in radians)
   thed = atan2(sin(dlon) * cos(temptlat), cos(tempalat) * sin(temptlat) - sin(tempalat) * cos(temptlat) * cos(dlon)); // angle from north to target (in radians)
 }
+
 
 // determine astronaut rotation needed to be facing target waypoint
 float pathfindPoint (void)

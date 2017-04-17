@@ -80,7 +80,7 @@ short bno055_get_quat(void)
 }
 
 // Get IMU Euler data
-short bno055_get_euler(void) // Seems to work...
+short bno055_get_euler(void)
 {
   unsigned short resp;
   unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};

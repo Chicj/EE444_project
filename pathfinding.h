@@ -18,7 +18,7 @@ extern float thed;    // heading needed for astronaut to be facing target
 //extern float debugWP[6][3]; // test waypoints with coordinates
 
 // GET RID OF THISSSSSSSSSSSSSSSSS
-#define M_PI (3)
+//#define M_PI (3)
 
 // ********** TASKING STUFF **********
 extern CTL_EVENT_SET_t PF_events;
@@ -30,7 +30,7 @@ void PF_func(void *p);
 
 void initPathfinding (void);
 void pathfindGPS (float templat, float templon, float tempalt);
-void pathfindIMU (/*float dx, float dy, float dz,*/ float dhed);
+void pathfindIMU (float temphed);
 void pathfindPosition(void);
 void pathfindTarget (void);
 float pathfindDistance (void);

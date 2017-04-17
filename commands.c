@@ -268,7 +268,7 @@ int reset_cmd(char **argv,unsigned short argc){
 int read_Quat(char **argv,unsigned short argc){
   unsigned char reg_addr = 0x20;
   short resp, j=0;
-  unsigned long int count = 0;
+  unsigned int count;
 
   if (argc != 0){
     printf("Usage: quat\n\r");
@@ -295,7 +295,7 @@ int read_Quat(char **argv,unsigned short argc){
       printf("Unknown Error, check wiki %i.\n\r",resp);
     }
     count = 0;
-    while (count < 100000){count++;}
+    while (count < 65535){count++;}
   }
   return resp;
 }
@@ -304,12 +304,10 @@ int read_Quat(char **argv,unsigned short argc){
 int read_Euler(char **argv, unsigned short argc){ // NOT WORKING YET!
   unsigned char reg_addr = 0x20;
   short resp, j=0;
-  unsigned long int count = 0;
-  int reg[4];
-  float quat[4];
+  unsigned int count = 0;
   float euler[3];
-  float angle;
-  float axis[3];
+  int reg[3];
+
 
   if (argc != 0){
     printf("Usage: euler\n\r");
@@ -320,40 +318,18 @@ int read_Euler(char **argv, unsigned short argc){ // NOT WORKING YET!
 
     printf("\n\r");
 
-    resp = bno055_get_quat();
-    if (resp >= 0){
+    resp = bno055_get_euler();
+    if (resp >= 0){      
+      // 1 degree = 16 LSB, 1 radian = 900 LSB
+      euler[0] = ((eul_buff[1] << 8) + eul_buff[0]) / 16.0; // e[x] 0 to 360
+      euler[1] = ((eul_buff[3] << 8) + eul_buff[2]) / 16.0; // e[y] 0 to 360
+      euler[2] = ((eul_buff[5] << 8) + eul_buff[4]) / 16.0; // e[z] 0 to 360
       
-      reg[0] = (glb_buff[1] << 8) + glb_buff[0]; // w
-      reg[1] = (glb_buff[3] << 8) + glb_buff[2]; // x
-      reg[2] = (glb_buff[5] << 8) + glb_buff[4]; // y
-      reg[3] = (glb_buff[7] << 8) + glb_buff[6]; // z
+      euler[0] = (euler[0] > 180)? euler[0] - 360 : euler[0]; // e[x] -180 to 180 (angle > 180)? angle - 360 : angle
+      euler[1] = (euler[1] > 180)? euler[1] - 360 : euler[1]; // e[y] -180 to 180
+      euler[2] = (euler[2] > 180)? euler[2] - 360 : euler[2]; // e[z] -180 to 180
 
-
-      printf("quat hex :  qw:  %04x  | qx:  %04x  | qy:  %04x  | qz:  %04x\n\r", reg[0], reg[1], reg[2], reg[3]);
-      // 1 Quaternion (unit less) = 2^14 LSB = 16384 LSB
-      quat[0] = reg[0] / 16383.0; // q[w] = w / 0x3FFF
-      quat[1] = reg[1] / 16383.0; // q[x] = x / 0x3FFF
-      quat[2] = reg[2] / 16383.0; // q[y] = y / 0x3FFF
-      quat[3] = reg[3] / 16383.0; // q[z] = z / 0x3FFF
-
-      printf("quat dec :  qw: % 5.3f | qx: % 5.3f | qy: % 5.3f | qz: % 5.3f\n\r", quat[0], quat[1], quat[2], quat[3]);
-
-//      euler[0] = atan2((2 * quat[2] * quat[0]) - (2 * quat[1] * quat[3]), 1 - (2 * pow(quat[2],2)) - (2 * pow(quat[3],2))); // heading
-//      euler[1] = asin((2 * quat[1] * quat[2]) + (2 * quat[3] * quat[0])); // attitude
-//      euler[2] = atan2((2 * quat[1] * quat[0]) - (2 * quat[2] * quat[3]), 1 - (2 * pow(quat[1],2)) - (2 * pow(quat[3],2))); // bank
-      
-      euler[0] = atan2((2 * quat[2] * quat[0]) - (2 * quat[1] * quat[3]), pow(quat[1],2) - pow(quat[2],2) - pow(quat[3],2) + pow(quat[0],2));
-      euler[1] = asin(2 * ((quat[1] * quat[2]) + (quat[3] * quat[0])) / (pow(quat[1],2) + pow(quat[2],2) + pow(quat[3],2) + pow(quat[0],2)));
-      euler[2] = atan2((2 * quat[1] * quat[0]) - (2 * quat[2] * quat[3]), -pow(quat[1],2) + pow(quat[2],2) - pow(quat[3],2) + pow(quat[0],2));
-
-      printf("euler cal:  hd: % 6.1f | at: % 6.1f | bk: % 6.1f\n\r", euler[0] * 180 / M_PI, euler[1] * 180 / M_PI, euler[2] * 180 / M_PI);
-
-//      angle = 2 * acos(quat[0]); // angle
-//      axis[0] = quat[1] / sqrt(1 - pow(quat[0],2)); // x
-//      axis[1] = quat[2] / sqrt(1 - pow(quat[0],2)); // y
-//      axis[2] = quat[3] / sqrt(1 - pow(quat[0],2)); // z
-//
-//      printf("ang/ax   :  ang: % 3.1f | x: % 3.1f | y: % 3.1f | z: % 3.1f\n\r", angle, axis[0], axis[1], axis[2]);
+      printf("dir:  hd: % 6.1f | at: % 6.1f | bk: % 6.1f\n\r", euler[0], euler[1], euler[2]);
     }
     else if (resp == -1){
       printf("I2C error: NACK.\n\r");
@@ -365,23 +341,8 @@ int read_Euler(char **argv, unsigned short argc){ // NOT WORKING YET!
       printf("Unknown Error, check wiki %i.\n\r",resp);
     }
 
-    resp = bno055_get_euler();
-    if (resp >= 0){      
-
-      reg[0] = (glb_buff[1] << 8) + glb_buff[0]; // x
-      reg[1] = (glb_buff[3] << 8) + glb_buff[2]; // y
-      reg[2] = (glb_buff[5] << 8) + glb_buff[4]; // z
-
-      // 1 degree = 16 LSB, 1 radian = 900 LSB
-      euler[0] = reg[0] / 16.0; // e[x]
-      euler[1] = reg[1] / 16.0; // e[y]
-      euler[2] = reg[2] / 16.0; // e[z]
-
-      printf("euler dir:  hd: % 6.1f | at: % 6.1f | bk: % 6.1f\n\r", euler[0] - 180, euler[1] - 180, euler[2] - 180);
-    }
-
     count = 0;
-    while (count < 100000){count++;}
+    while (count < 65535){count++;} // pause for a little bit... 65535 max for unsigned int
   }
   return resp;
 }
@@ -522,6 +483,67 @@ int set_oprmode(char **argv, unsigned short argc){
   return resp;
 }
 
+
+// spoof gps, then use actual IMU data.
+int testIMU (char **argv, unsigned short argc)
+{
+  float templat;
+  float templon;
+  float tempalt;
+  float temphed;
+  short resp;
+  unsigned int count;
+
+  if (argc > 3) {
+    printf("Too many arguments.\r\n");
+    printf("Usage: sgps [lat] [lon] [alt]");
+    return -1;
+  }
+  else
+  {
+    while(UCA2_CheckKey()==EOF){
+     // argv[0] = "sgps";
+     templat = strtof(argv[1],NULL);
+     templon = strtof(argv[2],NULL);
+     tempalt = strtof(argv[3],NULL);
+
+      resp = bno055_get_euler();
+      if (resp >= 0){      
+        // 1 degree = 16 LSB, 1 radian = 900 LSB
+        temphed = ((eul_buff[1] << 8) + eul_buff[0]) / 900.0; // euler[heading] from 0 to 2pi
+        temphed = (temphed > M_PI)? temphed - (2 * M_PI) : temphed; // euler[heading] from -pi to pi
+
+        //printf("euler dir:  hd: % 6.1f | at: % 6.1f | bk: % 6.1f\n\r", euler[0] - 180, euler[1] - 180, euler[2] - 180);
+      
+        pathfindGPS (templat, templon, tempalt);
+        pathfindTarget();
+        pathfindIMU(temphed);
+        pathfindHeading();
+
+        printf("\n\r");
+        printf("thed: % 5.1f degrees\n\r", thed * 180 / M_PI);
+        printf("ahed: % 5.1f degrees\n\r", ahed * 180 / M_PI);
+        printf("Rotate: % 5.1f degrees\n\r", pathfindPoint());
+
+      }
+      else if (resp == -1){
+        printf("I2C error: NACK.\n\r");
+      }
+      else if (resp == -2){
+        printf("I2C error: Timeout.\n\r");
+      }
+      else{
+        printf("Unknown Error, check wiki %i.\n\r",resp);
+      }
+
+      count = 0;
+      while (count < 65535){count++;} // pause for a little bit... 65535 max for unsigned int
+
+    }
+    return resp;
+  }
+}
+
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
@@ -536,8 +558,9 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"readOpr","Reads IMU operation mode and power mode", get_oprcmd},
                    {"setOprDefault","Set IMU operation mode to default (IMU mode)", set_oprmode_default},
                    {"setOpr","Set IMU operation mode to passed num", set_oprmode},
-                   {"sgps","[sgps] [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates.", spoofGPS},
-                   {"simu","[simu] [hed]""Spoofs astronaut's IMU heading.", spoofIMU},
+                   {"sgps","sgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates.", spoofGPS},
+                   {"simu","simu [hed]""Spoofs astronaut's IMU heading.", spoofIMU},
+                   {"timu","pgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates, but uses actual IMU data", testIMU},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
