@@ -147,6 +147,7 @@ int I2C_tx(char **argv, unsigned short argc){
   }
 }
 
+
 int I2C_txrx(char **argv, unsigned short argc){
   unsigned char tx_buf[1],rx_buf[100],reg_addr;
   unsigned short addr, rx_len;
@@ -264,6 +265,7 @@ int reset_cmd(char **argv,unsigned short argc){
     return resp;
   }
 }
+
 
 int read_Quat(char **argv,unsigned short argc){
   unsigned char reg_addr = 0x20;
@@ -418,6 +420,7 @@ int status_cmd(char **argv,unsigned short argc){
   return resp;
 }
 
+
 // reads and changes the op mode of the IMU 
 int get_oprcmd(char **argv,unsigned short argc){
   short resp;
@@ -439,6 +442,7 @@ int get_oprcmd(char **argv,unsigned short argc){
   return resp;
 }
 
+
 int set_oprmode_default(char **argv, unsigned short argc){
   short resp;
   resp = bno055_set_oprmode_default();
@@ -456,6 +460,7 @@ int set_oprmode_default(char **argv, unsigned short argc){
   }
   return resp;
 }
+
 
 int set_oprmode(char **argv, unsigned short argc){
   short resp, opr_mode, i;
@@ -543,6 +548,7 @@ int testIMU (char **argv, unsigned short argc)
     return resp;
   }
 }
+
 
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},

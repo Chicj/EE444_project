@@ -176,6 +176,8 @@ __interrupt void USCI_A0_ISR (void)
       default: break;
       }
   }
+
+
 /*
 void TimerA1_ISR (void) __interrupt [TIMER1_A1_VECTOR] {
   switch (TA1IV) {

@@ -22,24 +22,6 @@ int tWP = 0;                    // current target waypoint
 float tpos[3] = {0.0,0.0,0.0};  // coordinates of current target waypoint
 float thed = 0.0;               // heading needed for astronaut to be facing target
 
-CTL_EVENT_SET_t PF_events;
-
-void PF_func(void *p) __toplevel{
-  unsigned int e;
-  for (;;) {
-    e=ctl_events_wait(CTL_EVENT_WAIT_ANY_EVENTS_WITH_AUTO_CLEAR, &PF_events, PF_EV_ALL, CTL_TIMEOUT_NONE, 0);
-    // GPU STUFF HAPPENED
-    if (e & GPU_EV){
-
-    }
-    // IMU STUFF HAPPENED
-    if (e & IMU_EV){
-
-    }
-  }
-}
-
-
 //float debugWP[5][3] = { // test waypoints with coordinates
 //  {64.856272,-147.819532,177.4}, // Flag Circle
 //  {64.857242,-147.821270,177.4}, // Turtle Sex Park
@@ -57,6 +39,35 @@ float debugWP[6][3] = { // test waypoints with coordinates
   {50.0,-40.0,0.0}
   };
 
+CTL_EVENT_SET_t PF_events;
+
+void PF_func(void *p) __toplevel{
+  unsigned int e;
+  float temphed;
+  float tempout;
+  for (;;) {
+    e=ctl_events_wait(CTL_EVENT_WAIT_ANY_EVENTS_WITH_AUTO_CLEAR, &PF_events, PF_EV_ALL, CTL_TIMEOUT_NONE, 0);
+    // GPU STUFF HAPPENED
+    if (e & GPU_EV){
+      // pathfindGPS(0,0,0); // updates astronaut location // should probably be done in GPS_ISR
+      pathfindTarget(); // determine/update target waypoint
+      pathfindHeading(); // determine/update heading to target waypoint
+    }
+    // IMU STUFF HAPPENED
+    if (e & IMU_EV){
+      // called by timer...
+        if (bno055_get_euler() >= 0){
+        temphed = ((eul_buff[1] << 8) + eul_buff[0]) / 900.0; // astronaut heading from 0 to 2pi
+        temphed = (temphed > M_PI)? temphed - (2 * M_PI) : temphed; // astronaut heading from -pi to pi
+        pathfindIMU(temphed); // updates astronaut heading // may be unnecessary, could just replace temphed with ahed...
+        tempout = pathfindPoint(); // astronaut rotation to target waypoint (-180 to 180 degrees)
+
+        printf("% 5.1f degrees\n\r",tempout); // output astronaut rotation
+      }
+    }
+  }
+}
+
 
 // Initializes everything necessary for pathfinding algorithm to work.
 void initPathfinding (void)
@@ -67,7 +78,7 @@ void initPathfinding (void)
 }
 
 
-// Takes latitude, longitude, and altitude from spoofed GPS and applies it to global position variable.
+// Takes latitude, longitude, and altitude from GPS and applies it to global position variable.
 void pathfindGPS (float templat, float templon, float tempalt)
 {
   // set current position to GPS ping
@@ -77,7 +88,7 @@ void pathfindGPS (float templat, float templon, float tempalt)
 }
 
 
-// update astronaut heading from spoofed IMU
+// update astronaut heading from IMU
 void pathfindIMU (float temphed)
 {
   ahed = temphed;// * M_PI / 180; // radians?

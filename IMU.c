@@ -18,12 +18,14 @@ const char *sys_err_strings[] = {"No Error", "Peripheral Initialization Error", 
  create a read sys_err function 
 */
 
+
 // Reset IMU
 short bno055_reset(void)
 {
   unsigned char tx_buf[2]={BNO055_SYS_TRIGGER_ADDR, BNO055_SYS_RST_MSK};
   return i2c_tx(addr, tx_buf, 2);
 }
+
 
 //TODO test this 
 /* Changes accessible IMU register page */
@@ -33,12 +35,14 @@ short bno055_pageid(unsigned char page){
   return i2c_tx(addr, tx_buf, 2);//set pageid
 }
 
+
 // This command will check the status of the IMU board reads 0x35 --> 0x39
 short bno055_status(void)
 {
   unsigned char tx_buf[1] = {BNO055_CALIB_STAT_ADDR};  
   return i2c_txrx(addr, tx_buf, 1, glb_buff, 5);// read status data
 }
+
 
 // Get IMU Operating Mode
 short bno055_get_oprmode(void)
@@ -51,12 +55,14 @@ short bno055_get_oprmode(void)
   return resp;
 }
 
+
 // Set IMU Operating Mode to IMU (Fusion mode with Gyro+Accel)
 short bno055_set_oprmode_default(void)
 {
   unsigned char tx_buf[2] = {BNO055_OPR_MODE_ADDR, BNO055_OPERATION_MODE_IMUPLUS};
   return i2c_tx(addr, tx_buf, 2);// write opp mode
 }
+
 
 // Set IMU Operating Mode to IMU (Fusion mode with Gyro+Accel)
 short bno055_set_oprmode(unsigned char op_mode){
@@ -65,6 +71,7 @@ short bno055_set_oprmode(unsigned char op_mode){
   return i2c_tx(addr, tx_buf, 2);// write opp mode
 }
 
+
 // Get IMU system error codes
 short bno55_syserr(void)
 {
@@ -72,12 +79,14 @@ short bno55_syserr(void)
   return i2c_txrx(addr, tx_buf, 1, glb_buff, 2);// read sys_err reg
 }
 
+
 // Get IMU Quaternion data
 short bno055_get_quat(void)
 {
   unsigned char tx_buf[1] = {BNO055_QUATERNION_DATA_W_LSB_ADDR};
   return i2c_txrx(addr, tx_buf, 1, glb_buff, 8);// read sys_err reg
 }
+
 
 // Get IMU Euler data
 short bno055_get_euler(void)
@@ -88,6 +97,10 @@ short bno055_get_euler(void)
   ctl_events_set_clear(&PF_events, IMU_EV, 0);
   return resp;
 }
+
+
+// Consider making bno055_get_euler_heading(), which only reads the two bytes needed for heading, for efficiency...
+
 
 // Get IMU power mode
 //TODO set power mode 
