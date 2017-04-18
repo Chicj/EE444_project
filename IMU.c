@@ -93,7 +93,9 @@ short bno055_get_euler(void)
 {
   unsigned short resp;
   unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};
+  // FUNCTION IS FAILING IN i2c_txrx()!
   resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8);// read sys_err reg
+  // SOMETIMES NEVER MAKES IT HERE! 
   ctl_events_set_clear(&PF_events, IMU_EV, 0);
   return resp;
 }

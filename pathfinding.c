@@ -62,6 +62,7 @@ void PF_func(void *p) __toplevel{
         pathfindIMU(temphed); // updates astronaut heading // may be unnecessary, could just replace temphed with ahed...
         tempout = pathfindPoint(); // astronaut rotation to target waypoint (-180 to 180 degrees)
 
+        printf("\e[1;1H\e[2J"); // clear terminal
         printf("% 5.1f degrees\n\r",tempout); // output astronaut rotation
       }
     }

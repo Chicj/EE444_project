@@ -506,12 +506,12 @@ int testIMU (char **argv, unsigned short argc)
   }
   else
   {
-    while(UCA2_CheckKey()==EOF){
-     // argv[0] = "sgps";
-     templat = strtof(argv[1],NULL);
-     templon = strtof(argv[2],NULL);
-     tempalt = strtof(argv[3],NULL);
+    // argv[0] = "sgps";
+    templat = strtof(argv[1],NULL);
+    templon = strtof(argv[2],NULL);
+    tempalt = strtof(argv[3],NULL);
 
+    while(UCA2_CheckKey()==EOF){
       resp = bno055_get_euler();
       if (resp >= 0){      
         // 1 degree = 16 LSB, 1 radian = 900 LSB
@@ -526,10 +526,10 @@ int testIMU (char **argv, unsigned short argc)
         pathfindHeading();
 
         printf("\n\r");
-        printf("thed: % 5.1f degrees\n\r", thed * 180 / M_PI);
-        printf("ahed: % 5.1f degrees\n\r", ahed * 180 / M_PI);
+        //printf("%c[2J", 27); // clear terminal
+        //printf("thed: % 5.1f degrees\n\r", thed * 180 / M_PI);
+        //printf("ahed: % 5.1f degrees\n\r", ahed * 180 / M_PI);
         printf("Rotate: % 5.1f degrees\n\r", pathfindPoint());
-
       }
       else if (resp == -1){
         printf("I2C error: NACK.\n\r");
@@ -550,6 +550,23 @@ int testIMU (char **argv, unsigned short argc)
 }
 
 
+// test i2c
+int testI2C(char **argv, unsigned short argc)
+{
+  unsigned int count;
+  if (argc > 2) {
+    printf("Usage: ti2c [str (no spaces)]\n");
+  }
+  else{
+    while(UCA2_CheckKey()==EOF){
+      printf("%s\n\r", argv[1]);
+      count = 0;
+      while (count < 65535){count++;}
+    }
+  }
+  return 0;
+}
+
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
@@ -567,6 +584,7 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"sgps","sgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates.", spoofGPS},
                    {"simu","simu [hed]""Spoofs astronaut's IMU heading.", spoofIMU},
                    {"timu","pgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates, but uses actual IMU data", testIMU},
+                   {"ti2c","ti2c [str (no spaces)]""returns input str (no spaces) forever, unless key is pressed", testI2C},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
