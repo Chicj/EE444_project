@@ -4,6 +4,7 @@
 
 #include <msp430.h>
 #include <msp430f6779a.h>
+#include <IMU.h>
 
 //GPS ISR
 #pragma vector = USCI_A0_VECTOR
@@ -178,18 +179,16 @@ __interrupt void USCI_A0_ISR (void)
   }
 
 
-/*
-void TimerA1_ISR (void) __interrupt [TIMER1_A1_VECTOR] {
-  switch (TA1IV) {
-    // Toggle P5.0
-    case TA0IV_TA0CCR1:
-      //P5OUT ^= BIT0;
-      TA0CCR1 += TA_COUNT;
+
+void TimerA0_ISR (void) __interrupt [TIMER0_A0_VECTOR] {
+  switch (TA0IV) {
+    case TA0IV_TA0IFG:
+      bno055_get_euler();
       break;
 
     default:
       break;
   }
 }
-*/
+
 
