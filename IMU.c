@@ -84,6 +84,7 @@ short bno55_syserr(void)
 short bno055_get_quat(void)
 {
   unsigned char tx_buf[1] = {BNO055_QUATERNION_DATA_W_LSB_ADDR};
+  // TODO FUNCTION IS FAILING IN i2c_txrx()! SOMETIMES EXITS TO LPM0! 
   return i2c_txrx(addr, tx_buf, 1, glb_buff, 8);// read sys_err reg
 }
 
@@ -93,15 +94,22 @@ short bno055_get_euler(void)
 {
   unsigned short resp;
   unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};
-  // FUNCTION IS FAILING IN i2c_txrx()!
+  // TODO FUNCTION IS FAILING IN i2c_txrx()! SOMETIMES EXITS TO LPM0! 
   resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8);// read sys_err reg
-  // SOMETIMES NEVER MAKES IT HERE! 
-  ctl_events_set_clear(&PF_events, IMU_EV, 0);
   return resp;
 }
 
 
-// Consider making bno055_get_euler_heading(), which only reads the two bytes needed for heading, for efficiency...
+// Get IMU Euler data and start IMU task
+short bno055_get_imu(void)
+{
+  unsigned short resp;
+  unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};
+  // TODO FUNCTION IS FAILING IN i2c_txrx()! SOMETIMES EXITS TO LPM0!
+  resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8);// read sys_err reg
+  ctl_events_set_clear(&PF_events, IMU_EV, 0); // will be used in bno055_get_IMU instead...
+  return resp;
+}
 
 
 // Get IMU power mode

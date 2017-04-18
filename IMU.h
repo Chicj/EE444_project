@@ -18,6 +18,7 @@ short bno055_set_oprmode_default(void);
 short bno055_set_oprmode(unsigned char op_mode);
 short bno055_get_quat(void);
 short bno055_get_euler(void);
+short bno055_get_imu(void);
 short bno055_get_pwrmode(unsigned char op_mode);
 
 

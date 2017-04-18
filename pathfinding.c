@@ -31,7 +31,7 @@ float thed = 0.0;               // heading needed for astronaut to be facing tar
 //}; // elevation of 177.4 may not be reachable at all locations, taken at flag circle.
 
 float debugWP[6][3] = { // test waypoints with coordinates
-  {-10.0,-10.0,0.0},
+  {10.0,10.0,0.0},
   {10.0,20.0,0.0},
   {-10.0,-10.0,0.0},
   {-20.0,20.0,0.0},
@@ -54,17 +54,16 @@ void PF_func(void *p) __toplevel{
       pathfindHeading(); // determine/update heading to target waypoint
     }
     // IMU STUFF HAPPENED
-    if (e & IMU_EV){
+    if (e & IMU_EV)
+    {
       // called by timer...
-        if (bno055_get_euler() >= 0){
-        temphed = ((eul_buff[1] << 8) + eul_buff[0]) / 900.0; // astronaut heading from 0 to 2pi
-        temphed = (temphed > M_PI)? temphed - (2 * M_PI) : temphed; // astronaut heading from -pi to pi
-        pathfindIMU(temphed); // updates astronaut heading // may be unnecessary, could just replace temphed with ahed...
-        tempout = pathfindPoint(); // astronaut rotation to target waypoint (-180 to 180 degrees)
+      temphed = ((eul_buff[1] << 8) + eul_buff[0]) / 900.0; // astronaut heading from 0 to 2pi
+      temphed = (temphed > M_PI)? temphed - (2 * M_PI) : temphed; // astronaut heading from -pi to pi
+      pathfindIMU(temphed); // updates astronaut heading // may be unnecessary, could just replace temphed with ahed...
+      tempout = pathfindPoint(); // astronaut rotation to target waypoint (-180 to 180 degrees)
 
-        printf("\e[1;1H\e[2J"); // clear terminal
-        printf("% 5.1f degrees\n\r",tempout); // output astronaut rotation
-      }
+      printf("%c[2J%c[f",27,27); // clear terminal, set cursor home
+      printf("% 5.1f degrees\n\r",tempout); // output astronaut rotation
     }
   }
 }

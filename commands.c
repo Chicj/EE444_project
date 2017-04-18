@@ -318,8 +318,6 @@ int read_Euler(char **argv, unsigned short argc){ // NOT WORKING YET!
 
   while(UCA2_CheckKey()==EOF){
 
-    printf("\n\r");
-
     resp = bno055_get_euler();
     if (resp >= 0){      
       // 1 degree = 16 LSB, 1 radian = 900 LSB
@@ -330,8 +328,9 @@ int read_Euler(char **argv, unsigned short argc){ // NOT WORKING YET!
       euler[0] = (euler[0] > 180)? euler[0] - 360 : euler[0]; // e[x] -180 to 180 (angle > 180)? angle - 360 : angle
       euler[1] = (euler[1] > 180)? euler[1] - 360 : euler[1]; // e[y] -180 to 180
       euler[2] = (euler[2] > 180)? euler[2] - 360 : euler[2]; // e[z] -180 to 180
-
-      printf("dir:  hd: % 6.1f | at: % 6.1f | bk: % 6.1f\n\r", euler[0], euler[1], euler[2]);
+      
+      printf("\n\r");
+      printf("dir:  hd: % 5.1f | at: % 5.1f | bk: % 5.1f\n\r", euler[0], euler[1], euler[2]);
     }
     else if (resp == -1){
       printf("I2C error: NACK.\n\r");
@@ -501,7 +500,7 @@ int testIMU (char **argv, unsigned short argc)
 
   if (argc > 3) {
     printf("Too many arguments.\r\n");
-    printf("Usage: sgps [lat] [lon] [alt]");
+    printf("Usage: timu [lat] [lon] [alt]");
     return -1;
   }
   else
@@ -542,7 +541,7 @@ int testIMU (char **argv, unsigned short argc)
       }
 
       count = 0;
-      while (count < 65535){count++;} // pause for a little bit... 65535 max for unsigned int
+      while (count < 65535){count++;} // pause for a little bit, 65535 max for unsigned int
 
     }
     return resp;
@@ -550,8 +549,8 @@ int testIMU (char **argv, unsigned short argc)
 }
 
 
-// test i2c
-int testI2C(char **argv, unsigned short argc)
+// test i2c, make sure it is printing properly, it seems fine
+int testI2C (char **argv, unsigned short argc)
 {
   unsigned int count;
   if (argc > 2) {
@@ -560,6 +559,61 @@ int testI2C(char **argv, unsigned short argc)
   else{
     while(UCA2_CheckKey()==EOF){
       printf("%s\n\r", argv[1]);
+      count = 0;
+      while (count < 65535){count++;}
+    }
+  }
+  return 0;
+}
+
+
+//// test IMU tasking
+//int testTaskingGPS (char **argv, unsigned short argc)
+//{
+//  unsigned int count;
+//  if (argc > 4) {
+//    printf("Usage: ttimu\n");
+//  }
+//  else{
+//    while(UCA2_CheckKey()==EOF){
+//      bno055_get_imu();
+//      count = 0;
+//      while (count < 65535){count++;}
+//    }
+//  }
+//  return 0;
+//
+//  float templat;
+//  float templon;
+//  float tempalt;
+//  float temphed;
+//  short resp;
+//  unsigned int count;
+//
+//  if (argc > 3) {
+//    printf("Too many arguments.\r\n");
+//    printf("Usage: timu [lat] [lon] [alt]");
+//    return -1;
+//  }
+//  else
+//  {
+//    // argv[0] = "sgps";
+//    templat = strtof(argv[1],NULL);
+//    templon = strtof(argv[2],NULL);
+//    tempalt = strtof(argv[3],NULL);
+//}
+
+
+// test IMU tasking
+int testTaskingIMU (char **argv, unsigned short argc)
+{
+  unsigned int count;
+  if (argc > 1) {
+    printf("Usage: ttimu\n");
+  }
+  else{
+    while(UCA2_CheckKey()==EOF){
+      bno055_get_imu();
       count = 0;
       while (count < 65535){count++;}
     }
@@ -583,8 +637,10 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"setOpr","Set IMU operation mode to passed num", set_oprmode},
                    {"sgps","sgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates.", spoofGPS},
                    {"simu","simu [hed]""Spoofs astronaut's IMU heading.", spoofIMU},
-                   {"timu","pgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates, but uses actual IMU data", testIMU},
+                   {"timu","timu [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates, but uses actual IMU data", testIMU},
                    {"ti2c","ti2c [str (no spaces)]""returns input str (no spaces) forever, unless key is pressed", testI2C},
+//                   {"ttgps","ttgps [lat] [lon] [alt]""activates GPS_EV once, uses lat, lon, and alt arguments", testTaskingGPS},
+                   {"ttimu","ttimu""repeatedly activates IMU_EV", testTaskingIMU},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
