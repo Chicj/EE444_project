@@ -330,7 +330,7 @@ int read_Euler(char **argv, unsigned short argc){ // NOT WORKING YET!
       euler[2] = (euler[2] > 180)? euler[2] - 360 : euler[2]; // e[z] -180 to 180
       
       printf("\n\r");
-      printf("dir:  hd: % 5.1f | at: % 5.1f | bk: % 5.1f\n\r", euler[0], euler[1], euler[2]);
+      printf("hd: % 5.1f | at: % 5.1f | bk: % 5.1f\n\r", euler[0], euler[1], euler[2]);
     }
     else if (resp == -1){
       printf("I2C error: NACK.\n\r");
