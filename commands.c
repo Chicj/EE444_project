@@ -659,9 +659,27 @@ int testTX (char **argv, unsigned short argc)
 
 // calls TX interupt to transmit "U" ASCII symbol (binary 01010101)
 int testLED_cmd (char **argv, unsigned short argc){
-int input;
-  input=strtol(argv[1],NULL,0);// populate LED input
-  write_LED(input);  // will send out 
+char i = 0;
+int k;
+int input = 1;
+  //input=strtol(argv[1],NULL,0);// populate LED input
+  // write_LED(input);  // will command LEDs
+  if(argc == 1){
+    input=strtol(argv[1],NULL,0);// populate LED input
+    write_LED(input);  // will command LEDs
+  }
+ else{
+    while(UCA2_CheckKey()==EOF){
+    for(k=0;k<10000;k++){};
+      input = input<<1; //pulse all LEDS
+      write_LED(input);  // will command LEDs
+      i++;
+      if(i>15){
+        input = 1;
+        i=0;
+      }
+    }
+  }
   return 0;
 }
 
