@@ -30,8 +30,9 @@ __interrupt void USCI_A0_ISR (void)
     case 0x02:
       //Save current char into variable array
       gps[i] = UCA0RXBUF;
+      printf("%c", gps[i]);
       //Look for 'enter' at the end of the gps line
-      if(gps[i] == '\n')
+      if(gps[i] == 0x24)
       {
         //          |0    5|7       16|18     26| |30      39| | |  |   |52  56| |   | |   |       |
         sprintf(gps,"$GPGGA,225307.072,6451.3762,N,14749.1884,W,1,07,1.2,176.7,M,4.8,M,0.0,0000*57\n\0"); //for testing
