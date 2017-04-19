@@ -17,3 +17,15 @@ void gps_setup(void){
   UCA0CTL1 &= ~UCSWRST;
   UCA0IE |=  UCRXIE;
 }
+
+
+float gps_mintodeg(float tempmin)
+{
+  return tempmin / 60;
+}
+
+
+float gps_sectodeg(float tempsec)
+{
+  return tempsec / 3600;
+}
