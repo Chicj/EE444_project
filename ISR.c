@@ -10,43 +10,42 @@
 #include <gps.h>
 #include <string.h>
 
+
 //GPS ISR
-#pragma vector = USCI_A0_VECTOR
-__interrupt void USCI_A0_ISR (void)
+/*#pragma vector = USCI_A0_VECTOR
+__interrupt*/
+void USCI_A0_ISR (void) __interrupt [USCI_A0_VECTOR]
 {
   static int i = 0;
   //GPS data & gps header
-  char gps[500], gpsh[6];
+  //char gps[500];
+  //char gpsh[6];
   //int comma = 0;
   //int cycle, deg, min, sec;
   //double GpsLat, GpsLong, GpsElv;
 
-  float timeh, timem, times, latd, latm, lond, lonm, lons;
+  float timeh, timem, times, latd, latm, lats, lond, lonm, lons;
   int j;
+  j = 0; // mostly for break point.
 
   switch(UCA0IV)
   {
-    case 0x00: break;
-    case 0x02:
+    case USCI_UART_UCRXIFG:
       //Save current char into variable array
       gps[i] = UCA0RXBUF;
-      printf("%c", gps[i]);
+      //printf("%c", gps[i]);
       //Look for 'enter' at the end of the gps line
-      if(gps[i] == 0x24)
+      if(gps[i] == 0x0D)
       {
-        //          |0    5|7       16|18     26| |30      39| | |  |   |52  56| |   | |   |       |
-        sprintf(gps,"$GPGGA,225307.072,6451.3762,N,14749.1884,W,1,07,1.2,176.7,M,4.8,M,0.0,0000*57\n\0"); //for testing
-        //Store header for strcmp()
-        for(j = 0; j >= 5; j++)
-        {
-          gpsh[j] = gps[j];
-        }
+        i = 0;
+        ////          |0    5|7       16|18     26| |30      39| | |  |   |52  56| |   | |   |       |
+        //sprintf(gps,"$GPGGA,225307.072,6451.3762,N,14749.1884,W,1,07,1.2,176.7,M,4.8,M,0.0,0000*57\n\0"); //for testing
         //Check header (really all we care about is the GGA data, everything else can be dropped)
-        if(!strcmp(gpsh,"$GPGGA"))
+        if((gps[0] == '$') && (gps[1] == 'G') && (gps[2] == 'P') && (gps[3] == 'G') && (gps[4] == 'G') && (gps[5] == 'A')) // (!strcmp(gpsh,"$GPGGA"))
         {
-          for (j = 0; j >= 42; j++) //change 42 to include alt
+          for (j = 0; j < 42; j++) //change 42 to include alt
           {
-            gps[j] -= 0x30; // change all important ASCII chars to actual numbers...
+            gps[j] = gps[j] - 0x30; // change all important ASCII chars to actual numbers...
           }
           // skip gps[0..5] = "$GPGGA" | skip gps[6] = ","
 //          timeh = (gps[7] * 10) + gps[8];
@@ -54,8 +53,9 @@ __interrupt void USCI_A0_ISR (void)
 //          times = (gps[11] * 10) + gps[12] + (gps[14] / 10) + (gps[15] / 100) + (gps[16] / 1000); // skip gps[13] = "."
           // skip gps[17] = ","
           latd = (gps[18] * 10) + gps[19];
-          latm = (gps[20] * 10) + gps[21] + (gps[23] / 10) + (gps[24] / 100) + (gps[25] / 1000) + (gps[26] / 1000); // skip gps[22] = "."
-          apos[0] = latd + gps_mintodeg(latm); // astronaut latitude
+          latm = (gps[20] * 10) + gps[21]; // + (gps[23] / 10) + (gps[24] / 100) + (gps[25] / 1000) + (gps[26] / 1000); // skip gps[22] = "."
+          lats = (gps[23] * 1000) + (gps[24] * 100) + (gps[25] * 10) + gps[26];
+          apos[0] = latd + gps_mintodeg(latm) + gps_sectodeg(lats); // astronaut latitude
           // skip gps[27] = ","
 //          lats = (gps[28] == "N")? 1 : -1;
           // skip gps[29] = ","
@@ -69,18 +69,12 @@ __interrupt void USCI_A0_ISR (void)
           apos[2] = 0; // astronaut altitude
           ctl_events_set_clear(&PF_events, GPS_EV, 0);
         }
-        else
-        {
-          i = 0; // if header isn't "$GPGGA" reset gps[] pointer to 0
-        }
       }
       else
       {
-        i++; // if not end of string, continue to count gps[] RX pointer
+        i = (i + 1) % 42; // if not end of string, continue to count gps[] RX pointer
       }
     break;
-
-    case 0x04: break;
     default: break;
   }
 }

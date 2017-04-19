@@ -18,6 +18,7 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <IMU.h>
 #include <pathfinding.h>
 #include <math.h>
+#include <gps.h>
 
 //*********************************************************** passing arguments over the terminal *********************************************
 int example_command(char **argv,unsigned short argc){
@@ -621,6 +622,38 @@ int testTaskingIMU (char **argv, unsigned short argc)
   return 0;
 }
 
+
+// read current gps[] string
+int readGPS (char **argv, unsigned short argc)
+{
+  if (argc > 1) {
+    printf("Usage: ttimu\n");
+  }
+  else{
+    printf("%s\n\r", gps);
+  }
+  return 0;
+}
+
+
+// calls TX interupt to transmit "U" ASCII symbol (binary 01010101)
+int testTX (char **argv, unsigned short argc)
+{
+  unsigned int count;
+  if (argc > 1) {
+    printf("Usage: ttimu\n");
+  }
+  else{
+    while(UCA2_CheckKey()==EOF){
+      UCA0TXBUF = 0x55;
+      //count = 0;
+      //while (count < 65535){count++;}
+    }
+  }
+  return 0;
+}
+
+
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ex","[arg1] [arg2] ...\r\n\t""Example command to show how arguments are passed",example_command},
@@ -641,6 +674,8 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ti2c","ti2c [str (no spaces)]""returns input str (no spaces) forever, unless key is pressed", testI2C},
 //                   {"ttgps","ttgps [lat] [lon] [alt]""activates GPS_EV once, uses lat, lon, and alt arguments", testTaskingGPS},
                    {"ttimu","ttimu""repeatedly activates IMU_EV", testTaskingIMU},
+                   {"rgps","rgps""reads gps[] string", readGPS},
+                   {"ttx","ttx""outputs 01010101", testTX},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list

@@ -4,4 +4,6 @@
   void gps_setup(void);
   float gps_mintodeg(float);
   float gps_sectodeg(float);
+
+  extern char gps[100];
 #endif
