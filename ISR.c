@@ -36,11 +36,11 @@ void USCI_A0_ISR (void) __interrupt [USCI_A0_VECTOR]
         //printf("%c\n\r", gps[i]);
         gps[0] = '$';
         i = 1;
-        ////          |0    5|7       16|18     26| |30      39| | |  |   |52  56| |   | |   |       |
-        //sprintf(gps,"$GPGGA,225307.072,6451.3762,N,14749.1884,W,1,07,1.2,176.7,M,4.8,M,0.0,0000*57\n\0"); //for testing
         //Check header (really all we care about is the GGA data, everything else can be dropped)
         if((gps[0] == '$') && (gps[1] == 'G') && (gps[2] == 'P') && (gps[3] == 'G') && (gps[4] == 'G') && (gps[5] == 'A')) // (!strcmp(gpsh,"$GPGGA"))
         {
+          ////          |0    5|7       16|18     26| |30      39| | |  |   |52  56| |   | |   |       |
+          sprintf(gps,"$GPGGA,225307.072,6451.3762,N,14749.1884,W,1,07,1.2,176.7,M,4.8,M,0.0,0000*57\n\0"); //for testing
           //printf("%s\n\r", gps);
           ctl_events_set_clear(&PF_events, GPS_EV, 0);
         }

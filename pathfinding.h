@@ -11,9 +11,9 @@ extern double apos[3];     // astronaut combined position from GPS and IMU
 extern float ahed;        // astronaut heading relative to north (in radians)
 extern float arot;        // astronaut rotation needed to be facing target (in degrees for now)
 
-extern int tWP;       // current target waypoint
-extern float tpos[3]; // coordinates of current target waypoint
-extern float thed;    // heading needed for astronaut to be facing target
+extern unsigned int tWP;  // current target waypoint
+extern double tpos[3];     // coordinates of current target waypoint
+extern float thed;        // heading needed for astronaut to be facing target
 
 //extern float debugWP[6][3]; // test waypoints with coordinates
 

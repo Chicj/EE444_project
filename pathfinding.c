@@ -23,11 +23,11 @@ double apos[3] = {0.0,0.0,0.0};    // astronaut combined position from GPS and I
 float ahed = 0.0;                 // astronaut heading relative to north (in radians)
 float arot = 0.0;                 // astronaut rotation needed to be facing target (in degrees for now)
 
-int tWP = 0;                    // current target waypoint
-float tpos[3] = {0.0,0.0,0.0};  // coordinates of current target waypoint
+unsigned int tWP = 0;           // current target waypoint
+double tpos[3] = {0.0,0.0,0.0};  // coordinates of current target waypoint
 float thed = 0.0;               // heading needed for astronaut to be facing target
 
-float debugWP[5][3] = { // test waypoints with coordinates
+double debugWP[5][3] = { // test waypoints with coordinates
   {64.856272,-147.819532,177.4}, // Flag Circle
   {64.857242,-147.821270,177.4}, // Turtle Sex Park
   {64.857065,-147.823148,177.4}, // The Lonely Tree
@@ -59,7 +59,7 @@ void PF_func(void *p) __toplevel{
       pathfindTarget(); // determine/update target waypoint
       pathfindHeading(); // determine/update heading to target waypoint
       printf("apos: % 10.6f | % 11.6f\n\r", apos[0], apos[1]);
-      printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
+      printf("tpos: % 10.6f | % 11.6f | ID: %u\n\r", tpos[0], tpos[1], tWP);
     }
     // IMU STUFF HAPPENED
     if (e & IMU_EV)
