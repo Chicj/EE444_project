@@ -1,4 +1,5 @@
 #include <bno055.h>
+#include <msp430f6779a.h>
 #include "i2c.h"
 #include "IMU.h"
 #include <ctl.h>
@@ -17,6 +18,13 @@ const char *sys_err_strings[] = {"No Error", "Peripheral Initialization Error", 
  create a set addr function ? only needed for multi IMU's
  create a read sys_err function 
 */
+
+void initIMUtimer(void) {
+  TA0CCR0 = 3277;
+  TA0CTL = TACLR;
+  TA0CTL = TASSEL__ACLK + TAIE;
+  TA0CTL |= MC__UP;
+}
 
 
 // Reset IMU

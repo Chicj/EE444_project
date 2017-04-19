@@ -46,12 +46,13 @@ void PF_func(void *p) __toplevel{
   float temphed;
   float tempout;
   for (;;) {
-    e=ctl_events_wait(CTL_EVENT_WAIT_ANY_EVENTS_WITH_AUTO_CLEAR, &PF_events, PF_EV_ALL, CTL_TIMEOUT_NONE, 0);
+    e = ctl_events_wait(CTL_EVENT_WAIT_ANY_EVENTS_WITH_AUTO_CLEAR, &PF_events, PF_EV_ALL, CTL_TIMEOUT_NONE, 0);
     // GPU STUFF HAPPENED
-    if (e & GPU_EV){
+    if (e & GPS_EV){
       // pathfindGPS(0,0,0); // updates astronaut location // should probably be done in GPS_ISR
       pathfindTarget(); // determine/update target waypoint
       pathfindHeading(); // determine/update heading to target waypoint
+      printf("Lat: % 5.1f | Lon: % 5.1f | Alt: % 5.1f\n\r", apos[0], apos[1], apos[2]);
     }
     // IMU STUFF HAPPENED
     if (e & IMU_EV)

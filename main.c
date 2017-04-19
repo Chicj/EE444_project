@@ -12,6 +12,7 @@
 #include <string.h>           // for memset function
 #include <UCA2_uart.h>        // UART setup 
 #include "gps.h"
+#include <IMU.h>
 #include <pathfinding.h>
 
 extern CTL_MUTEX_t crc_mutex;
@@ -57,7 +58,7 @@ void main(void){
   // also enables interrupts
   ctl_task_init(&idle_task, 255, "idle");
   
-  // initialize stacks (3) 
+  // initialize terminal task stack with known values
   memset(terminal_stack,0xcd,sizeof(terminal_stack));                                           //write known values into the stack 
   terminal_stack[0]=terminal_stack[sizeof(terminal_stack)/sizeof(terminal_stack[0])-1]=0xfeed;  //put marker values at the words before/after the stack
 
@@ -67,7 +68,7 @@ void main(void){
   // initialize PathFinding events and run PathFinding Task
   ctl_events_init(&PF_events, 0);
   ctl_task_run(&PF_task, 100, PF_func, NULL, "PathFinding task", sizeof(PF_stack)/sizeof(PF_stack[0])-2, PF_stack-1, 0);
-
+//  initIMUtimer();
   // drop to lowest priority to start created tasks running.
   ctl_task_set_priority(&idle_task,0);  
   
