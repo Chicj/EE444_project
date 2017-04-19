@@ -11,9 +11,10 @@
 #include <terminal.h>      
 #include <string.h>           // for memset function
 #include <UCA2_uart.h>        // UART setup 
-#include "gps.h"
 #include <IMU.h>
 #include <pathfinding.h>
+#include "LED.h"
+#include "gps.h"
 
 extern CTL_MUTEX_t crc_mutex;
 
@@ -45,13 +46,12 @@ void main(void){
   gps_setup();
   //initialize UART
   UCA2_init_UART(3,5,6);  //UCA2_init_UART(UART_PORT,UART_TX_PIN_NUM,UART_RX_PIN_NUM);
-
   //initialize pathfinding
   initPathfinding();
-
   //init I2C on P4.5 SDA and P4.4 SCL
   initI2C(4,5,4);
-  
+  // setup SPI to talk to LED driver
+  SPI_LED_setup();
   // initialize tasking things  
   // create a main task (idle task) with maximum priority so other tasks can be created without interruption
   // this should be called before other tasks are created

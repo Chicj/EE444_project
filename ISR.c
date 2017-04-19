@@ -84,7 +84,7 @@ void USCI_A0_ISR (void) __interrupt [USCI_A0_VECTOR]
 //void TimerA0_ISR (void) __interrupt [TIMER0_A0_VECTOR] {
 //  switch (TA0IV) {
 //    case TA0IV_TA0IFG:
-//      bno055_get_euler();
+//      bno055_get_imu();
 //      break;
 //
 //    default:

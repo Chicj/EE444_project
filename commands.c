@@ -19,7 +19,11 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <pathfinding.h>
 #include <math.h>
 #include <gps.h>
+#include "LED.h"
 
+#ifndef  M_PI 
+#define  M_PI 3.1415926535897932384/* pi  for problems with Crossworks*/
+#endif
 //*********************************************************** passing arguments over the terminal *********************************************
 int example_command(char **argv,unsigned short argc){
   int i,j;
@@ -653,6 +657,13 @@ int testTX (char **argv, unsigned short argc)
   return 0;
 }
 
+// calls TX interupt to transmit "U" ASCII symbol (binary 01010101)
+int testLED_cmd (char **argv, unsigned short argc){
+int input;
+  input=strtol(argv[1],NULL,0);// populate LED input
+  write_LED(input);  // will send out 
+  return 0;
+}
 
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
@@ -676,6 +687,8 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ttimu","ttimu""repeatedly activates IMU_EV", testTaskingIMU},
                    {"rgps","rgps""reads gps[] string", readGPS},
                    {"ttx","ttx""outputs 01010101", testTX},
+                   {"LED","Test LED driver", testLED_cmd},
+
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list

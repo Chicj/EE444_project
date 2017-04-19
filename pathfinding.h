@@ -22,8 +22,8 @@ extern float thed;    // heading needed for astronaut to be facing target
 
 // ********** TASKING STUFF **********
 extern CTL_EVENT_SET_t PF_events;
-enum{GPS_EV=(1<<0), IMU_EV=(1<<1)};
-#define PF_EV_ALL (GPS_EV|IMU_EV)
+enum{GPS_EV=(1<<0), IMU_EV=(1<<1),LED_EV=(1<<2)};
+#define PF_EV_ALL (GPS_EV|IMU_EV|LED_EV)
 
 void PF_func(void *p);
 // ***********************************

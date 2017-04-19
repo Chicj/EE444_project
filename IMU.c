@@ -116,6 +116,7 @@ short bno055_get_imu(void)
   // TODO FUNCTION IS FAILING IN i2c_txrx()! SOMETIMES EXITS TO LPM0!
   resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8);// read sys_err reg
   ctl_events_set_clear(&PF_events, IMU_EV, 0); // will be used in bno055_get_IMU instead...
+  ctl_events_set_clear(&PF_events, LED_EV, 0);  // Drive LED
   return resp;
 }
 

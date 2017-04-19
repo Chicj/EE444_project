@@ -12,6 +12,10 @@ http://www.movable-type.co.uk/scripts/latlong.html
 #include <ctl.h>
 #include <IMU.h>
 
+#ifndef  M_PI 
+#define  M_PI 3.1415926535897932384/* pi  for problems with Crossworks*/
+#endif
+
 float apos[3] = {0.0,0.0,0.0};    // astronaut combined position from GPS and IMU
 float aposGPS[3] = {0.0,0.0,0.0}; // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
 float aposIMU[3] = {0.0,0.0,0.0}; // astronaut relative position from IMU [x (meters), y (meters), z (meters)] relative to last GPS ping
@@ -65,6 +69,12 @@ void PF_func(void *p) __toplevel{
 
       printf("%c[2J%c[f",27,27); // clear terminal, set cursor home
       printf("% 5.1f degrees\n\r",tempout); // output astronaut rotation
+    }
+    // LED STUFF HERE
+    if(e & LED_EV){
+    // drive LEDs W/ Euler output
+    // parse arot (-180 <--> +180) with 270 deg LED 
+    //write_LED(?????); <-- needs char pointer w/ 16 bits
     }
   }
 }

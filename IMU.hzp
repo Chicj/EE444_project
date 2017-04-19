@@ -33,6 +33,8 @@
       <file file_name="gps.h" />
       <file file_name="pathfinding.c" />
       <file file_name="pathfinding.h" />
+      <file file_name="LED.c" />
+      <file file_name="LED.h" />
     </folder>
     <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
