@@ -5,9 +5,9 @@
 // Nothing but pathfinding.c and commands.c should use these variables.
 #include <ctl.h>
 
-extern float apos[3];     // astronaut combined position from GPS and IMU
-extern float aposGPS[3];  // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
-extern float aposIMU[3];  // astronaut relative position from IMU [x (meters), y (meters), z (meters)] relative to last GPS ping
+extern double apos[3];     // astronaut combined position from GPS and IMU
+//extern float aposGPS[3];  // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
+//extern float aposIMU[3];  // astronaut relative position from IMU [x (meters), y (meters), z (meters)] relative to last GPS ping
 extern float ahed;        // astronaut heading relative to north (in radians)
 extern float arot;        // astronaut rotation needed to be facing target (in degrees for now)
 

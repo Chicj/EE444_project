@@ -17,9 +17,9 @@ http://www.movable-type.co.uk/scripts/latlong.html
 #define  M_PI 3.1415926535897932384/* pi  for problems with Crossworks*/
 #endif
 
-float apos[3] = {0.0,0.0,0.0};    // astronaut combined position from GPS and IMU
-float aposGPS[3] = {0.0,0.0,0.0}; // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
-float aposIMU[3] = {0.0,0.0,0.0}; // astronaut relative position from IMU [x (meters), y (meters), z (meters)] relative to last GPS ping
+double apos[3] = {0.0,0.0,0.0};    // astronaut combined position from GPS and IMU
+//float aposGPS[3] = {0.0,0.0,0.0}; // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
+//float aposIMU[3] = {0.0,0.0,0.0}; // astronaut relative position from IMU [x (meters), y (meters), z (meters)] relative to last GPS ping
 float ahed = 0.0;                 // astronaut heading relative to north (in radians)
 float arot = 0.0;                 // astronaut rotation needed to be facing target (in degrees for now)
 

@@ -657,7 +657,7 @@ int testTX (char **argv, unsigned short argc)
   return 0;
 }
 
-// calls TX interupt to transmit "U" ASCII symbol (binary 01010101)
+// 
 int testLED_cmd (char **argv, unsigned short argc){
 int input;
   input=strtol(argv[1],NULL,0);// populate LED input
