@@ -90,6 +90,7 @@ char *err_decode(char buf[150], unsigned short source,int err, unsigned short ar
 //perhaps should try to recover/log error
 void ctl_handle_error(CTL_ERROR_CODE_t e) __toplevel{
   //a really bad error occurred, reset and report the error 
+  printf("ERROR!");
   while(1){ //TODO replace this with a reset later
    __no_operation(); // for debug break here 
   }

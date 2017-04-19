@@ -11,6 +11,7 @@ http://www.movable-type.co.uk/scripts/latlong.html
 #include <pathfinding.h>
 #include <ctl.h>
 #include <IMU.h>
+#include "gps.h"
 
 #ifndef  M_PI 
 #define  M_PI 3.1415926535897932384/* pi  for problems with Crossworks*/
@@ -26,22 +27,22 @@ int tWP = 0;                    // current target waypoint
 float tpos[3] = {0.0,0.0,0.0};  // coordinates of current target waypoint
 float thed = 0.0;               // heading needed for astronaut to be facing target
 
-//float debugWP[5][3] = { // test waypoints with coordinates
-//  {64.856272,-147.819532,177.4}, // Flag Circle
-//  {64.857242,-147.821270,177.4}, // Turtle Sex Park
-//  {64.857065,-147.823148,177.4}, // The Lonely Tree
-//  {64.856471,-147.822139,177.4}, // Gruelson Junction
-//  {64.855865,-147.821099,177.4}  // Signer's Bus Bench
-//}; // elevation of 177.4 may not be reachable at all locations, taken at flag circle.
+float debugWP[5][3] = { // test waypoints with coordinates
+  {64.856272,-147.819532,177.4}, // Flag Circle
+  {64.857242,-147.821270,177.4}, // Turtle Sex Park
+  {64.857065,-147.823148,177.4}, // The Lonely Tree
+  {64.856471,-147.822139,177.4}, // Gruelson Junction
+  {64.855865,-147.821099,177.4}  // Signer's Bus Bench
+}; // elevation of 177.4 may not be reachable at all locations, taken at flag circle.
 
-float debugWP[6][3] = { // test waypoints with coordinates
-  {10.0,10.0,0.0},
-  {10.0,20.0,0.0},
-  {-10.0,-10.0,0.0},
-  {-20.0,20.0,0.0},
-  {-50.0,50.0,0.0},
-  {50.0,-40.0,0.0}
-  };
+//float debugWP[6][3] = { // test waypoints with coordinates
+//  {10.0,10.0,0.0},
+//  {10.0,20.0,0.0},
+//  {-10.0,-10.0,0.0},
+//  {-20.0,20.0,0.0},
+//  {-50.0,50.0,0.0},
+//  {50.0,-40.0,0.0}
+//};
 
 CTL_EVENT_SET_t PF_events;
 
@@ -53,10 +54,12 @@ void PF_func(void *p) __toplevel{
     e = ctl_events_wait(CTL_EVENT_WAIT_ANY_EVENTS_WITH_AUTO_CLEAR, &PF_events, PF_EV_ALL, CTL_TIMEOUT_NONE, 0);
     // GPU STUFF HAPPENED
     if (e & GPS_EV){
-      // pathfindGPS(0,0,0); // updates astronaut location // should probably be done in GPS_ISR
+      //printf("GPS_EV\n\r");
+      gps_RX();
       pathfindTarget(); // determine/update target waypoint
       pathfindHeading(); // determine/update heading to target waypoint
-      printf("Lat: % 5.1f | Lon: % 5.1f | Alt: % 5.1f\n\r", apos[0], apos[1], apos[2]);
+      printf("apos: % 10.6f | % 11.6f\n\r", apos[0], apos[1]);
+      printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
     }
     // IMU STUFF HAPPENED
     if (e & IMU_EV)
