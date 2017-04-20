@@ -31,8 +31,8 @@ void initIMU(void) {
   short resp, gyr_calib;
   long i;
   unsigned char tx_buf[2]={BNO055_SYS_TRIGGER_ADDR, BNO055_SYS_RST_MSK};
-  for (i = 0; i < 100000; i++);
-  resp = bno055_reset();
+  //for (i = 0; i < 100000; i++);
+  //resp = bno055_reset();
   
   /*while (resp < 0) {
     printf("IMU init: Failed to set  operation mode.\n\r");

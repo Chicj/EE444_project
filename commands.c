@@ -620,7 +620,7 @@ int testTaskingIMU (char **argv, unsigned short argc)
     while(UCA2_CheckKey()==EOF){
       bno055_get_imu();
       count = 0;
-      while (count < 65535){count++;}
+      while (count < 655){count++;}
     }
   }
   return 0;

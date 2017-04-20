@@ -50,7 +50,7 @@ CTL_EVENT_SET_t PF_events;
 
 void PF_func(void *p) __toplevel{
   unsigned int e,LED_input = 0;
-  int LED_scratch;
+  float LED_scratch;
   float temphed;
   float tempout;
   initIMU();
@@ -84,7 +84,9 @@ void PF_func(void *p) __toplevel{
     // drive LEDs W/ Euler output
     // parse arot (-180 <--> +180) with 270 deg LED 
  
-      LED_input = arot;
+      LED_scratch = arot < 0 ? arot + 360 : arot;
+      LED_input = LED_scratch/16.3;
+      LED_input = 1<<LED_input;
       write_LED(LED_input); // needs int
     }
   }
