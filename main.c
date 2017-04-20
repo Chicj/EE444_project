@@ -52,28 +52,30 @@ void main(void){
   initI2C(4,5,4);
   // setup SPI to talk to LED driver
   SPI_LED_setup();
+
   // initialize tasking things  
   // create a main task (idle task) with maximum priority so other tasks can be created without interruption
   // this should be called before other tasks are created
   // also enables interrupts
   ctl_task_init(&idle_task, 255, "idle");
-  
+
   // initialize terminal task stack with known values
   memset(terminal_stack,0xcd,sizeof(terminal_stack));                                           //write known values into the stack 
   terminal_stack[0]=terminal_stack[sizeof(terminal_stack)/sizeof(terminal_stack[0])-1]=0xfeed;  //put marker values at the words before/after the stack
 
   // creating the tasks
-  ctl_task_run(&terminal_task,BUS_PRI_LOW,terminal,"EE444 IMU Project code","terminal",sizeof(terminal_stack)/sizeof(terminal_stack[0])-2,terminal_stack-1,0);
-  
+  ctl_task_run(&terminal_task,20,terminal,"EE444 IMU Project code","terminal",sizeof(terminal_stack)/sizeof(terminal_stack[0])-2,terminal_stack-1,0);
+
   // initialize PathFinding events and run PathFinding Task
   ctl_events_init(&PF_events, 0);
   ctl_task_run(&PF_task, 100, PF_func, NULL, "PathFinding task", sizeof(PF_stack)/sizeof(PF_stack[0])-2, PF_stack-1, 0);
-//  initIMUtimer();
+
   // drop to lowest priority to start created tasks running.
   ctl_task_set_priority(&idle_task,0);  
-  
+
   //main loop
   for(;;){
+    WDT_KICK();
     LPM0;     // wait in lowpower mode 
   }
 }

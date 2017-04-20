@@ -6,28 +6,30 @@ http://www.movable-type.co.uk/scripts/latlong.html
 */
 
 #include <msp430.h> 
+#include <Error.h>
 #include <math.h>
 #include <stdio.h>
 #include <pathfinding.h>
 #include <ctl.h>
 #include <IMU.h>
 #include "gps.h"
+#include "LED.h"
 
 #ifndef  M_PI 
 #define  M_PI 3.1415926535897932384/* pi  for problems with Crossworks*/
 #endif
 
-double apos[3] = {0.0,0.0,0.0};    // astronaut combined position from GPS and IMU
-//float aposGPS[3] = {0.0,0.0,0.0}; // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
-//float aposIMU[3] = {0.0,0.0,0.0}; // astronaut relative position from IMU [x (meters), y (meters), z (meters)] relative to last GPS ping
+float apos[3] = {0.0,0.0,0.0};    // astronaut combined position from GPS and IMU
+float aposGPS[3] = {0.0,0.0,0.0}; // astronaut global position from GPS [latitude (degrees), longitude (degrees), altitude (meters)]
+float aposIMU[3] = {0.0,0.0,0.0}; // astronaut relative position from IMU [x (meters), y (meters), z (meters)] relative to last GPS ping
 float ahed = 0.0;                 // astronaut heading relative to north (in radians)
 float arot = 0.0;                 // astronaut rotation needed to be facing target (in degrees for now)
 
-unsigned int tWP = 0;           // current target waypoint
-double tpos[3] = {0.0,0.0,0.0};  // coordinates of current target waypoint
+int tWP = 0;                    // current target waypoint
+float tpos[3] = {0.0,0.0,0.0};  // coordinates of current target waypoint
 float thed = 0.0;               // heading needed for astronaut to be facing target
 
-double debugWP[5][3] = { // test waypoints with coordinates
+float debugWP[5][3] = { // test waypoints with coordinates
   {64.856272,-147.819532,177.4}, // Flag Circle
   {64.857242,-147.821270,177.4}, // Turtle Sex Park
   {64.857065,-147.823148,177.4}, // The Lonely Tree
@@ -47,11 +49,15 @@ double debugWP[5][3] = { // test waypoints with coordinates
 CTL_EVENT_SET_t PF_events;
 
 void PF_func(void *p) __toplevel{
-  unsigned int e;
+  unsigned int e,LED_input = 0;
+  int LED_scratch;
   float temphed;
   float tempout;
+  initIMU();
+  //initIMUtimer();
   for (;;) {
     e = ctl_events_wait(CTL_EVENT_WAIT_ANY_EVENTS_WITH_AUTO_CLEAR, &PF_events, PF_EV_ALL, CTL_TIMEOUT_NONE, 0);
+    WDT_KICK();
     // GPU STUFF HAPPENED
     if (e & GPS_EV){
       //printf("GPS_EV\n\r");
@@ -59,7 +65,7 @@ void PF_func(void *p) __toplevel{
       pathfindTarget(); // determine/update target waypoint
       pathfindHeading(); // determine/update heading to target waypoint
       printf("apos: % 10.6f | % 11.6f\n\r", apos[0], apos[1]);
-      printf("tpos: % 10.6f | % 11.6f | ID: %u\n\r", tpos[0], tpos[1], tWP);
+      printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
     }
     // IMU STUFF HAPPENED
     if (e & IMU_EV)
@@ -77,7 +83,9 @@ void PF_func(void *p) __toplevel{
     if(e & LED_EV){
     // drive LEDs W/ Euler output
     // parse arot (-180 <--> +180) with 270 deg LED 
-    //write_LED(?????); <-- needs char pointer w/ 16 bits
+ 
+      LED_input = arot;
+      write_LED(LED_input); // needs int
     }
   }
 }

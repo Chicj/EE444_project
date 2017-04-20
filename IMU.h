@@ -11,6 +11,7 @@ extern const char *sys_status_strings[];
 extern const char *sys_err_strings[];
 
 void  initIMUtimer(void);
+void  initIMU(void);
 short bno055_pageid(unsigned char page);
 short bno055_reset(void);
 short bno055_status(void);

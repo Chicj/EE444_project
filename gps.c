@@ -34,104 +34,44 @@ void gps_setup(void){
 }
 
 
-double gps_mintodeg(double tempmin)
+float gps_mintodeg(float tempmin)
 {
   return tempmin / 60;
 }
 
 
-//double gps_sectodeg(double tempsec)
-//{
-//  return tempsec / 3600;
-//}
+float gps_sectodeg(float tempsec)
+{
+  return tempsec / 3600;
+}
 
 
 void gps_RX(void)
 {
+  double timeh, timem, times, latd, latm, lond, lonm, lats, lons;
   int j;
   //sprintf(gps,"$GPGGA,225307.072,6451.3762,N,14749.1884,W,1,07,1.2,176.7,M,4.8,M,0.0,0000*57");
   for (j = 0; j < 100; j++) //change 42 to include alt
     {
       gps[j] = gps[j] - 0x30; // change all important ASCII chars to actual numbers...
     }
-    // time = gps_time();
-    apos[0] = gps_lat();
-    apos[1] = gps_lon();
-    apos[2] = gps_alt();
-}
-
-
-//float gps_time(void)
-//{
-//  // skip gps[0..5] = "$GPGGA" | skip gps[6] = ","
-//  timeh = (gps[7] * 10) + gps[8];
-//  timem = (gps[9] * 10) + gps[10];
-//  times = (gps[11] * 10) + gps[12] + (gps[14] / 10) + (gps[15] / 100) + (gps[16] / 1000); // skip gps[13] = "."
-//  // skip gps[17] = ","
-//}
-
-
-double gps_lat(void)
-{
-  //float latd, latm, latsin;
-  int latd;
-  float latm;
-  char latsin;
-
-  // skip gps[17] = ","
-  latd = gps_latd(); // (gps[18] * 10.0) + gps[19];
-  latm = gps_latm(); // (gps[20] * 10.0) + gps[21] + (gps[23] / 10.0) + (gps[24] / 100.0) + (gps[25] / 1000.0) + (gps[26] / 10000.0); // skip gps[22] = "."
-  // skip gps[27] = ","
-  latsin = (gps[28] == ('N' - 0x30))? 1 : -1; // printf("%c\n\r", gps[28] + 0x30);
-  return latsin * (latd + gps_mintodeg(latm)); // astronaut latitude
-}
-
-double gps_lon(void)
-{
-  double lond, lonm, lonsin;
-  // skip gps[29] = ","
-  lond =  gps_lond(); // (gps[30] * 100.0) + (gps[31] * 10.0) + gps[32];
-  lonm =  gps_lonm(); // (gps[33] * 10.0) + gps[34] + (gps[36] / 10.0) + (gps[37] / 100.0) + (gps[38] / 1000.0) + (gps[39] / 10000.0); // skip gps[35] = "."
-  // skip gps[40] = ","
-  lonsin = (gps[41] == ('E' - 0x30))? 1 : -1; // printf("%c\n\r", gps[41] + 0x30);
-  return lonsin * (lond + gps_mintodeg(lonm)); // astronaut longitude
-}
-
-double gps_alt(void)
-{
-  // skip gps[42..51] = junk
-  // alt = gps[52..?]
-  return 0; // astronaut altitude
-}
-
-double gps_latd(void)
-{
-  return (gps[18] * 10.0) + gps[19];
-}
-
-double gps_latm(void)
-{
-  double var0 = (gps[20] * 10.0);
-  double var1 = gps[21];
-  double var2 = (gps[23] / 10.0);
-  double var3 = (gps[24] / 100.0);
-  double var4 = (gps[25] / 1000.0);
-  double var5 = (gps[26] / 10000.0); // skip gps[22] = "."
-  return var0 + var1 + var2 + var3 + var4 + var5;
-}
-
-double gps_lond(void)
-{
-  return (gps[30] * 100.0) + (gps[31] * 10.0) + gps[32];
-}
-
-double gps_lonm(void)
-{
-  double var0 = (gps[33] * 10.0);
-  double var1 = gps[34];
-  double var2 = (gps[36] / 10.0);
-  double var3 = (gps[37] / 100.0);
-  double var4 = (gps[38] / 1000.0);
-  double var5 = (gps[39] / 10000.0); // skip gps[35] = "."
-  return var0 + var1 + var2 + var3 + var4 + var5;
+    // skip gps[0..5] = "$GPGGA" | skip gps[6] = ","
+//    timeh = (gps[7] * 10) + gps[8];
+//    timem = (gps[9] * 10) + gps[10];
+//    times = (gps[11] * 10) + gps[12] + (gps[14] / 10) + (gps[15] / 100) + (gps[16] / 1000); // skip gps[13] = "."
+    // skip gps[17] = ","
+    latd = (gps[18] * 10) + gps[19];
+    latm = (gps[20] * 10) + gps[21] + (gps[23] / 10) + (gps[24] / 100) + (gps[25] / 1000) + (gps[26] / 1000); // skip gps[22] = "."
+    // skip gps[27] = ","
+    lats = (gps[28] == ('N' - 0x30))? 1 : -1; // printf("%c\n\r", gps[28] + 0x30);
+    apos[0] = lats * (latd + gps_mintodeg(latm)); // astronaut latitude
+    // skip gps[29] = ","
+    lond = (gps[30] * 100) + (gps[31] * 10) + gps[32];
+    lonm = (gps[33] * 10) + gps[34] + (gps[36] / 10) + (gps[37] / 100) + (gps[38] / 1000) + (gps[39] / 10000); // skip gps[35] = "."
+    // skip gps[40] = ","
+    lons = (gps[41] == ('E' - 0x30))? 1 : -1; // printf("%c\n\r", gps[41] + 0x30);
+    apos[1] = lons * (lond + gps_mintodeg(lonm)); // astronaut longitude
+    // skip gps[42..51] = junk
+    // alt = gps[52..?]
+    apos[2] = 0; // astronaut altitude
 }

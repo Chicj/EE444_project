@@ -371,10 +371,10 @@ int status_cmd(char **argv,unsigned short argc){
       printf("IMU is fully calibrated.\r\n");
     }
     else{
-      printf("System calibration status is: %d\n\r",glb_buff[0] && BIT7+BIT6);
-      printf("Gyro status is: %d\n\r",glb_buff[0] &&  BIT5+BIT4);
-      printf("ACC calibration status is: %d\n\r",glb_buff[0] && BIT3+BIT2);
-      printf("MAG calibration status is: %d\n\r",glb_buff[0] && BIT1+BIT0);
+      printf("System calibration status is: %d\n\r",(glb_buff[0] & BIT7+BIT6)>>6);
+      printf("Gyro status is: %d\n\r",(glb_buff[0] &  BIT5+BIT4)>>4);
+      printf("ACC calibration status is: %d\n\r",(glb_buff[0] & BIT3+BIT2)>>2);
+      printf("MAG calibration status is: %d\n\r",glb_buff[0] & BIT1+BIT0);
     }
 
     printf("**************************************\r\n");
@@ -386,10 +386,10 @@ int status_cmd(char **argv,unsigned short argc){
       printf("All self tests failed.\r\n");
     }
     else {
-      printf("Microcontroller self test result: %s.\n\r", (glb_buff[1] && BIT3) ? "Passed" : "Failed");
-      printf("Gyroscope self test result: %s.\n\r", (glb_buff[1] && BIT2) ? "Passed" : "Failed");
-      printf("Magnetometer self test result: %s.\n\r", (glb_buff[1] && BIT1) ? "Passed" : "Failed");
-      printf("Accelerometer self test result: %s.\n\r", (glb_buff[1] && BIT0) ? "Passed" : "Failed");
+      printf("Microcontroller self test result: %s.\n\r", (glb_buff[1] & BIT3) ? "Passed" : "Failed");
+      printf("Gyroscope self test result: %s.\n\r", (glb_buff[1] & BIT2) ? "Passed" : "Failed");
+      printf("Magnetometer self test result: %s.\n\r", (glb_buff[1] & BIT1) ? "Passed" : "Failed");
+      printf("Accelerometer self test result: %s.\n\r", (glb_buff[1] & BIT0) ? "Passed" : "Failed");
     }
 
     printf("**************************************\r\n");
@@ -657,11 +657,10 @@ int testTX (char **argv, unsigned short argc)
   return 0;
 }
 
-// 
+// calls TX interupt to transmit "U" ASCII symbol (binary 01010101)
 int testLED_cmd (char **argv, unsigned short argc){
 char i = 0;
-int k;
-int input = 1;
+int input = 1 , k;
   //input=strtol(argv[1],NULL,0);// populate LED input
   // write_LED(input);  // will command LEDs
   if(argc == 1){
@@ -691,21 +690,21 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"setup","get sum data?",setup_cmd},
                    {"reset","Reset IMU", reset_cmd},
                    {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
-                   {"quat","Reads all quaternion data registers", read_Quat},
-                   {"euler","Reads all quaternion data registers and converts them to euler angles", read_Euler},
-                   {"status","Reads all relavtent IMU status registers", status_cmd},
-                   {"readOpr","Reads IMU operation mode and power mode", get_oprcmd},
-                   {"setOprDefault","Set IMU operation mode to default (IMU mode)", set_oprmode_default},
-                   {"setOpr","Set IMU operation mode to passed num", set_oprmode},
-                   {"sgps","sgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates.", spoofGPS},
-                   {"simu","simu [hed]""Spoofs astronaut's IMU heading.", spoofIMU},
-                   {"timu","timu [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates, but uses actual IMU data", testIMU},
-                   {"ti2c","ti2c [str (no spaces)]""returns input str (no spaces) forever, unless key is pressed", testI2C},
+                   {"quat","Reads all quaternion data registers\n\r", read_Quat},
+                   {"euler","Reads all quaternion data registers and converts them to euler angles\n\r", read_Euler},
+                   {"status","Reads all relavtent IMU status registers\n\r", status_cmd},
+                   {"readOpr","Reads IMU operation mode and power mode\n\r", get_oprcmd},
+                   {"setOprDefault","Set IMU operation mode to default (IMU mode)\n\r", set_oprmode_default},
+                   {"setOpr","Set IMU operation mode to passed num\n\r", set_oprmode},
+                   {"sgps","sgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates.\n\r", spoofGPS},
+                   {"simu","simu [hed]""Spoofs astronaut's IMU heading.\n\r", spoofIMU},
+                   {"timu","timu [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates, but uses actual IMU data.\n\r", testIMU},
+                   {"ti2c","ti2c [str (no spaces)]""returns input str (no spaces) forever, unless key is pressed.\n\r", testI2C},
 //                   {"ttgps","ttgps [lat] [lon] [alt]""activates GPS_EV once, uses lat, lon, and alt arguments", testTaskingGPS},
-                   {"ttimu","ttimu""repeatedly activates IMU_EV", testTaskingIMU},
-                   {"rgps","rgps""reads gps[] string", readGPS},
-                   {"ttx","ttx""outputs 01010101", testTX},
-                   {"LED","Test LED driver", testLED_cmd},
+                   {"ttimu","ttimu""repeatedly activates IMU_EV.\n\r", testTaskingIMU},
+                   {"rgps","rgps""reads gps[] string.\n\r", readGPS},
+                   {"ttx","ttx""outputs 01010101.\n\r", testTX},
+                   {"LED","Test LED driver, if argc>0 [char] will convert char to int and drive that pattern.\n\r", testLED_cmd},
 
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 

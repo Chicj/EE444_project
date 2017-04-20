@@ -4,6 +4,7 @@
 #include "IMU.h"
 #include <ctl.h>
 #include <pathfinding.h>
+#include <stdio.h>
 
 unsigned short addr = BNO055_I2C_ADDR1; // global IMU addr
 unsigned char glb_buff[10];  // global buffer
@@ -24,6 +25,31 @@ void initIMUtimer(void) {
   TA0CTL = TACLR;
   TA0CTL = TASSEL__ACLK + TAIE;
   TA0CTL |= MC__UP;
+}
+
+void initIMU(void) {
+  short resp, gyr_calib;
+  long i;
+  unsigned char tx_buf[2]={BNO055_SYS_TRIGGER_ADDR, BNO055_SYS_RST_MSK};
+  for (i = 0; i < 100000; i++);
+  resp = bno055_reset();
+  
+  /*while (resp < 0) {
+    printf("IMU init: Failed to set  operation mode.\n\r");
+    //__delay_cycles(100000);
+    resp = i2c_tx(addr, tx_buf, 2);
+  }*/
+  for (i = 0; i < 100000; i++);
+  resp = bno055_set_oprmode_default();
+  
+
+  //gyr_calib = (glb_buff[0] & (BIT4+BIT5))>>4;
+  /*while (gyr_calib == 0) {
+    printf("IMU init: Not calibrated yet.\n\r");
+    //__delay_cycles(100000);
+    i2c_txrx(addr, tx_buf, 1, glb_buff, 2);
+    gyr_calib = (glb_buff[0] & (BIT4+BIT5))>>4;
+  }*/
 }
 
 
@@ -111,9 +137,11 @@ short bno055_get_euler(void)
 // Get IMU Euler data and start IMU task
 short bno055_get_imu(void)
 {
+  long i;
   unsigned short resp;
   unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};
   // TODO FUNCTION IS FAILING IN i2c_txrx()! SOMETIMES EXITS TO LPM0!
+  for (i = 0; i < 100000; i++);
   resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8);// read sys_err reg
   ctl_events_set_clear(&PF_events, IMU_EV, 0); // will be used in bno055_get_IMU instead...
   ctl_events_set_clear(&PF_events, LED_EV, 0);  // Drive LED

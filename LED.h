@@ -4,7 +4,7 @@
 #include <msp430.h>  
 
 void SPI_LED_setup(void); // using UCB0 SPI modual P2.5,6,7 --> SOMI,SIMO,CLK
-void write_LED(int input);  // will send out 
+void write_LED(int input);  // will send data to the LED driver
 
 
 //These are the pins that will talk to the shift register through SPI <-- Port 2
