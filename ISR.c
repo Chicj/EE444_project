@@ -4,25 +4,17 @@
 
 #include <msp430.h>
 #include <msp430f6779a.h>
-#include <IMU.h>
+#include "IMU.h"
 #include <stdio.h>
-#include <pathfinding.h>
-#include <gps.h>
+#include "pathfinding.h"
+#include "gps.h"
 #include <string.h>
 
 
 //GPS ISR
-/*#pragma vector = USCI_A0_VECTOR
-__interrupt*/
 void USCI_A0_ISR (void) __interrupt [USCI_A0_VECTOR]
 {
   static int i = 0;
-  //GPS data & gps header
-  //char gps[500];
-  //char gpsh[6];
-  //int comma = 0;
-  //int cycle, deg, min, sec;
-  //double GpsLat, GpsLong, GpsElv;
 
   switch(UCA0IV)
   {
@@ -55,15 +47,13 @@ void USCI_A0_ISR (void) __interrupt [USCI_A0_VECTOR]
 }
 
 
-
+// IMU interrupt
 void TimerA0_ISR (void) __interrupt [TIMER0_A1_VECTOR] {
   switch (TA0IV) {
     case TA0IV_TA0IFG:
       bno055_get_imu();
-      break;
-
-    default:
-      break;
+    break;
+    default: break;
   }
 }
 

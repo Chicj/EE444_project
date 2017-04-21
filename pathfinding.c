@@ -9,9 +9,9 @@ http://www.movable-type.co.uk/scripts/latlong.html
 #include <Error.h>
 #include <math.h>
 #include <stdio.h>
-#include <pathfinding.h>
+#include "pathfinding.h"
 #include <ctl.h>
-#include <IMU.h>
+#include "IMU.h"
 #include "gps.h"
 #include "LED.h"
 
@@ -49,7 +49,8 @@ float debugWP[5][3] = { // test waypoints with coordinates
 CTL_EVENT_SET_t PF_events;
 
 void PF_func(void *p) __toplevel{
-  unsigned int e,LED_input = 0;
+  unsigned int e;
+  int LED_input = 0;
   float LED_scratch;
   float temphed;
   float tempout;
@@ -60,33 +61,28 @@ void PF_func(void *p) __toplevel{
     WDT_KICK();
     // GPU STUFF HAPPENED
     if (e & GPS_EV){
-      //printf("GPS_EV\n\r");
       gps_RX();
       pathfindTarget(); // determine/update target waypoint
       pathfindHeading(); // determine/update heading to target waypoint
       printf("apos: % 10.6f | % 11.6f\n\r", apos[0], apos[1]);
-      printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
+      //printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
     }
     // IMU STUFF HAPPENED
     if (e & IMU_EV)
     {
-      // called by timer...
       temphed = ((eul_buff[1] << 8) + eul_buff[0]) / 900.0; // astronaut heading from 0 to 2pi
       temphed = (temphed > M_PI)? temphed - (2 * M_PI) : temphed; // astronaut heading from -pi to pi
       pathfindIMU(temphed); // updates astronaut heading // may be unnecessary, could just replace temphed with ahed...
       tempout = pathfindPoint(); // astronaut rotation to target waypoint (-180 to 180 degrees)
-
-      printf("%c[2J%c[f",27,27); // clear terminal, set cursor home
+      //printf("%c[2J%c[f",27,27); // clear terminal, set cursor home
       printf("% 5.1f degrees\n\r",tempout); // output astronaut rotation
     }
     // LED STUFF HERE
     if(e & LED_EV){
-    // drive LEDs W/ Euler output
-    // parse arot (-180 <--> +180) with 270 deg LED 
- 
-      LED_scratch = arot < 0 ? arot + 360 : arot;
-      LED_input = LED_scratch/16.3;
-      LED_input = 1<<LED_input;
+      // drive LEDs W/ Euler output
+      // parse arot (-180 <--> +180) with 270 deg LED 
+      LED_input = round(arot / 16.3);
+      LED_input = (LED_input > 0)? 0x80 << LED_input : 0x80 >> -LED_input;
       write_LED(LED_input); // needs int
     }
   }

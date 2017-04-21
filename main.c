@@ -11,8 +11,8 @@
 #include <terminal.h>      
 #include <string.h>           // for memset function
 #include <UCA2_uart.h>        // UART setup 
-#include <IMU.h>
-#include <pathfinding.h>
+#include "IMU.h"
+#include "pathfinding.h"
 #include "LED.h"
 #include "gps.h"
 
@@ -73,11 +73,14 @@ void main(void){
   // drop to lowest priority to start created tasks running.
   ctl_task_set_priority(&idle_task,0);  
 
+  //_EINT(); // Enable interrupts.
+
   //main loop
   for(;;){
     WDT_KICK();
     LPM0;     // wait in lowpower mode 
   }
+  printf("MAIN_EXIT!");
 }
 
 //decode errors

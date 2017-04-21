@@ -15,10 +15,10 @@ Then function must be added to the "const CMD_SPEC cmd_tbl[]={{"help"," [command
 #include <bno055.h>     // for pin defines 
 #include <UCA2_uart.h>  // for check keys
 #include <ctl.h>        // for delay
-#include <IMU.h>
-#include <pathfinding.h>
+#include "IMU.h"
+#include "pathfinding.h"
 #include <math.h>
-#include <gps.h>
+#include "gps.h"
 #include "LED.h"
 
 #ifndef  M_PI 
@@ -620,7 +620,7 @@ int testTaskingIMU (char **argv, unsigned short argc)
     while(UCA2_CheckKey()==EOF){
       bno055_get_imu();
       count = 0;
-      while (count < 655){count++;}
+      while (count < 65535){count++;}
     }
   }
   return 0;
@@ -657,23 +657,30 @@ int testTX (char **argv, unsigned short argc)
   return 0;
 }
 
+
+// TODO for some reason commands.c is missing prototype for write_LED()!
 // calls TX interupt to transmit "U" ASCII symbol (binary 01010101)
-int testLED_cmd (char **argv, unsigned short argc){
-char i = 0;
-int input = 1 , k;
+int testLED_cmd (char **argv, unsigned short argc)
+{
+  char i = 0;
+  int input = 1 , k;
   //input=strtol(argv[1],NULL,0);// populate LED input
   // write_LED(input);  // will command LEDs
-  if(argc == 1){
-    input=strtol(argv[1],NULL,0);// populate LED input
-    write_LED(input);  // will command LEDs
+  if(argc == 1)
+  {
+   input=strtol(argv[1],NULL,0);// populate LED input
+   write_LED(input);  // will command LEDs
   }
- else{
-    while(UCA2_CheckKey()==EOF){
-    for(k=0;k<10000;k++){};
+  else
+  {
+    while(UCA2_CheckKey()==EOF)
+    {
+      for(k=0;k<10000;k++){};
       input = input<<1; //pulse all LEDS
       write_LED(input);  // will command LEDs
       i++;
-      if(i>15){
+      if(i>15)
+      {
         input = 1;
         i=0;
       }
@@ -692,10 +699,10 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"pageid","checks page ID and changes page ID if passed an arg.\n\r",pageID_cmd},
                    {"quat","Reads all quaternion data registers\n\r", read_Quat},
                    {"euler","Reads all quaternion data registers and converts them to euler angles\n\r", read_Euler},
-                   {"status","Reads all relavtent IMU status registers\n\r", status_cmd},
-                   {"readOpr","Reads IMU operation mode and power mode\n\r", get_oprcmd},
-                   {"setOprDefault","Set IMU operation mode to default (IMU mode)\n\r", set_oprmode_default},
-                   {"setOpr","Set IMU operation mode to passed num\n\r", set_oprmode},
+                   {"stat","Reads all relavtent IMU status registers\n\r", status_cmd},
+                   {"readop","Reads IMU operation mode and power mode\n\r", get_oprcmd},
+                   {"setopdef","Set IMU operation mode to default (IMU mode)\n\r", set_oprmode_default},
+                   {"setOp","Set IMU operation mode to passed num\n\r", set_oprmode},
                    {"sgps","sgps [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates.\n\r", spoofGPS},
                    {"simu","simu [hed]""Spoofs astronaut's IMU heading.\n\r", spoofIMU},
                    {"timu","timu [lat] [lon] [alt]""Spoofs astronaut's GPS coordinates, but uses actual IMU data.\n\r", testIMU},
@@ -704,7 +711,7 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"ttimu","ttimu""repeatedly activates IMU_EV.\n\r", testTaskingIMU},
                    {"rgps","rgps""reads gps[] string.\n\r", readGPS},
                    {"ttx","ttx""outputs 01010101.\n\r", testTX},
-                   {"LED","Test LED driver, if argc>0 [char] will convert char to int and drive that pattern.\n\r", testLED_cmd},
+                   {"led","Test LED driver, if argc>0 [char] will convert char to int and drive that pattern.\n\r", testLED_cmd},
 
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 

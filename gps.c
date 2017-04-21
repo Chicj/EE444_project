@@ -12,10 +12,10 @@ char gps[100];
 void gps_setup(void){
   gps[0] = 0x21; // "!" to indicate an unaltered register
   
-  // TODO don't output clocks in final design...
-  P1DIR |= ACLK + MCLK + SMCLK; // Pin 1.2 is output
-  P1SEL0 |= ACLK + MCLK + SMCLK; // Pin 1.2 output ACLK
-  P3SEL0 |= BIT0 + BIT1; // UCA0RXD + UCA0TXD
+//  // TODO don't output clocks in final design...
+//  P1DIR |= ACLK + MCLK + SMCLK; // Pin 1.2 is output
+//  P1SEL0 |= ACLK + MCLK + SMCLK; // Pin 1.2 output ACLK
+//  P3SEL0 |= BIT0 + BIT1; // UCA0RXD + UCA0TXD
 
   UCA0CTLW0 = UCSWRST; // open UCA1 control registers
   //ACLK chosen, UCA0 needs 32kHz signal to communicate with GPS
