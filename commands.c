@@ -451,7 +451,8 @@ int set_oprmode_default(char **argv, unsigned short argc){
   short resp;
   resp = bno055_set_oprmode_default();
   if (resp > 0){
-    printf("Opr mode set to IMU.\n\r");
+    printf("Opr mode set to IMU.\n\r"); 
+
   }
   else if (resp == -1){
     printf("I2C error: NACK.\n\r");
