@@ -166,11 +166,12 @@ short bno055_get_pwrmode(unsigned char op_mode){
 
 
 short bno055_errcheck(void){
+  long int i = 0;
   unsigned char tx_buf[1] = {BNO055_SYS_STAT_ADDR};  
   i2c_txrx(addr, tx_buf, 1, glb_buff, 2);// read sys_stat data and sys_er
-
   if(glb_buff[0] == 1){
     bno055_reset(); // reset IMU if in err state
+    __delay_cycles(10000000);
     return 1; // err found 
   }
   return 0; // no err
