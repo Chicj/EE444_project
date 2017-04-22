@@ -22,7 +22,7 @@ short bno055_get_quat(void);
 short bno055_get_euler(void);
 short bno055_get_imu(void);
 short bno055_get_pwrmode(unsigned char op_mode);
-
+short bno055_errcheck(void);
 
 
 #endif
