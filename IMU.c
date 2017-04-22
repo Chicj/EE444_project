@@ -141,11 +141,13 @@ short bno055_get_euler(void)
 // Get IMU Euler data and start IMU task
 short bno055_get_imu(void)
 {
+  short imu_stat;
   long int i;
   unsigned short resp;
   unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};
   //for (i = 0; i < 100000; i++);
   // TODO with timer interrupt, bno055_get_imu() never makes it back from 12c_txrx()
+  imu_stat = bno055_errcheck();
   resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8); // read sys_err reg
   ctl_events_set_clear(&PF_events, IMU_EV, 0); // will be used in bno055_get_IMU instead...
   ctl_events_set_clear(&PF_events, LED_EV, 0);  // Drive LED
@@ -161,4 +163,13 @@ short bno055_get_pwrmode(unsigned char op_mode){
 }
 
 
+short bno055_errcheck(void){
+  unsigned char tx_buf[1] = {BNO055_SYS_STAT_ADDR};  
+  i2c_txrx(addr, tx_buf, 1, glb_buff, 2);// read sys_stat data and sys_er
 
+  if(glb_buff[0] == 1){
+    bno055_reset(); // reset IMU if in err state
+    return 1; // err found 
+  }
+  return 0; // no err
+}
