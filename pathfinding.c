@@ -64,8 +64,9 @@ void PF_func(void *p) __toplevel{
       gps_RX();
       pathfindTarget(); // determine/update target waypoint
       pathfindHeading(); // determine/update heading to target waypoint
-      printf("apos: % 10.6f | % 11.6f\n\r", apos[0], apos[1]);
-      printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
+//      printf("%c[2J%c[f",27,27); // clear terminal, set cursor home
+//      printf("apos: % 10.6f | % 11.6f\n\r", apos[0], apos[1]);
+//      printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
     }
     // IMU STUFF HAPPENED
     if (e & IMU_EV)
@@ -74,7 +75,9 @@ void PF_func(void *p) __toplevel{
       temphed = (temphed > M_PI)? temphed - (2 * M_PI) : temphed; // astronaut heading from -pi to pi
       pathfindIMU(temphed); // updates astronaut heading // may be unnecessary, could just replace temphed with ahed...
       tempout = pathfindPoint(); // astronaut rotation to target waypoint (-180 to 180 degrees)
-      //printf("%c[2J%c[f",27,27); // clear terminal, set cursor home
+      printf("%c[2J%c[f",27,27); // clear terminal, set cursor home
+//      printf("apos: % 10.6f | % 11.6f\n\r", apos[0], apos[1]);
+//      printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
       printf("% 5.1f degrees\n\r",tempout); // output astronaut rotation
     }
     // LED STUFF HERE
