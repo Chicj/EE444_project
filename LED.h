@@ -1,5 +1,5 @@
-#ifndef __SDLIB_H
-#define __SDLIB_H
+#ifndef __LED_H
+#define __LED_H
 
   #include <msp430.h>  
 
