@@ -80,7 +80,7 @@ short bno055_pageid(unsigned char page){
 short bno055_status(void)
 {
   unsigned char tx_buf[1] = {BNO055_CALIB_STAT_ADDR};  
-  return i2c_txrx(addr, tx_buf, 1, glb_buff, 5);// read status data
+  return i2c_txrx(addr, tx_buf, 1, glb_buff, 6);// read status data
 }
 
 
