@@ -36,14 +36,8 @@ void gps_setup(void){
 
 double gps_mintodeg(double tempmin)
 {
-  return tempmin / 60;
+  return tempmin / 60.0;
 }
-
-
-//double gps_sectodeg(double tempsec)
-//{
-//  return tempsec / 3600;
-//}
 
 
 void gps_RX(void)

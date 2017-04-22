@@ -56,5 +56,3 @@ void TimerA0_ISR (void) __interrupt [TIMER0_A1_VECTOR] {
     default: break;
   }
 }
-
-

@@ -20,6 +20,7 @@ const char *sys_err_strings[] = {"No Error", "Peripheral Initialization Error", 
  create a read sys_err function 
 */
 
+
 void initIMUtimer(void) {
   // TODO get timer to interrupt without doing something weird in assembly... still interrupts at TA0CCR0 speed.
   // TODO clear IFG at end of interrupt?
@@ -32,6 +33,7 @@ void initIMUtimer(void) {
   TA0CTL = TASSEL__ACLK + MC__STOP + TAIE;
   //TA0CTL |= MC__UP;
 }
+
 
 void initIMU(void) {
   short resp, gyr_calib;

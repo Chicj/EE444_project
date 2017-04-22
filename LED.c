@@ -1,6 +1,7 @@
 #include <msp430f6779a.h>
 #include "LED.h"
 
+
 void SPI_LED_setup(void){ // using UCB0 SPI modual P2.5,6,7 --> SOMI,SIMO,CLK
   P2SEL0 |= SDI + SDO + CLK; // select SPI functionality 
   P2DIR |= SDI + CLK + LE + OE; // set outputs
@@ -13,6 +14,7 @@ void SPI_LED_setup(void){ // using UCB0 SPI modual P2.5,6,7 --> SOMI,SIMO,CLK
   UCB0CTLW0 &=~UCSWRST;                      //Initialize state machine
   
 }
+
 
 void write_LED(int input){  // will send out 
   char i = 0;

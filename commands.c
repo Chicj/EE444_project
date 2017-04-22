@@ -689,10 +689,12 @@ int testLED_cmd (char **argv, unsigned short argc)
   return 0;
 }
 
+
 int start_timer (char **argv, unsigned short argc)
 {
   TA0CTL = TASSEL__ACLK + MC__UP + TAIE;
 }
+
 
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
@@ -717,8 +719,7 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"rgps","rgps""reads gps[] string.\n\r", readGPS},
                    {"ttx","ttx""outputs 01010101.\n\r", testTX},
                    {"led","Test LED driver, if argc>0 [char] will convert char to int and drive that pattern.\n\r", testLED_cmd},
-                   {"stime","", start_timer},
-
+                   {"stime","start TimerA0, which calls bno055_get_IMU()", start_timer},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list
