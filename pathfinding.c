@@ -55,7 +55,7 @@ void PF_func(void *p) __toplevel{
   float temphed;
   float tempout;
   initIMU();
-  //initIMUtimer();
+  initIMUtimer();
   for (;;) {
     e = ctl_events_wait(CTL_EVENT_WAIT_ANY_EVENTS_WITH_AUTO_CLEAR, &PF_events, PF_EV_ALL, CTL_TIMEOUT_NONE, 0);
     WDT_KICK();
@@ -65,7 +65,7 @@ void PF_func(void *p) __toplevel{
       pathfindTarget(); // determine/update target waypoint
       pathfindHeading(); // determine/update heading to target waypoint
       printf("apos: % 10.6f | % 11.6f\n\r", apos[0], apos[1]);
-      //printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
+      printf("tpos: % 10.6f | % 11.6f\n\r", tpos[0], tpos[1]);
     }
     // IMU STUFF HAPPENED
     if (e & IMU_EV)

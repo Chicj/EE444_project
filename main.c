@@ -69,18 +69,16 @@ void main(void){
   // initialize PathFinding events and run PathFinding Task
   ctl_events_init(&PF_events, 0);
   ctl_task_run(&PF_task, 100, PF_func, NULL, "PathFinding task", sizeof(PF_stack)/sizeof(PF_stack[0])-2, PF_stack-1, 0);
-
   // drop to lowest priority to start created tasks running.
   ctl_task_set_priority(&idle_task,0);  
 
-  //_EINT(); // Enable interrupts.
+  //TA0CTL = TASSEL__ACLK + MC__UP + TAIE;
 
   //main loop
   for(;;){
     WDT_KICK();
     LPM0;     // wait in lowpower mode 
   }
-  printf("MAIN_EXIT!");
 }
 
 //decode errors

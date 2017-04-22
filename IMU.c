@@ -21,10 +21,16 @@ const char *sys_err_strings[] = {"No Error", "Peripheral Initialization Error", 
 */
 
 void initIMUtimer(void) {
-  TA0CCR0 = 3277;
-  TA0CTL = TACLR;
-  TA0CTL = TASSEL__ACLK + TAIE;
-  TA0CTL |= MC__UP;
+  // TODO get timer to interrupt without doing something weird in assembly... still interrupts at TA0CCR0 speed.
+  // TODO clear IFG at end of interrupt?
+
+  // CLK = ACLK / ID / IDEX = 32768 / 0 / 0 = 32768 Hz
+  // N = T * CLK / (1 + UPDOWN?) = 0.100 * 32768 / (1 + 0) = 3276.8
+  // trigger every 100 ms, 10 Hz
+  TA0CCR0 = 65535; //3277; 
+  //TA0CTL = TACLR;
+  TA0CTL = TASSEL__ACLK + MC__STOP + TAIE;
+  //TA0CTL |= MC__UP;
 }
 
 void initIMU(void) {
@@ -39,7 +45,7 @@ void initIMU(void) {
     //__delay_cycles(100000);
     resp = i2c_tx(addr, tx_buf, 2);
   }*/
-  for (i = 0; i < 100000; i++);
+  //for (i = 0; i < 100000; i++);
   resp = bno055_set_oprmode_default();
   
 
@@ -139,7 +145,8 @@ short bno055_get_imu(void)
   unsigned short resp;
   unsigned char tx_buf[1] = {BNO055_EULER_H_LSB_ADDR};
   //for (i = 0; i < 100000; i++);
-  resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8);// read sys_err reg
+  // TODO with timer interrupt, bno055_get_imu() never makes it back from 12c_txrx()
+  resp = i2c_txrx(addr, tx_buf, 1, eul_buff, 8); // read sys_err reg
   ctl_events_set_clear(&PF_events, IMU_EV, 0); // will be used in bno055_get_IMU instead...
   ctl_events_set_clear(&PF_events, LED_EV, 0);  // Drive LED
   return resp;
