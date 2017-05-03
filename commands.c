@@ -621,7 +621,7 @@ int testTaskingIMU (char **argv, unsigned short argc)
     while(UCA2_CheckKey()==EOF){
       bno055_get_imu();
       count = 0;
-      while (count < 65535){count++;}
+      __delay_cycles(100000);
     }
   }
   return 0;
@@ -693,9 +693,22 @@ int testLED_cmd (char **argv, unsigned short argc)
 
 int start_timer (char **argv, unsigned short argc)
 {
-  TA0CTL = TASSEL__ACLK + MC__UP + TAIE;
+  TA0CTL |= MC__UP;
+  return 0;
 }
 
+int stop_timer (char **argv, unsigned short argc)
+{
+  TA0CTL |= MC__STOP + TACLR;
+  return 0;
+}
+
+/*
+int err_check (char **argv, unsigned short argc)
+{
+  return bno055_errcheck();
+}
+*/
 
 //table of commands with help
 const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
@@ -720,7 +733,9 @@ const CMD_SPEC cmd_tbl[]={{"help"," [command]",helpCmd},
                    {"rgps","rgps""reads gps[] string.\n\r", readGPS},
                    {"ttx","ttx""outputs 01010101.\n\r", testTX},
                    {"led","Test LED driver, if argc>0 [char] will convert char to int and drive that pattern.\n\r", testLED_cmd},
-                   {"stime","start TimerA0, which calls bno055_get_IMU()", start_timer},
+                   {"start","start TimerA0, which calls bno055_get_IMU()", start_timer},
+                   {"stop","stop TimerA0", stop_timer},
+                   //{"errcheck","check for errors and reset", err_check},
 
                    //ARC_COMMANDS,CTL_COMMANDS,ERROR_COMMANDS, // add lib functions to the help list 
                    //end of list

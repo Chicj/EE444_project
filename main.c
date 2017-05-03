@@ -42,6 +42,11 @@ void main(void){
   P7DIR=0xFF;
   //init complete turn on LED0 and all others off
   P7OUT=0xFF;
+
+  // MCLK to just under 8 MHz
+  //UCSCTL1 = DCORSEL_4;
+  //UCSCTL2 = 240;
+
   //init gps UART
   gps_setup();
   //initialize UART
@@ -72,7 +77,6 @@ void main(void){
   // drop to lowest priority to start created tasks running.
   ctl_task_set_priority(&idle_task,0);  
 
-  //TA0CTL = TASSEL__ACLK + MC__UP + TAIE;
 
   //main loop
   for(;;){

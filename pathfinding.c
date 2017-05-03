@@ -85,7 +85,7 @@ void PF_func(void *p) __toplevel{
     if(e & LED_EV){
       // drive LEDs W/ Euler output
       // parse arot (-180 <--> +180) with 270 deg LED 
-      LED_input = round(arot / 16.3);
+      LED_input = arot / 16.3;
       LED_input = (LED_input > 0)? 0x80 << LED_input : 0x80 >> -LED_input;
       write_LED(LED_input); // needs int
     }
